@@ -5,26 +5,107 @@
 
 // header
 header {
-    #logo {
-        display: block;
-        position: fixed;
-        top: 42px;
-        left: 11.2%;
-        z-index: 100;
-    }
-    nav {
-        display: none;
-    }
-    .mo-nav {
-        .hambur {
-            span {
-                position: absolute;
-                display: block;
-                width: 100%;
-                height: 2px;
-                background-color: $white;
-                transition: 0.3s;
+    .main-menu {
+        #logo {
+            display: block;
+            position: fixed;
+            top: 42px;
+            left: 11.2%;
+            z-index: 100;
+    
+            @include responsive(tablet-size) {
+                left: 5%;
             }
+        }
+
+        .navbar {
+            .gnb {
+                overflow: hidden;
+                position: fixed;
+                top: 42px;
+                right: 11.2%;
+
+                @include responsive(tablet-size) {
+                    right: 5%;
+                }
+
+                li {
+                    &:not(:last-child) {
+                        display: none;
+
+                        @include responsive(tablet-size) {
+                            display: inline-block;
+
+                            a {
+                                margin-right: 25px;
+                            }
+                        }
+
+                    }
+
+                    .hamburger-btn {
+                        span {
+                            background: $white;
+                            display: block;
+                            width: 25px;
+                            height: 3px;
+                            margin: 5px 0;
+                        }
+
+                        @include responsive(tablet-size) {
+                            display: none;
+                        }
+                    }
+
+                }
+            }
+
+            /*.gnb {
+                overflow: hidden;
+                position: fixed;
+                top: 42px;
+                width: 100%;
+
+                @include responsive(tablet-size) {
+                    float: right;
+                    right: 5%;
+                }
+
+                a {
+                    color: $white;
+                    display: none;
+                    text-align: center;
+
+                    &:hover {
+                        background-color: $color-background;
+                        color: $orange;
+                    }
+
+                    @include responsive(tablet-size) {
+                        display: inline-block;
+                        float:right;
+                        margin-right: 30px;
+                    }
+                }
+
+                .hamburger-btn {
+                    display: block;
+                    float: right;
+                    margin-right: 11.2%;
+
+                    @include responsive(tablet-size) {
+                        display: none;
+                    }
+                    
+                    span {
+                        background: $white;
+                        display: block;
+                        width: 25px;
+                        height: 3px;
+                        margin: 5px 0;
+                    }
+                }
+            }*/
         }
     }
 }

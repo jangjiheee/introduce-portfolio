@@ -3,7 +3,6 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "roboto";
 }
 
 html {
@@ -51,7 +50,7 @@ ul, li {
   list-style-position: inside;
 }
 
-header #logo {
+header .main-menu #logo {
   display: block;
   position: fixed;
   top: 42px;
@@ -59,18 +58,99 @@ header #logo {
   z-index: 100;
 }
 
-header nav {
+@media screen and (min-width: 768px) {
+  header .main-menu #logo {
+    left: 5%;
+  }
+}
+
+header .main-menu .navbar {
+  /*.gnb {
+                overflow: hidden;
+                position: fixed;
+                top: 42px;
+                width: 100%;
+
+                @include responsive(tablet-size) {
+                    float: right;
+                    right: 5%;
+                }
+
+                a {
+                    color: $white;
+                    display: none;
+                    text-align: center;
+
+                    &:hover {
+                        background-color: $color-background;
+                        color: $orange;
+                    }
+
+                    @include responsive(tablet-size) {
+                        display: inline-block;
+                        float:right;
+                        margin-right: 30px;
+                    }
+                }
+
+                .hamburger-btn {
+                    display: block;
+                    float: right;
+                    margin-right: 11.2%;
+
+                    @include responsive(tablet-size) {
+                        display: none;
+                    }
+                    
+                    span {
+                        background: $white;
+                        display: block;
+                        width: 25px;
+                        height: 3px;
+                        margin: 5px 0;
+                    }
+                }
+            }*/
+}
+
+header .main-menu .navbar .gnb {
+  overflow: hidden;
+  position: fixed;
+  top: 42px;
+  right: 11.2%;
+}
+
+@media screen and (min-width: 768px) {
+  header .main-menu .navbar .gnb {
+    right: 5%;
+  }
+}
+
+header .main-menu .navbar .gnb li:not(:last-child) {
   display: none;
 }
 
-header .mo-nav .hambur span {
-  position: absolute;
+@media screen and (min-width: 768px) {
+  header .main-menu .navbar .gnb li:not(:last-child) {
+    display: inline-block;
+  }
+  header .main-menu .navbar .gnb li:not(:last-child) a {
+    margin-right: 25px;
+  }
+}
+
+header .main-menu .navbar .gnb li .hamburger-btn span {
+  background: #ffffff;
   display: block;
-  width: 100%;
-  height: 2px;
-  background-color: #ffffff;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  width: 25px;
+  height: 3px;
+  margin: 5px 0;
+}
+
+@media screen and (min-width: 768px) {
+  header .main-menu .navbar .gnb li .hamburger-btn {
+    display: none;
+  }
 }
 
 section {
