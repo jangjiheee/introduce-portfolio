@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-en;
+}
+
+html {
+    background-color: $color-background;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: $white;
+}
+
+h1 {
+    font-size: 18.75em;
+    color: $white;
+}
+
+h2 {
+    font-size: 6.25em;
+    color: $white;
+}
+
+h3 {
+    font-size: 3.75em;
+    color: $white;
+}
+
+h4 {
+    font-size: 1.375em;
+    color: $white;
+}
+
+p {
+    font-size: 1em;
+    color: $white;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+ul, li {
+    list-style: none;
+    list-style-position: inside;
+}
