@@ -4,6 +4,16 @@
     padding: 0 7%;
 }
 
+@mixin confix-tab() {
+    width: 90%;
+    margin: 0 auto;
+}
+
+@mixin confix() {
+    width: 1320px;
+    margin: 0 auto;
+}
+
 @mixin responsive($break) {
     @if $break == mobile-size {
         @media screen and (min-width: $break-mobile) {

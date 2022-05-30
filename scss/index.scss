@@ -33,11 +33,26 @@ header {
                     &:not(:last-child) {
                         display: none;
 
-                        @include responsive(tablet-size) {
+                        @include responsive(pc-size) {
                             display: inline-block;
 
                             a {
-                                margin-right: 25px;
+                                margin-right: 60px;
+                                font-size: 1.25em;
+
+                                @include responsive(tablet-size) {
+                                    margin-right: 25px;
+                                    font-size: 1.2em;
+                                }
+
+                                @include responsive(pc-size) {
+                                    margin-right: 57px;
+                                    font-size: 1.25em;
+                                }
+
+                                &:hover {
+                                    color: $orange;
+                                }
                             }
                         }
 
@@ -52,7 +67,7 @@ header {
                             margin: 5px 0;
                         }
 
-                        @include responsive(tablet-size) {
+                        @include responsive(pc-size) {
                             display: none;
                         }
                     }
@@ -116,7 +131,7 @@ section {
 
     .intro-text {
         display: block;
-        margin-top: 235px;
+        margin-top: 210px;
         margin-bottom: 200px;
 
         h1 {
@@ -125,12 +140,19 @@ section {
                 size: 5em;
                 weight: bolder;
             }
+            @include responsive(tablet-size) {
+                font: {
+                    size: 11em;
+                }
+            }
+
             @include responsive(pc-size) {
                 font: {
                     size: 18.75em;
                 }
             }
         }
+
         h2 {
             font: {
                 size: 3em;
@@ -141,45 +163,291 @@ section {
                 }
             }
         }
-    }
+    } /* intro text */
 
+    /* introduce */
     .introduce {
-        margin-bottom: 50px;
-        
-        h2 {
-            font-size: 4.4em;
-            margin-bottom: 60px;
-        }
-        .introduce-img {
-            width: 70%;
-            margin: 0 auto;
-        }
-        .explain {
-            h3 {
-                color: $orange;
-                font-size: 1.8em;
-                margin: 20px 0 5px 0;
-            }
-            .name {
-                font-size: 2.8em;
-                font-weight: bolder;
-                margin-bottom: 67px;
-            }
-        }
-        .eng-character {
-            width: 80%;
-            margin: 0 auto;
-            font-size: 1.6em;
-            text-align: left;
-            display: flex;
-            justify-content: space-between;
+        @include confix-tab();
+        margin-bottom: 200px;
 
-            .flex-box1,
-            .flex-box2 {
-                p {
-                    margin-bottom: 0.5em;
+        h2 {
+            font-size: 3em;
+            margin-bottom: 60px;
+
+            @include responsive(tablet-size) {
+                text-align: left;
+                margin-left: 7%;
+                font-size: 4.5em;
+            }
+
+            @include responsive(pc-size) {
+                margin-left: 4%;
+                font-size: 6.25em;
+            }
+        }
+
+        .intro-flex-box {
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+
+            @include responsive(tablet-size) {
+                flex-direction: row;
+                position: relative;
+                margin: 0 auto;
+            }
+
+            .img-box {
+                margin: 0 auto;
+                @include responsive(tablet-size) {
+                    width: 40%;
+                    margin-left: 3.5%;
+                }
+                @include responsive(pc-size) {
+                    margin-left: 9%;
+                }
+            }
+
+            .explain {
+                margin: 0 auto;
+                @include responsive(tablet-size) {
+                    position: absolute;
+                    left: 50%;
+                    bottom: 10%;
+                    margin-right: 0;
+                }
+                @include responsive(pc-size) {
+                    left: 56%;
+                    bottom: 15%;
+                }
+
+                h3 {
+                    color: $orange;
+                    font-size: 2em;
+                    margin: 30px 0 15px 0;
+                    @include responsive(tablet-size) {
+                        font-size: 1.66em;
+                    }
+                    @include responsive(pc-size) {
+                        font-size: 2.8em;
+                    }
+                }
+
+                .name {
+                    font: {
+                        size: 3em;
+                        weight: bolder;
+                    }
+                    margin-bottom: 67px;
+
+                    @include responsive(pc-size) {
+                        font-size: 5.7em;
+                        text-align: left;
+                    }
+                }
+
+                .eng-character {
+                    width: 100%;
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: space-between;
+
+                    div {
+                        p {
+                            font-size: 1.5em;
+                            text-align: left;
+                            margin-bottom: 10px;
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+                            @include responsive(tablet-size) {
+                                font-size: 1.57em;
+                                margin-bottom: 17px;
+                            }
+                            @include responsive(pc-size) {
+                                font-size: 2.54em;
+                                font-weight: bolder;
+                                margin-bottom: 17px;
+                            }
+                        }
+                    }
                 }
             }
         }
+    /*.introduce {
+        margin-bottom: 50px;
+        
+        h2 {
+            font-size: 3em;
+            margin-bottom: 60px;
+            
+            @include responsive(tablet-size) {
+                text-align: left;
+                margin-left: 13.5%;
+                font-size: 4.5em;
+            }
+        }
+
+        .intro-flex-box {
+            @include responsive(tablet-size) {
+                width: 100%;
+                position: relative;
+                margin: 0 auto;
+            }
+
+            @include responsive(pc-size) {
+                width: 80%;
+                position: relative;
+                margin: 0 auto;
+            }
+
+
+            .img-box {
+                width: 80%;
+                margin: 0 auto;
+                @include responsive(tablet-size) {
+                    width: 30%;
+                    margin-left: 10%;
+                    position: relative;
+                }
+                @include responsive(pc-size) {
+                    width: 30%;
+                    margin-left: 10%;
+                }
+            }
+            
+            .explain {
+                @include responsive(tablet-size) {
+                    // width: 450px;
+                    text-align: left;
+                    // justify-content: space-around;
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    margin: 0 auto;
+                }
+
+                @include responsive(pc-size) {
+                    width: 600px;
+                    text-align: left;
+                    // justify-content: space-around;
+                    position: absolute;
+                    bottom: 0;
+                    right: 10px;
+                }
+
+
+                h3 {
+                    color: $orange;
+                    font-size: 2em;
+                    margin: 20px 0 5px 0;
+                    @include responsive(tablet-size) {
+                        font-size: 1.8em;
+                        margin-top: 20%;
+                        margin-bottom: 5%;
+                    }
+
+                    @include responsive(pc-size) {
+                        font-size: 2.8em;
+                    }
+
+                }
+
+                .name {
+                    font: {
+                        size: 3em;
+                        weight: bolder;
+                    }
+                    margin-bottom: 67px;
+                    @include responsive(pc-size) {
+                        font-size: 5.7em;
+                        font-weight: 900;
+                    }
+                }
+
+                .eng-character {
+                    margin: 0 auto;
+                    width: 70%;
+                    display: flex;
+                    justify-content: space-around;
+                    text-align: left;
+                    
+                    p {
+                        font-size: 1.1em;
+                        @include responsive(tablet-size) {
+                            margin-bottom: 10px;
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+                        }
+                        @include responsive(pc-size) {
+                            font-size: 1.5em;
+                        }
+                    }
+
+                    @include responsive(tablet-size) {
+                        width: 350px;
+                        margin: 0;
+                        float: left;
+                        justify-content: space-between;
+                    }
+
+                    @include responsive(pc-size) {
+                        width: 600px;
+                        margin: 0;
+                        float: left;
+                        justify-content: space-between;
+                    }
+                }                
+            }
+
+            /*@include responsive(tablet-size) {
+                display: flex;
+                clear: both;
+                justify-content: space-around;
+            }
+
+            img {
+                margin: 0 auto;
+                width: 80%;
+                
+                @include responsive(tablet-size) {
+                    width: 40%
+                }
+            }
+
+            .explain {
+                h3 {
+                    color: $orange;
+                    font-size: 2em;
+                    margin: 20px 0 5px 0;
+                }
+                .name {
+                    font-size: 2.8em;
+                    font-weight: bolder;
+                    margin-bottom: 67px;
+                }
+                @include responsive(tablet-size) {
+                    width: 50%;
+                    margin-top: 70px;
+                }
+
+            }
+            .eng-character {
+                // width: 80%;
+                margin: 0 auto;
+                font-size: 1.6em;
+                text-align: left;
+                display: flex;
+                justify-content: space-between;
+    
+                .flex-box1,
+                .flex-box2 {
+                    p {
+                        margin-bottom: 0.5em;
+                    }
+                }
+            }
+        }*/
     }
 }
