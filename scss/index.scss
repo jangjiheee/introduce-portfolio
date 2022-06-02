@@ -361,5 +361,25 @@ section {
                 }
             }
         }
+    } //skill
+
+    .workspace {
+        margin-bottom: 200px;
+
+        h2 {
+            font-size: 3em;
+            margin-bottom: 60px;
+
+            @include responsive(tablet-size) {
+                text-align: left;
+                margin-left: 12%;
+                font-size: 4.5em;
+            }
+
+            @include responsive(pc-size) {
+                margin-left: 8%;
+                font-size: 6.25em;
+            }
+        }
     }
 }
