@@ -153,11 +153,21 @@ section {
             }
         }
 
-        h2 {
+        .mobile-welcome {
             font: {
                 size: 3em;
             }
-            @include responsive(pc-size) {
+            @include responsive(tablet-size) {
+                display: none;
+            }
+        }
+
+        .tablet-welcome {
+            @include responsive(mobile-size) {
+                display: none;
+            }
+            @include responsive(tablet-size) {
+                display: block;
                 font: {
                     size: 6.57em;
                 }

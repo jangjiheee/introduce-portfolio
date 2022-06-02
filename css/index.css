@@ -204,12 +204,25 @@ section .intro-text h1 {
   }
 }
 
-section .intro-text h2 {
+section .intro-text .mobile-welcome {
   font-size: 3em;
 }
 
-@media screen and (min-width: 1460px) {
-  section .intro-text h2 {
+@media screen and (min-width: 768px) {
+  section .intro-text .mobile-welcome {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  section .intro-text .tablet-welcome {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  section .intro-text .tablet-welcome {
+    display: block;
     font-size: 6.57em;
   }
 }
