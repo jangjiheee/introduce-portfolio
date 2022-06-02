@@ -283,181 +283,83 @@ section {
                     }
                 }
             }
-        }
-    /*.introduce {
-        margin-bottom: 50px;
-        
+        } //intor-flex-box
+    } //introduce
+
+    .skill {
+        margin-bottom: 200px;
+
         h2 {
             font-size: 3em;
             margin-bottom: 60px;
-            
+
             @include responsive(tablet-size) {
                 text-align: left;
-                margin-left: 13.5%;
+                margin-left: 12%;
                 font-size: 4.5em;
-            }
-        }
-
-        .intro-flex-box {
-            @include responsive(tablet-size) {
-                width: 100%;
-                position: relative;
-                margin: 0 auto;
             }
 
             @include responsive(pc-size) {
-                width: 80%;
-                position: relative;
-                margin: 0 auto;
+                margin-left: 8%;
+                font-size: 6.25em;
             }
-
-
-            .img-box {
-                width: 80%;
-                margin: 0 auto;
-                @include responsive(tablet-size) {
-                    width: 30%;
-                    margin-left: 10%;
-                    position: relative;
-                }
-                @include responsive(pc-size) {
-                    width: 30%;
-                    margin-left: 10%;
-                }
-            }
-            
-            .explain {
-                @include responsive(tablet-size) {
-                    // width: 450px;
-                    text-align: left;
-                    // justify-content: space-around;
-                    position: absolute;
-                    bottom: 0;
-                    right: 0;
-                    margin: 0 auto;
-                }
-
-                @include responsive(pc-size) {
-                    width: 600px;
-                    text-align: left;
-                    // justify-content: space-around;
-                    position: absolute;
-                    bottom: 0;
-                    right: 10px;
-                }
-
-
-                h3 {
-                    color: $orange;
-                    font-size: 2em;
-                    margin: 20px 0 5px 0;
-                    @include responsive(tablet-size) {
-                        font-size: 1.8em;
-                        margin-top: 20%;
-                        margin-bottom: 5%;
-                    }
-
-                    @include responsive(pc-size) {
-                        font-size: 2.8em;
-                    }
-
-                }
-
-                .name {
-                    font: {
-                        size: 3em;
-                        weight: bolder;
-                    }
-                    margin-bottom: 67px;
-                    @include responsive(pc-size) {
-                        font-size: 5.7em;
-                        font-weight: 900;
-                    }
-                }
-
-                .eng-character {
-                    margin: 0 auto;
-                    width: 70%;
-                    display: flex;
-                    justify-content: space-around;
-                    text-align: left;
-                    
-                    p {
-                        font-size: 1.1em;
-                        @include responsive(tablet-size) {
-                            margin-bottom: 10px;
-                            &:last-child {
-                                margin-bottom: 0;
-                            }
-                        }
-                        @include responsive(pc-size) {
-                            font-size: 1.5em;
-                        }
-                    }
-
-                    @include responsive(tablet-size) {
-                        width: 350px;
-                        margin: 0;
-                        float: left;
-                        justify-content: space-between;
-                    }
-
-                    @include responsive(pc-size) {
-                        width: 600px;
-                        margin: 0;
-                        float: left;
-                        justify-content: space-between;
-                    }
-                }                
-            }
-
-            /*@include responsive(tablet-size) {
+        }
+        
+        .skill-flex-box {
+            @include responsive(pc-size) {
                 display: flex;
-                clear: both;
-                justify-content: space-around;
             }
 
-            img {
-                margin: 0 auto;
-                width: 80%;
+            .skill-explain {
+                display: none;
                 
-                @include responsive(tablet-size) {
-                    width: 40%
+                @include responsive(pc-size) {
+                    display: table;
+                    background-color: #2c2c2c;
+                    .img-box {
+                        margin: 0 auto;
+                        display: table-cell;
+                        vertical-align: middle;
+                        img {
+                            width: 85%;
+                            margin: 0 auto;
+                        }
+                        p {
+                            width: 85%;
+                            margin: 40px auto 0 auto;
+                            font-size: 1.25em;
+                        }
+                    }
                 }
+                
             }
 
-            .explain {
-                h3 {
-                    color: $orange;
-                    font-size: 2em;
-                    margin: 20px 0 5px 0;
-                }
-                .name {
-                    font-size: 2.8em;
-                    font-weight: bolder;
-                    margin-bottom: 67px;
-                }
-                @include responsive(tablet-size) {
-                    width: 50%;
-                    margin-top: 70px;
+            .skill-graph {
+                @include responsive(pc-size) {
+                    border: 1px solid white;
+                    padding: 124px 0;
                 }
 
-            }
-            .eng-character {
-                // width: 80%;
-                margin: 0 auto;
-                font-size: 1.6em;
-                text-align: left;
-                display: flex;
-                justify-content: space-between;
+                .flex-img {
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 70%;
+                    margin: 0 auto;
+                    justify-content: space-between;
     
-                .flex-box1,
-                .flex-box2 {
-                    p {
-                        margin-bottom: 0.5em;
+                    @include responsive(tablet-size) {
+                        width: 80%;
+                    }
+                }
+    
+                img {
+                    width: 47%;
+                    margin-bottom: 25px;
+                    @include responsive(tablet-size) {
+                        width: 21%;
                     }
                 }
             }
-        }*/
+        }
     }
 }
