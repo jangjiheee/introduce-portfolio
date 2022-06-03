@@ -104,7 +104,7 @@
                                 <div class="btn1">
                                     <a href="#">작업 가이드</a>
                                 </div>
-                                <div class="btn2">
+                                <div class="btn2" style="margin-bottom: 100px;">
                                     <a href="#">사이트 바로가기</a>
                                 </div>
                             </div><!--btn-->
@@ -150,7 +150,8 @@
             </div><!-- workspace -->
         
             <div class="contact">
-                <h2>CONTACT POINT</h2>
+                <h2 class="mobile-contact">CONTACT<br>POINT</h2>
+                <h2 class="tablet-contact">CONTACT POINT</h2>
                 <div class="icon">
                     <img src="./images/phone.png" alt="phone-icon">
                     <img src="./images/talk.png" alt="talk-icon">
@@ -158,28 +159,34 @@
                 </div>
                 <div class="contact-form">
                     <form name="contact" action="#" method="post"></form>
-                    <ul>
-                        <li>
-                            <label for="name">NAME</label>
-                            <input type="text" value="">
-                        </li>
-                        <li>
-                            <label for="email">E-MAIL</label>
-                            <input type="email" value="">
-                        </li>
-                        <li>
-                            <label for="text">MESSAGE</label>
-                            <textarea name="message" required></textarea>
-                        </li>
+                    <div class="contact-flex-box">
+                        <ul>
+                            <div class="flex-group">
+                                <li>
+                                    <label for="name">NAME</label>
+                                    <input type="text" value="">
+                                </li>
+                                <li>
+                                    <label for="email">E-MAIL</label>
+                                    <input type="email" value="">
+                                </li>
+                            </div>
+                            <div class="flex-group-message">
+                                <li>
+                                    <label for="text">MESSAGE</label>
+                                    <textarea name="message" required></textarea>
+                                </li>
+                            </div>
+                        </ul>
                         <input type="submit" value="SEND-EMAIL">
-                    </ul>
+                    </div>
                 </div>
             </div> <!--contact-->
         </section>
     </main>
 
     <footer>
-
+        <p>ONLY MADE BY JIHEE</p>
     </footer>
 </body>
 </html>

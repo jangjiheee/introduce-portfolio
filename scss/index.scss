@@ -475,19 +475,149 @@ section {
                                 width: 165px;
                                 height: 40px;
                                 line-height: 36px;
-                                color: #ea894e;
-                                border: 2px solid #ea894e;
+                                color: $orange;
+                                border: 2px solid $orange;
                                 font-weight: 600;
 
                                 &:hover {
-                                    background-color: #ea894e;
+                                    background-color: $orange;
                                     color: $white;
                                 }
                             }
                         }
                     }
+                } //.port01-text, .port02-text
+            } //work-flex-box
+        } //portfolio 1,2
+    } //workspace
+
+    .contact {
+        margin-bottom: 200px;
+        width: 90%;
+        margin: 0 auto;
+
+        h2 {
+            font-size: 3em;
+            margin-bottom: 60px;
+
+            @include responsive(tablet-size) {
+                text-align: left;
+                margin-left: 7%;
+                font-size: 4.5em;
+            }
+
+            @include responsive(pc-size) {
+                margin-left: 8%;
+                font-size: 6.25em;
+            }
+        }
+
+        .mobile-contact {
+            @include responsive(tablet-size) {
+                display: none;
+            }
+        }
+
+        .tablet-contact {
+            display: none;
+            @include responsive(tablet-size) {
+                display: block;
+            }
+        }
+
+        .icon {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+            
+            img {
+                width: 40px;
+                margin-right: 15px;
+                &:last-child {
+                    margin-right: 0;
                 }
             }
         }
+
+        .contact-form {
+            border: 4px solid $white;
+            padding: 60px 35px;
+            color: $white;
+            margin-bottom: 100px;
+
+            @include responsive(tablet-size) {
+                width: 87%;
+                margin: 0 auto;
+            }
+
+            .contact-flex-box {
+                ul {
+                    text-align: left;
+                    display: flex;
+                    flex-direction: column;
+
+                    @include responsive(tablet-size) {
+                        flex-direction: row;
+                        justify-content: space-between;
+                    }
+
+                    .flex-group {
+                        @include responsive(tablet-size) {
+                            width: 49%
+                        }
+                        li {
+                            margin-bottom: 20px;
+
+                            input {
+                                display: block;
+                                width: 100%;
+                                height: 30px;
+                                background-color: transparent;
+                                border: 1px solid $white;
+                                margin-top: 10px;
+                            }
+                        }
+                    }
+                    .flex-group-message {
+                        textarea {
+                            display: block;
+                            width: 100%;
+                            height: 100px;
+                            background-color: transparent;
+                            border: 1px solid $white;
+                            margin-top: 10px;
+                            @include responsive(tablet-size) {
+                                height: 110px;
+                            }
+                        }
+                        @include responsive(tablet-size) {
+                            width: 49%
+                        }
+                    }
+                }
+                input {
+                    width: 100%;
+                    margin-top: 30px;
+                    background-color: transparent;
+                    border: 1px solid $orange;
+                    color: $orange;
+                    padding: 10px 0;
+                }
+            }
+        }
+    }
+}
+
+//footer
+footer {
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    line-height: 100px;
+    background-color: $orange;
+
+    p {
+        color: #000;
+        font-weight: 600;
     }
 }
