@@ -773,7 +773,7 @@ section .contact .contact-form {
 @media screen and (min-width: 768px) {
   section .contact .contact-form {
     width: 87%;
-    margin: 0 auto;
+    margin: 0 auto 200px auto;
   }
 }
 

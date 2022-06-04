@@ -547,7 +547,7 @@ section {
 
             @include responsive(tablet-size) {
                 width: 87%;
-                margin: 0 auto;
+                margin: 0 auto 200px auto;
             }
 
             .contact-flex-box {
