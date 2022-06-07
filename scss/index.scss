@@ -547,10 +547,15 @@ section {
 
             @include responsive(tablet-size) {
                 width: 87%;
-                margin: 0 auto;
+                margin: 0 auto 100px auto;
             }
 
             .contact-flex-box {
+                @include responsive(pc-size) {
+                    width: 90%;
+                    margin: 0 auto;
+                }
+
                 ul {
                     text-align: left;
                     display: flex;
@@ -616,8 +621,15 @@ footer {
     line-height: 100px;
     background-color: $orange;
 
+    @include responsive(tablet-size) {
+        text-align: right;
+    }
+
     p {
         color: #000;
         font-weight: 600;
+        @include responsive(tablet-size) {
+            margin-right: 5%;
+        }
     }
 }

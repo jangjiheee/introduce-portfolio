@@ -1,8 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -58,79 +57,73 @@ header .main-menu #logo {
   left: 11.2%;
   z-index: 100;
 }
-
 @media screen and (min-width: 768px) {
   header .main-menu #logo {
     left: 5%;
   }
 }
-
 header .main-menu .navbar {
   /*.gnb {
-                overflow: hidden;
-                position: fixed;
-                top: 42px;
-                width: 100%;
+      overflow: hidden;
+      position: fixed;
+      top: 42px;
+      width: 100%;
 
-                @include responsive(tablet-size) {
-                    float: right;
-                    right: 5%;
-                }
+      @include responsive(tablet-size) {
+          float: right;
+          right: 5%;
+      }
 
-                a {
-                    color: $white;
-                    display: none;
-                    text-align: center;
+      a {
+          color: $white;
+          display: none;
+          text-align: center;
 
-                    &:hover {
-                        background-color: $color-background;
-                        color: $orange;
-                    }
+          &:hover {
+              background-color: $color-background;
+              color: $orange;
+          }
 
-                    @include responsive(tablet-size) {
-                        display: inline-block;
-                        float:right;
-                        margin-right: 30px;
-                    }
-                }
+          @include responsive(tablet-size) {
+              display: inline-block;
+              float:right;
+              margin-right: 30px;
+          }
+      }
 
-                .hamburger-btn {
-                    display: block;
-                    float: right;
-                    margin-right: 11.2%;
+      .hamburger-btn {
+          display: block;
+          float: right;
+          margin-right: 11.2%;
 
-                    @include responsive(tablet-size) {
-                        display: none;
-                    }
-                    
-                    span {
-                        background: $white;
-                        display: block;
-                        width: 25px;
-                        height: 3px;
-                        margin: 5px 0;
-                    }
-                }
-            }*/
+          @include responsive(tablet-size) {
+              display: none;
+          }
+
+          span {
+              background: $white;
+              display: block;
+              width: 25px;
+              height: 3px;
+              margin: 5px 0;
+          }
+      }
+  }*/
 }
-
 header .main-menu .navbar .gnb {
   overflow: hidden;
   position: fixed;
   top: 42px;
   right: 11.2%;
 }
-
 @media screen and (min-width: 768px) {
   header .main-menu .navbar .gnb {
     right: 5%;
   }
 }
-
 header .main-menu .navbar .gnb li:not(:last-child) {
   display: none;
 }
-
 @media screen and (min-width: 1460px) {
   header .main-menu .navbar .gnb li:not(:last-child) {
     display: inline-block;
@@ -140,27 +133,23 @@ header .main-menu .navbar .gnb li:not(:last-child) {
     font-size: 1.25em;
   }
 }
-
 @media screen and (min-width: 1460px) and (min-width: 768px) {
   header .main-menu .navbar .gnb li:not(:last-child) a {
     margin-right: 25px;
     font-size: 1.2em;
   }
 }
-
 @media screen and (min-width: 1460px) and (min-width: 1460px) {
   header .main-menu .navbar .gnb li:not(:last-child) a {
     margin-right: 57px;
     font-size: 1.25em;
   }
 }
-
 @media screen and (min-width: 1460px) {
   header .main-menu .navbar .gnb li:not(:last-child) a:hover {
     color: #ea894e;
   }
 }
-
 header .main-menu .navbar .gnb li .hamburger-btn span {
   background: #ffffff;
   display: block;
@@ -168,7 +157,6 @@ header .main-menu .navbar .gnb li .hamburger-btn span {
   height: 3px;
   margin: 5px 0;
 }
-
 @media screen and (min-width: 1460px) {
   header .main-menu .navbar .gnb li .hamburger-btn {
     display: none;
@@ -180,65 +168,54 @@ section {
   /* intro text */
   /* introduce */
 }
-
 section .intro-text {
   display: block;
   margin-top: 210px;
   margin-bottom: 200px;
 }
-
 section .intro-text h1 {
   margin-bottom: 65px;
   font-size: 5em;
   font-weight: bolder;
 }
-
 @media screen and (min-width: 768px) {
   section .intro-text h1 {
     font-size: 11em;
   }
 }
-
 @media screen and (min-width: 1460px) {
   section .intro-text h1 {
     font-size: 18.75em;
   }
 }
-
 section .intro-text .mobile-welcome {
   font-size: 3em;
 }
-
 @media screen and (min-width: 768px) {
   section .intro-text .mobile-welcome {
     display: none;
   }
 }
-
 @media screen and (min-width: 320px) {
   section .intro-text .tablet-welcome {
     display: none;
   }
 }
-
 @media screen and (min-width: 768px) {
   section .intro-text .tablet-welcome {
     display: block;
     font-size: 6.57em;
   }
 }
-
 section .introduce {
   width: 90%;
   margin: 0 auto;
   margin-bottom: 200px;
 }
-
 section .introduce h2 {
   font-size: 3em;
   margin-bottom: 60px;
 }
-
 @media screen and (min-width: 768px) {
   section .introduce h2 {
     text-align: left;
@@ -246,57 +223,41 @@ section .introduce h2 {
     font-size: 4.5em;
   }
 }
-
 @media screen and (min-width: 1460px) {
   section .introduce h2 {
     margin-left: 4%;
     font-size: 6.25em;
   }
 }
-
 section .introduce .intro-flex-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin: 0 auto;
 }
-
 @media screen and (min-width: 768px) {
   section .introduce .intro-flex-box {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     position: relative;
     margin: 0 auto;
   }
 }
-
 section .introduce .intro-flex-box .img-box {
   margin: 0 auto;
 }
-
 @media screen and (min-width: 768px) {
   section .introduce .intro-flex-box .img-box {
     width: 40%;
     margin-left: 3.5%;
   }
 }
-
 @media screen and (min-width: 1460px) {
   section .introduce .intro-flex-box .img-box {
     margin-left: 9%;
   }
 }
-
 section .introduce .intro-flex-box .explain {
   margin: 0 auto;
 }
-
 @media screen and (min-width: 768px) {
   section .introduce .intro-flex-box .explain {
     position: absolute;
@@ -305,73 +266,58 @@ section .introduce .intro-flex-box .explain {
     margin-right: 0;
   }
 }
-
 @media screen and (min-width: 1460px) {
   section .introduce .intro-flex-box .explain {
     left: 56%;
     bottom: 15%;
   }
 }
-
 section .introduce .intro-flex-box .explain h3 {
   color: #ea894e;
   font-size: 2em;
   margin: 30px 0 15px 0;
 }
-
 @media screen and (min-width: 768px) {
   section .introduce .intro-flex-box .explain h3 {
     font-size: 1.66em;
   }
 }
-
 @media screen and (min-width: 1460px) {
   section .introduce .intro-flex-box .explain h3 {
     font-size: 2.8em;
   }
 }
-
 section .introduce .intro-flex-box .explain .name {
   font-size: 3em;
   font-weight: bolder;
   margin-bottom: 67px;
 }
-
 @media screen and (min-width: 1460px) {
   section .introduce .intro-flex-box .explain .name {
     font-size: 5.7em;
     text-align: left;
   }
 }
-
 section .introduce .intro-flex-box .explain .eng-character {
   width: 100%;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 section .introduce .intro-flex-box .explain .eng-character div p {
   font-size: 1.5em;
   text-align: left;
   margin-bottom: 10px;
 }
-
 section .introduce .intro-flex-box .explain .eng-character div p:last-child {
   margin-bottom: 0;
 }
-
 @media screen and (min-width: 768px) {
   section .introduce .intro-flex-box .explain .eng-character div p {
     font-size: 1.57em;
     margin-bottom: 17px;
   }
 }
-
 @media screen and (min-width: 1460px) {
   section .introduce .intro-flex-box .explain .eng-character div p {
     font-size: 2.54em;
@@ -379,16 +325,13 @@ section .introduce .intro-flex-box .explain .eng-character div p:last-child {
     margin-bottom: 17px;
   }
 }
-
 section .skill {
   margin-bottom: 200px;
 }
-
 section .skill h2 {
   font-size: 3em;
   margin-bottom: 60px;
 }
-
 @media screen and (min-width: 768px) {
   section .skill h2 {
     text-align: left;
@@ -396,26 +339,20 @@ section .skill h2 {
     font-size: 4.5em;
   }
 }
-
 @media screen and (min-width: 1460px) {
   section .skill h2 {
     margin-left: 8%;
     font-size: 6.25em;
   }
 }
-
 @media screen and (min-width: 1460px) {
   section .skill .skill-flex-box {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
 }
-
 section .skill .skill-flex-box .skill-explain {
   display: none;
 }
-
 @media screen and (min-width: 1460px) {
   section .skill .skill-flex-box .skill-explain {
     display: table;
@@ -436,53 +373,40 @@ section .skill .skill-flex-box .skill-explain {
     font-size: 1.25em;
   }
 }
-
 @media screen and (min-width: 1460px) {
   section .skill .skill-flex-box .skill-graph {
     border: 1px solid white;
     padding: 124px 0;
   }
 }
-
 section .skill .skill-flex-box .skill-graph .flex-img {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   width: 70%;
   margin: 0 auto;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 @media screen and (min-width: 768px) {
   section .skill .skill-flex-box .skill-graph .flex-img {
     width: 80%;
   }
 }
-
 section .skill .skill-flex-box .skill-graph img {
   width: 47%;
   margin-bottom: 25px;
 }
-
 @media screen and (min-width: 768px) {
   section .skill .skill-flex-box .skill-graph img {
     width: 21%;
   }
 }
-
 section .workspace {
   margin-bottom: 200px;
 }
-
 section .workspace h2 {
   font-size: 3em;
   margin-bottom: 60px;
 }
-
 @media screen and (min-width: 768px) {
   section .workspace h2 {
     text-align: left;
@@ -490,45 +414,32 @@ section .workspace h2 {
     font-size: 4.5em;
   }
 }
-
 @media screen and (min-width: 1460px) {
   section .workspace h2 {
     margin-left: 8%;
     font-size: 6.25em;
   }
 }
-
 section .workspace .portfolio01 .work-flex-box,
 section .workspace .portfolio02 .work-flex-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 @media screen and (min-width: 768px) {
   section .workspace .portfolio01 .work-flex-box,
-  section .workspace .portfolio02 .work-flex-box {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+section .workspace .portfolio02 .work-flex-box {
+    flex-direction: row;
     width: 90%;
     margin: 0 auto;
   }
 }
-
 @media screen and (min-width: 1460px) {
   section .workspace .portfolio01 .work-flex-box,
-  section .workspace .portfolio02 .work-flex-box {
+section .workspace .portfolio02 .work-flex-box {
     width: 100%;
     margin-left: 7%;
   }
 }
-
 section .workspace .portfolio01 .work-flex-box .port01-img,
 section .workspace .portfolio01 .work-flex-box .port02-img,
 section .workspace .portfolio02 .work-flex-box .port01-img,
@@ -536,25 +447,22 @@ section .workspace .portfolio02 .work-flex-box .port02-img {
   width: 90%;
   margin: 0 auto 20px auto;
 }
-
 @media screen and (min-width: 768px) {
   section .workspace .portfolio01 .work-flex-box .port01-img,
-  section .workspace .portfolio01 .work-flex-box .port02-img,
-  section .workspace .portfolio02 .work-flex-box .port01-img,
-  section .workspace .portfolio02 .work-flex-box .port02-img {
+section .workspace .portfolio01 .work-flex-box .port02-img,
+section .workspace .portfolio02 .work-flex-box .port01-img,
+section .workspace .portfolio02 .work-flex-box .port02-img {
     width: 55%;
   }
 }
-
 @media screen and (min-width: 1460px) {
   section .workspace .portfolio01 .work-flex-box .port01-img,
-  section .workspace .portfolio01 .work-flex-box .port02-img,
-  section .workspace .portfolio02 .work-flex-box .port01-img,
-  section .workspace .portfolio02 .work-flex-box .port02-img {
+section .workspace .portfolio01 .work-flex-box .port02-img,
+section .workspace .portfolio02 .work-flex-box .port01-img,
+section .workspace .portfolio02 .work-flex-box .port02-img {
     width: 45%;
   }
 }
-
 section .workspace .portfolio01 .work-flex-box .port01-text,
 section .workspace .portfolio01 .work-flex-box .port02-text,
 section .workspace .portfolio02 .work-flex-box .port01-text,
@@ -563,26 +471,23 @@ section .workspace .portfolio02 .work-flex-box .port02-text {
   text-align: left;
   margin: 0 auto;
 }
-
 @media screen and (min-width: 768px) {
   section .workspace .portfolio01 .work-flex-box .port01-text,
-  section .workspace .portfolio01 .work-flex-box .port02-text,
-  section .workspace .portfolio02 .work-flex-box .port01-text,
-  section .workspace .portfolio02 .work-flex-box .port02-text {
+section .workspace .portfolio01 .work-flex-box .port02-text,
+section .workspace .portfolio02 .work-flex-box .port01-text,
+section .workspace .portfolio02 .work-flex-box .port02-text {
     width: 43%;
   }
 }
-
 @media screen and (min-width: 1460px) {
   section .workspace .portfolio01 .work-flex-box .port01-text,
-  section .workspace .portfolio01 .work-flex-box .port02-text,
-  section .workspace .portfolio02 .work-flex-box .port01-text,
-  section .workspace .portfolio02 .work-flex-box .port02-text {
+section .workspace .portfolio01 .work-flex-box .port02-text,
+section .workspace .portfolio02 .work-flex-box .port01-text,
+section .workspace .portfolio02 .work-flex-box .port02-text {
     margin: 0 0 0 1%;
     width: 55%;
   }
 }
-
 section .workspace .portfolio01 .work-flex-box .port01-text h3,
 section .workspace .portfolio01 .work-flex-box .port02-text h3,
 section .workspace .portfolio02 .work-flex-box .port01-text h3,
@@ -594,73 +499,62 @@ section .workspace .portfolio02 .work-flex-box .port02-text h3 {
   border-right: none;
   margin-bottom: 30px;
 }
-
 @media screen and (min-width: 1460px) {
   section .workspace .portfolio01 .work-flex-box .port01-text h3,
-  section .workspace .portfolio01 .work-flex-box .port02-text h3,
-  section .workspace .portfolio02 .work-flex-box .port01-text h3,
-  section .workspace .portfolio02 .work-flex-box .port02-text h3 {
+section .workspace .portfolio01 .work-flex-box .port02-text h3,
+section .workspace .portfolio02 .work-flex-box .port01-text h3,
+section .workspace .portfolio02 .work-flex-box .port02-text h3 {
     width: 100%;
   }
 }
-
 @media screen and (min-width: 1460px) {
   section .workspace .portfolio01 .work-flex-box .port01-text .mobile-ver,
-  section .workspace .portfolio01 .work-flex-box .port02-text .mobile-ver,
-  section .workspace .portfolio02 .work-flex-box .port01-text .mobile-ver,
-  section .workspace .portfolio02 .work-flex-box .port02-text .mobile-ver {
+section .workspace .portfolio01 .work-flex-box .port02-text .mobile-ver,
+section .workspace .portfolio02 .work-flex-box .port01-text .mobile-ver,
+section .workspace .portfolio02 .work-flex-box .port02-text .mobile-ver {
     display: none;
   }
 }
-
 section .workspace .portfolio01 .work-flex-box .port01-text .tablet-ver,
 section .workspace .portfolio01 .work-flex-box .port02-text .tablet-ver,
 section .workspace .portfolio02 .work-flex-box .port01-text .tablet-ver,
 section .workspace .portfolio02 .work-flex-box .port02-text .tablet-ver {
   display: none;
 }
-
 @media screen and (min-width: 1460px) {
   section .workspace .portfolio01 .work-flex-box .port01-text .tablet-ver,
-  section .workspace .portfolio01 .work-flex-box .port02-text .tablet-ver,
-  section .workspace .portfolio02 .work-flex-box .port01-text .tablet-ver,
-  section .workspace .portfolio02 .work-flex-box .port02-text .tablet-ver {
+section .workspace .portfolio01 .work-flex-box .port02-text .tablet-ver,
+section .workspace .portfolio02 .work-flex-box .port01-text .tablet-ver,
+section .workspace .portfolio02 .work-flex-box .port02-text .tablet-ver {
     display: block;
   }
 }
-
 section .workspace .portfolio01 .work-flex-box .port01-text .text-left-align,
 section .workspace .portfolio01 .work-flex-box .port02-text .text-left-align,
 section .workspace .portfolio02 .work-flex-box .port01-text .text-left-align,
 section .workspace .portfolio02 .work-flex-box .port02-text .text-left-align {
   padding-left: 6%;
 }
-
 section .workspace .portfolio01 .work-flex-box .port01-text .text-left-align div,
 section .workspace .portfolio01 .work-flex-box .port02-text .text-left-align div,
 section .workspace .portfolio02 .work-flex-box .port01-text .text-left-align div,
 section .workspace .portfolio02 .work-flex-box .port02-text .text-left-align div {
   margin-bottom: 70px;
 }
-
 section .workspace .portfolio01 .work-flex-box .port01-text .text-left-align div h4,
 section .workspace .portfolio01 .work-flex-box .port02-text .text-left-align div h4,
 section .workspace .portfolio02 .work-flex-box .port01-text .text-left-align div h4,
 section .workspace .portfolio02 .work-flex-box .port02-text .text-left-align div h4 {
   margin-bottom: 11px;
 }
-
 @media screen and (min-width: 1460px) {
   section .workspace .portfolio01 .work-flex-box .port01-text .btn,
-  section .workspace .portfolio01 .work-flex-box .port02-text .btn,
-  section .workspace .portfolio02 .work-flex-box .port01-text .btn,
-  section .workspace .portfolio02 .work-flex-box .port02-text .btn {
-    display: -webkit-box;
-    display: -ms-flexbox;
+section .workspace .portfolio01 .work-flex-box .port02-text .btn,
+section .workspace .portfolio02 .work-flex-box .port01-text .btn,
+section .workspace .portfolio02 .work-flex-box .port02-text .btn {
     display: flex;
   }
 }
-
 section .workspace .portfolio01 .work-flex-box .port01-text .btn .btn1,
 section .workspace .portfolio01 .work-flex-box .port01-text .btn .btn2,
 section .workspace .portfolio01 .work-flex-box .port02-text .btn .btn1,
@@ -672,7 +566,6 @@ section .workspace .portfolio02 .work-flex-box .port02-text .btn .btn2 {
   margin-left: 6%;
   margin-bottom: 10px;
 }
-
 section .workspace .portfolio01 .work-flex-box .port01-text .btn .btn1 a,
 section .workspace .portfolio01 .work-flex-box .port01-text .btn .btn2 a,
 section .workspace .portfolio01 .work-flex-box .port02-text .btn .btn1 a,
@@ -689,7 +582,6 @@ section .workspace .portfolio02 .work-flex-box .port02-text .btn .btn2 a {
   border: 2px solid #ea894e;
   font-weight: 600;
 }
-
 section .workspace .portfolio01 .work-flex-box .port01-text .btn .btn1 a:hover,
 section .workspace .portfolio01 .work-flex-box .port01-text .btn .btn2 a:hover,
 section .workspace .portfolio01 .work-flex-box .port02-text .btn .btn1 a:hover,
@@ -701,18 +593,15 @@ section .workspace .portfolio02 .work-flex-box .port02-text .btn .btn2 a:hover {
   background-color: #ea894e;
   color: #ffffff;
 }
-
 section .contact {
   margin-bottom: 200px;
   width: 90%;
   margin: 0 auto;
 }
-
 section .contact h2 {
   font-size: 3em;
   margin-bottom: 60px;
 }
-
 @media screen and (min-width: 768px) {
   section .contact h2 {
     text-align: left;
@@ -720,96 +609,74 @@ section .contact h2 {
     font-size: 4.5em;
   }
 }
-
 @media screen and (min-width: 1460px) {
   section .contact h2 {
     margin-left: 8%;
     font-size: 6.25em;
   }
 }
-
 @media screen and (min-width: 768px) {
   section .contact .mobile-contact {
     display: none;
   }
 }
-
 section .contact .tablet-contact {
   display: none;
 }
-
 @media screen and (min-width: 768px) {
   section .contact .tablet-contact {
     display: block;
   }
 }
-
 section .contact .icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin-bottom: 20px;
 }
-
 section .contact .icon img {
   width: 40px;
   margin-right: 15px;
 }
-
 section .contact .icon img:last-child {
   margin-right: 0;
 }
-
 section .contact .contact-form {
   border: 4px solid #ffffff;
   padding: 60px 35px;
   color: #ffffff;
   margin-bottom: 100px;
 }
-
 @media screen and (min-width: 768px) {
   section .contact .contact-form {
     width: 87%;
+    margin: 0 auto 100px auto;
+  }
+}
+@media screen and (min-width: 1460px) {
+  section .contact .contact-form .contact-flex-box {
+    width: 90%;
     margin: 0 auto;
   }
 }
-
 section .contact .contact-form .contact-flex-box ul {
   text-align: left;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 @media screen and (min-width: 768px) {
   section .contact .contact-form .contact-flex-box ul {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
-
 @media screen and (min-width: 768px) {
   section .contact .contact-form .contact-flex-box ul .flex-group {
     width: 49%;
   }
 }
-
 section .contact .contact-form .contact-flex-box ul .flex-group li {
   margin-bottom: 20px;
 }
-
 section .contact .contact-form .contact-flex-box ul .flex-group li input {
   display: block;
   width: 100%;
@@ -818,7 +685,6 @@ section .contact .contact-form .contact-flex-box ul .flex-group li input {
   border: 1px solid #ffffff;
   margin-top: 10px;
 }
-
 section .contact .contact-form .contact-flex-box ul .flex-group-message textarea {
   display: block;
   width: 100%;
@@ -827,19 +693,16 @@ section .contact .contact-form .contact-flex-box ul .flex-group-message textarea
   border: 1px solid #ffffff;
   margin-top: 10px;
 }
-
 @media screen and (min-width: 768px) {
   section .contact .contact-form .contact-flex-box ul .flex-group-message textarea {
     height: 110px;
   }
 }
-
 @media screen and (min-width: 768px) {
   section .contact .contact-form .contact-flex-box ul .flex-group-message {
     width: 49%;
   }
 }
-
 section .contact .contact-form .contact-flex-box input {
   width: 100%;
   margin-top: 30px;
@@ -856,9 +719,17 @@ footer {
   line-height: 100px;
   background-color: #ea894e;
 }
-
+@media screen and (min-width: 768px) {
+  footer {
+    text-align: right;
+  }
+}
 footer p {
   color: #000;
   font-weight: 600;
 }
-/*# sourceMappingURL=index.css.map */
+@media screen and (min-width: 768px) {
+  footer p {
+    margin-right: 5%;
+  }
+}/*# sourceMappingURL=index.css.map */
