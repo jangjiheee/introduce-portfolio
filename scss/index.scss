@@ -100,21 +100,34 @@ header {
                     }
         
                     // 클릭
-                    input[id="menu"] + label span:first-child {
+                    input[id="menu"]:checked + label span:first-child {
                         top: 50%;
                         transform: translateY(-50%) rotate(45deg);
                     }
         
-                    input[id="menu"] + label span:nth-child(2) {
-                        top: 50%;
-                        transform: translateY(-50%);
+                    input[id="menu"]:checked + label span:nth-child(2) {
+                        opacity: 0;
                     }
         
-                    input[id="menu"] + label span:last-child {
+                    input[id="menu"]:checked + label span:last-child {
                         bottom: 50%;
                         transform: translateY(50%) rotate(-45deg);
                     }
                 }
+            }
+        }
+
+        div.mobile-menu {
+            position: absolute;
+            z-index: 2;
+            width: 100%;
+            background-color: pink;
+
+            ul.mobile-gnb {
+                height: 0vh;
+                padding: 0 20px;
+                overflow: hidden;
+                transition: height ease-in 1s 0s;
             }
         }
     }
