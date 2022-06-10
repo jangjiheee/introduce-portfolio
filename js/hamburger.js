@@ -15,7 +15,7 @@ const menuBar = document.querySelector(".mobile-gnb");
 let subToggle = true;
 function showMenu(){
     if(subToggle) {
-        menuBar.style.setProperty('height', 'calc(100vh - 80px)');
+        menuBar.style.setProperty('height', 'calc(100vh)');
         subToggle =! subToggle;
       } else {
         menuBar.style.height = "0px";
