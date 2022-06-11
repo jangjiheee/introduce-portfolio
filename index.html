@@ -18,22 +18,24 @@
                     <li><a href="#">SKILL</a></li>
                     <li><a href="#">WOKRSPACE</a></li>
                     <li><a href="#">CONTACT POINT</a></li>
-                    <div class="hamburger">
-                        <input type="checkbox" id="menu">
-                        <label for="menu">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </label>
-                    </div> <!--hamburger-->
                 </div> <!--gnb-->
             </div> <!--navbar-->
             <div class="mobile-menu">
+                <div class="hamburger">
+                    <input type="checkbox" id="menu" onclick="colorChange()">
+                    <label for="menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                </div> <!--hamburger-->
                 <ul class="mobile-gnb">
-                    <li class="mob-introduce">INTRODUCE</li>
-                    <li class="mob-skill">SKILL</li>
-                    <li class="mob-workspace">WORKSPACE</li>
-                    <li class="mob-contact">CONTACT POINT</li>
+                    <div class="mobile-list">
+                        <li class="mob-introduce">INTRODUCE</li>
+                        <li class="mob-skill">SKILL</li>
+                        <li class="mob-workspace">WORKSPACE</li>
+                        <li class="mob-contact">CONTACT POINT</li>
+                    </div>
                 </ul>
             </div>
         </nav>
