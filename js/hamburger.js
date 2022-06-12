@@ -11,16 +11,22 @@
 // 모바일 햄버거 버튼
 const hamburger = document.getElementById("menu");
 const menuBar = document.querySelector(".mobile-gnb");
+const menuChild = document.querySelector(".menuChild");
 
 let subToggle = true;
-function showMenu(){
+function showMenu() {
+    const mChild = menuChild.children;
+    console.log(mChild);
+
     if(subToggle) {
         menuBar.style.setProperty('height', 'calc(100vh)');
-        subToggle =! subToggle;
-      } else {
+        mChild.style.color = "black"
+    } else {
         menuBar.style.height = "0px";
-        subToggle =! subToggle;
+        mChild.style.color = "white"
     }
+    subToggle = !subToggle;
+
 }
 
 hamburger.addEventListener("click", showMenu);
