@@ -11,19 +11,28 @@
 // 모바일 햄버거 버튼
 const hamburger = document.getElementById("menu");
 const menuBar = document.querySelector(".mobile-gnb");
-const menuChild = document.querySelector(".menuChild");
-const mChild = menuChild.children;
 
 let subToggle = true;
 function showMenu() {
-    console.log(mChild);
+    const menuChild = document.querySelector(".menuChild");
+    const mChild = menuChild.children;
+    const blackLogo = document.querySelector("#logo");
 
     if(subToggle) {
         menuBar.style.setProperty('height', 'calc(100vh)');
-        //mChild.style.backgroundColor = "black"
+        for (let i = 0; i < mChild.length; i++) {
+            const mySpan = mChild[i];
+            mySpan.style.backgroundColor = "black";
+        }
+        blackLogo.style.color = "black";
+       
     } else {
         menuBar.style.height = "0px";
-        //mChild.style.backgroundColor = "white"
+        for (let i = 0; i < mChild.length; i++) {
+            const mySpan = mChild[i];
+            mySpan.style.backgroundColor = "white";
+        }
+        blackLogo.style.color = "white";
     }
     subToggle = !subToggle;
 

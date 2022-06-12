@@ -13,6 +13,7 @@ header {
             top: 42px;
             left: 11.2%;
             z-index: 100;
+            font-weight: 900;
     
             @include responsive(tablet-size) {
                 left: 5%;
@@ -63,7 +64,7 @@ header {
             z-index: 50;
             width: 100%;
             top: 0;
-            background-color: pink;
+            background-color: $orange;
             
             .hamburger {
                 position: fixed;
@@ -134,7 +135,7 @@ header {
                 height: 0vh;
                 padding: 0 20px;
                 overflow: hidden;
-                transition: height ease-in 1s 0s;
+                transition: height 0.6s linear;
 
                 .mobile-list {
                     position: relative;

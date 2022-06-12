@@ -59,6 +59,7 @@ header .main-menu #logo {
   top: 42px;
   left: 11.2%;
   z-index: 100;
+  font-weight: 900;
 }
 @media screen and (min-width: 768px) {
   header .main-menu #logo {
@@ -110,7 +111,7 @@ header .main-menu div.mobile-menu {
   z-index: 50;
   width: 100%;
   top: 0;
-  background-color: pink;
+  background-color: #ea894e;
 }
 header .main-menu div.mobile-menu .hamburger {
   position: fixed;
@@ -174,7 +175,7 @@ header .main-menu div.mobile-menu ul.mobile-gnb {
   height: 0vh;
   padding: 0 20px;
   overflow: hidden;
-  transition: height ease-in 1s 0s;
+  transition: height 0.6s linear;
 }
 header .main-menu div.mobile-menu ul.mobile-gnb .mobile-list {
   position: relative;

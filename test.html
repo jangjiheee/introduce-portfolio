@@ -25,45 +25,45 @@
         }
   
         /* Scroll Animation (sa, 스크롤 애니메이션) */
-        .sa {
+        .da {
           opacity: 0;
           transition: all .5s ease;
         }
   
         /* 아래에서 위로 페이드 인 */
-        .sa-up {
+        .da-up {
           transform: translate(0, 100px);
         }
         /* 위에서 아래로 페이드 인 */
-        .sa-down {
+        .da-down {
           transform: translate(0, -100px);
         }
         /* 왼쪽에서 오른쪽으로 페이드 인 */
-        .sa-right {
+        .da-right {
           transform: translate(-100px, 0);
         }
         /* 오른쪽에서 왼쪽으로 페이드 인 */
-        .sa-left {
+        .da-left {
           transform: translate(100px, 0);
         }
         /* 왼쪽으로 회전하면서 페이드 인 */
-        .sa-rotateL {
+        .da-rotateL {
           transform: rotate(180deg);
         }
         /* 오른쪽으로 회전하면서 페이드 인 */
-        .sa-rotateR {
+        .da-rotateR {
           transform: rotate(-180deg);
         }
         /* 작아진 상태에서 커지면서 페이드 인 */
-        .sa-scaleUp {
+        .da-scaleUp {
           transform: scale(.5);
         }
         /* 커진 상태에서 작아지면서 페이드 인 */
-        .sa-scaleDown {
+        .da-scaleDown {
           transform: scale(1.5);
         }
   
-        .sa.show {
+        .da.show {
           opacity: 1;
           transform: none;
         }
@@ -81,29 +81,29 @@
       </header>
       <main>
         <section>
-          <div class="sa sa-up">디비전 1</div>
-          <div class="sa sa-up">디비전 2</div>
-          <div class="sa sa-up">디비전 3</div>
-          <div class="sa sa-up">디비전 4</div>
+          <div class="da da-up">디비전 1</div>
+          <div class="da da-up">디비전 2</div>
+          <div class="da da-up">디비전 3</div>
+          <div class="da da-up">디비전 4</div>
         </section>
         <section>
-          <div class="sa sa-up">디비전 5</div>
-          <div class="sa sa-down">디비전 6</div>
-          <div class="sa sa-right">디비전 7</div>
-          <div class="sa sa-left">디비전 8</div>
+          <div class="da da-up">디비전 5</div>
+          <div class="da da-down">디비전 6</div>
+          <div class="da da-right">디비전 7</div>
+          <div class="da da-left">디비전 8</div>
         </section>
         <section>
-          <div class="sa sa-rotateL">디비전 9</div>
-          <div class="sa sa-rotateR">디비전 10</div>
-          <div class="sa sa-scaleUp">디비전 11</div>
-          <div class="sa sa-scaleDown">디비전 12</div>
+          <div class="da da-rotateL">디비전 9</div>
+          <div class="da da-rotateR">디비전 10</div>
+          <div class="da da-scaleUp">디비전 11</div>
+          <div class="da da-scaleDown">디비전 12</div>
         </section>
       </main>
   
       <script>
         // Scroll Animation (sa, 스크롤 애니메이션)
         const saTriggerMargin = 300;
-        const saElementList = document.querySelectorAll('.sa');
+        const saElementList = document.querySelectorAll('.da');
   
         const saFunc = function() {
           for (const element of saElementList) {
