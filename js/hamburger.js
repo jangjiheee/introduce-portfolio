@@ -12,18 +12,18 @@
 const hamburger = document.getElementById("menu");
 const menuBar = document.querySelector(".mobile-gnb");
 const menuChild = document.querySelector(".menuChild");
+const mChild = menuChild.children;
 
 let subToggle = true;
 function showMenu() {
-    const mChild = menuChild.children;
     console.log(mChild);
 
     if(subToggle) {
         menuBar.style.setProperty('height', 'calc(100vh)');
-        mChild.style.color = "black"
+        //mChild.style.backgroundColor = "black"
     } else {
         menuBar.style.height = "0px";
-        mChild.style.color = "white"
+        //mChild.style.backgroundColor = "white"
     }
     subToggle = !subToggle;
 

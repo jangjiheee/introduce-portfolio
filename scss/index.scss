@@ -159,48 +159,69 @@ header {
 //section
 section {
     text-align: center;
-
+    
     .intro-text {
+        margin-bottom: 100px;
+        height: 100vh;
         display: block;
-        margin-top: 210px;
-        margin-bottom: 200px;
+        @include responsive(tablet-size) {
+            margin-bottom: 200px;
+        }
+        @include responsive(pc-size) {
+            margin-bottom: 300px;
+        }
+        
+        .text-position {
+            width: 100%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
 
-        h1 {
-            margin-bottom: 65px;
-            font: {
-                size: 5em;
-                weight: bolder;
-            }
-            @include responsive(tablet-size) {
+            h1 {
+                margin-bottom: 70px;
                 font: {
-                    size: 11em;
+                    size: 6em;
+                    weight: bolder;
                 }
-            }
-
-            @include responsive(pc-size) {
-                font: {
-                    size: 18.75em;
+                @include responsive(tablet-size) {
+                    font: {
+                        size: 10.5em;
+                    }
+                    margin-bottom: 120px;
+                }
+    
+                @include responsive(pc-size) {
+                    font: {
+                        size: 18.75em;
+                    }
                 }
             }
         }
 
         .mobile-welcome {
             font: {
-                size: 3em;
+                size: 3.5em;
+                weight: 200;
             }
+
             @include responsive(tablet-size) {
+                font-size: 6.5em;
+            }
+            @include responsive(pc-size) {
                 display: none;
             }
         }
 
-        .tablet-welcome {
+        .pc-welcome {
             @include responsive(mobile-size) {
                 display: none;
             }
-            @include responsive(tablet-size) {
+
+            @include responsive(pc-size) {
                 display: block;
                 font: {
-                    size: 6.57em;
+                    size: 6.5em;
                 }
             }
         }
