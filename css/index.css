@@ -126,7 +126,7 @@ header .main-menu .main-filter {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 30px 0 30px 0;
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 header .main-menu .main-filter #logo {
@@ -616,6 +616,7 @@ section .skill {
 section .skill h2 {
   font-size: 3em;
   margin-bottom: 60px;
+  z-index: 2;
 }
 
 @media screen and (min-width: 768px) {

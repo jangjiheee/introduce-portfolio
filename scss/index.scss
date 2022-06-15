@@ -15,7 +15,7 @@ header {
             display: flex;
             justify-content: space-between;
             padding: 30px 0 30px 0;
-            border-bottom: 1px solid $white;
+            border-bottom: 1px solid rgba(255,255,255, 0.3);
 
             #logo {
                 margin-left: 11.2%;
@@ -449,6 +449,7 @@ section {
         h2 {
             font-size: 3em;
             margin-bottom: 60px;
+            z-index: 2;
 
             @include responsive(tablet-size) {
                 text-align: left;
