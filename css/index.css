@@ -57,64 +57,10 @@ ul, li {
 
 header .main-menu {
   margin: 0 auto;
-  /*.main-filter {
-            background-color: antiquewhite;
-            z-index: 100;
-            position: fixed;
-            top: 50;
-        }
-
-        #logo {
-            display: block;
-            position: fixed;
-            top: 42px;
-            left: 11.2%;
-            z-index: 100;
-            font-weight: 900;
-        }
-
-        .navbar {
-            .gnb {
-                overflow: hidden;
-                position: fixed;
-                top: 42px;
-                right: 11.2%;
-                z-index: 100;
-
-                @include responsive(tablet-size) {
-                    right: 5%;
-                }
-
-                li {
-                    display: none;
-                    @include responsive(pc-size) {
-                        display: inline-block;
-
-                        a {
-                            margin-right: 60px;
-                            font-size: 1.25em;
-
-                            @include responsive(tablet-size) {
-                                margin-right: 25px;
-                                font-size: 1.2em;
-                            }
-
-                            @include responsive(pc-size) {
-                                margin-right: 57px;
-                                font-size: 1.25em;
-                            }
-
-                            &:hover {
-                                color: $orange;
-                            }
-                        }
-                    }
-                }
-            }
-        }*/
 }
 
 header .main-menu .main-filter {
+  opacity: 0;
   z-index: 1;
   background-color: #171717;
   width: 100%;
@@ -792,6 +738,31 @@ section .workspace .portfolio02 .work-flex-box .port02-text {
   width: 90%;
   text-align: left;
   margin: 0 auto;
+  /*.btn {
+                        
+                        @include responsive(pc-size) {
+                            display: flex;
+                        }
+                        /*.btn1,
+                        .btn2 {
+                            margin-left: 6%;
+                            margin-bottom: 10px;
+
+                            a {
+                                text-align: center;
+                                width: 165px;
+                                height: 40px;
+                                line-height: 36px;
+                                color: $orange;
+                                border: 2px solid $orange;
+                                font-weight: 600;
+
+                                &:hover {
+                                    background-color: $orange;
+                                    color: $white;
+                                }
+                            }
+                        }*/
 }
 
 @media screen and (min-width: 768px) {
@@ -871,56 +842,44 @@ section .workspace .portfolio02 .work-flex-box .port02-text .text-left-align div
   margin-bottom: 11px;
 }
 
-@media screen and (min-width: 1460px) {
-  section .workspace .portfolio01 .work-flex-box .port01-text .btn,
-  section .workspace .portfolio01 .work-flex-box .port02-text .btn,
-  section .workspace .portfolio02 .work-flex-box .port01-text .btn,
-  section .workspace .portfolio02 .work-flex-box .port02-text .btn {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-
-section .workspace .portfolio01 .work-flex-box .port01-text .btn .btn1,
-section .workspace .portfolio01 .work-flex-box .port01-text .btn .btn2,
-section .workspace .portfolio01 .work-flex-box .port02-text .btn .btn1,
-section .workspace .portfolio01 .work-flex-box .port02-text .btn .btn2,
-section .workspace .portfolio02 .work-flex-box .port01-text .btn .btn1,
-section .workspace .portfolio02 .work-flex-box .port01-text .btn .btn2,
-section .workspace .portfolio02 .work-flex-box .port02-text .btn .btn1,
-section .workspace .portfolio02 .work-flex-box .port02-text .btn .btn2 {
-  margin-left: 6%;
-  margin-bottom: 10px;
-}
-
-section .workspace .portfolio01 .work-flex-box .port01-text .btn .btn1 a,
-section .workspace .portfolio01 .work-flex-box .port01-text .btn .btn2 a,
-section .workspace .portfolio01 .work-flex-box .port02-text .btn .btn1 a,
-section .workspace .portfolio01 .work-flex-box .port02-text .btn .btn2 a,
-section .workspace .portfolio02 .work-flex-box .port01-text .btn .btn1 a,
-section .workspace .portfolio02 .work-flex-box .port01-text .btn .btn2 a,
-section .workspace .portfolio02 .work-flex-box .port02-text .btn .btn1 a,
-section .workspace .portfolio02 .work-flex-box .port02-text .btn .btn2 a {
-  text-align: center;
+section .workspace .portfolio01 .work-flex-box .port01-text .btn1,
+section .workspace .portfolio01 .work-flex-box .port01-text .btn2,
+section .workspace .portfolio01 .work-flex-box .port02-text .btn1,
+section .workspace .portfolio01 .work-flex-box .port02-text .btn2,
+section .workspace .portfolio02 .work-flex-box .port01-text .btn1,
+section .workspace .portfolio02 .work-flex-box .port01-text .btn2,
+section .workspace .portfolio02 .work-flex-box .port02-text .btn1,
+section .workspace .portfolio02 .work-flex-box .port02-text .btn2 {
+  background: transparent;
+  font-weight: 600;
   width: 165px;
   height: 40px;
-  line-height: 36px;
-  color: #ea894e;
-  border: 2px solid #ea894e;
-  font-weight: 600;
+  -webkit-transition: all 0.7s ease-out;
+  transition: all 0.7s ease-out;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(223, 190, 106, 0.8)), color-stop(rgba(146, 111, 52, 0.8)), color-stop(rgba(34, 34, 34, 0)), to(rgba(34, 34, 34, 0)));
+  background: linear-gradient(270deg, rgba(223, 190, 106, 0.8), rgba(146, 111, 52, 0.8), rgba(34, 34, 34, 0), rgba(34, 34, 34, 0));
+  background-position: 1% 50%;
+  background-size: 300% 300%;
+  margin-bottom: 10px;
+  margin-left: 6%;
+  border: 1px solid #ea894e;
+  text-align: center;
+  line-height: 40px;
 }
 
-section .workspace .portfolio01 .work-flex-box .port01-text .btn .btn1 a:hover,
-section .workspace .portfolio01 .work-flex-box .port01-text .btn .btn2 a:hover,
-section .workspace .portfolio01 .work-flex-box .port02-text .btn .btn1 a:hover,
-section .workspace .portfolio01 .work-flex-box .port02-text .btn .btn2 a:hover,
-section .workspace .portfolio02 .work-flex-box .port01-text .btn .btn1 a:hover,
-section .workspace .portfolio02 .work-flex-box .port01-text .btn .btn2 a:hover,
-section .workspace .portfolio02 .work-flex-box .port02-text .btn .btn1 a:hover,
-section .workspace .portfolio02 .work-flex-box .port02-text .btn .btn2 a:hover {
-  background-color: #ea894e;
+section .workspace .portfolio01 .work-flex-box .port01-text .btn1:hover,
+section .workspace .portfolio01 .work-flex-box .port01-text .btn2:hover,
+section .workspace .portfolio01 .work-flex-box .port02-text .btn1:hover,
+section .workspace .portfolio01 .work-flex-box .port02-text .btn2:hover,
+section .workspace .portfolio02 .work-flex-box .port01-text .btn1:hover,
+section .workspace .portfolio02 .work-flex-box .port01-text .btn2:hover,
+section .workspace .portfolio02 .work-flex-box .port02-text .btn1:hover,
+section .workspace .portfolio02 .work-flex-box .port02-text .btn2:hover {
+  color: #fff;
+  border: 1px solid rgba(223, 190, 106, 0);
   color: #ffffff;
+  background-position: 99% 50%;
+  cursor: pointer;
 }
 
 section .contact {

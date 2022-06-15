@@ -14,8 +14,8 @@
 </head>
 <body>
     <header>
-        <nav class="main-menu">
-            <div class="main-filter">
+        <nav class="main-menu" >
+            <div class="main-filter" id="main-nav" onscroll="scrollF()">
                 <p id="logo">JIHEE</p>
                 <div class="navbar" id="makeNav">
                     <div class="gnb">
@@ -68,7 +68,7 @@
                 <h2>INTRODUCE</h2>
                 <div class="confix">
                     <div class="intro-flex-box">
-                        <div class="img-box">
+                        <div class="img-box" id="photo">
                             <img src="./images/photo.png" alt="main-photo" id="photo">
                         </div>
                         <div class="explain">
@@ -89,8 +89,8 @@
                         </div>
                     </div>
                 </div>
+                <script src="./js/scroll.js"></script>
             </div> <!--introduce-->
-            <script src="./js/trigger.js"></script>
 
             <div class="skill">
                 <h2>SKILL</h2>

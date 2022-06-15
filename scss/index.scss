@@ -8,6 +8,7 @@ header {
     .main-menu {
         margin: 0 auto;
         .main-filter {
+            opacity: 0;
             z-index: 1;
             background-color: $background;
             width: 100%;
@@ -61,61 +62,6 @@ header {
                 }
             }
         }
-        /*.main-filter {
-            background-color: antiquewhite;
-            z-index: 100;
-            position: fixed;
-            top: 50;
-        }
-
-        #logo {
-            display: block;
-            position: fixed;
-            top: 42px;
-            left: 11.2%;
-            z-index: 100;
-            font-weight: 900;
-        }
-
-        .navbar {
-            .gnb {
-                overflow: hidden;
-                position: fixed;
-                top: 42px;
-                right: 11.2%;
-                z-index: 100;
-
-                @include responsive(tablet-size) {
-                    right: 5%;
-                }
-
-                li {
-                    display: none;
-                    @include responsive(pc-size) {
-                        display: inline-block;
-
-                        a {
-                            margin-right: 60px;
-                            font-size: 1.25em;
-
-                            @include responsive(tablet-size) {
-                                margin-right: 25px;
-                                font-size: 1.2em;
-                            }
-
-                            @include responsive(pc-size) {
-                                margin-right: 57px;
-                                font-size: 1.25em;
-                            }
-
-                            &:hover {
-                                color: $orange;
-                            }
-                        }
-                    }
-                }
-            }
-        }*/
         
         div.mobile-menu {
             position: absolute;
@@ -366,6 +312,7 @@ section {
 
             .img-box {
                 margin: 0 auto;
+
                 @include responsive(tablet-size) {
                     width: 40%;
                     margin-left: 3.5%;
@@ -619,11 +566,12 @@ section {
                         }
                     }
 
-                    .btn {
+                    /*.btn {
+                        
                         @include responsive(pc-size) {
                             display: flex;
                         }
-                        .btn1,
+                        /*.btn1,
                         .btn2 {
                             margin-left: 6%;
                             margin-bottom: 10px;
@@ -642,6 +590,29 @@ section {
                                     color: $white;
                                 }
                             }
+                        }*/
+                    .btn1,
+                    .btn2 {
+                        background: transparent;
+                        font-weight: 600;
+                        width: 165px;
+                        height: 40px;
+                        transition: all 0.7s ease-out;
+                        background: linear-gradient(270deg, rgba(223,190,106,0.8), rgba(146,111,52,0.8), rgba(34,34,34,0), rgba(34,34,34,0));
+                        background-position: 1% 50%;
+                        background-size: 300% 300%;
+                        margin-bottom: 10px;
+                        margin-left: 6%;
+                        border: 1px solid $orange;
+                        text-align: center;
+                        line-height: 40px;
+
+                        &:hover {
+                            color: #fff;
+                            border: 1px solid rgba(223,190,106,0);
+                            color: $white;
+                            background-position: 99% 50%;
+                            cursor: pointer;
                         }
                     }
                 } //.port01-text, .port02-text
