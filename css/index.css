@@ -41,6 +41,10 @@ p {
   color: #ffffff;
 }
 
+span {
+  color: #ffffff;
+}
+
 img {
   width: 100%;
   display: block;
@@ -329,21 +333,96 @@ section .intro-text .text-position {
           transform: translate(-50%, -50%);
 }
 
-section .intro-text .text-position h1 {
-  margin-bottom: 70px;
+section .intro-text .text-position .hello-text span {
+  position: relative;
+  margin-bottom: 80px;
+  -webkit-animation: text-up 1.5s infinite;
+          animation: text-up 1.5s infinite;
   font-size: 6em;
   font-weight: bolder;
 }
 
+section .intro-text .text-position .hello-text span:nth-child(1) {
+  -webkit-animation-delay: .1s;
+          animation-delay: .1s;
+}
+
+section .intro-text .text-position .hello-text span:nth-child(2) {
+  -webkit-animation-delay: .2s;
+          animation-delay: .2s;
+}
+
+section .intro-text .text-position .hello-text span:nth-child(3) {
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
+}
+
+section .intro-text .text-position .hello-text span:nth-child(4) {
+  -webkit-animation-delay: .4s;
+          animation-delay: .4s;
+}
+
+section .intro-text .text-position .hello-text span:nth-child(5) {
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+}
+
+section .intro-text .text-position .hello-text span:nth-child(6) {
+  -webkit-animation-delay: .6s;
+          animation-delay: .6s;
+}
+
+@-webkit-keyframes text-up {
+  0% {
+    top: 0;
+  }
+  20% {
+    top: -1.5rem;
+  }
+  40% {
+    top: 0;
+  }
+  60% {
+    top: 0;
+  }
+  80% {
+    top: 0;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes text-up {
+  0% {
+    top: 0;
+  }
+  20% {
+    top: -1.5rem;
+  }
+  40% {
+    top: 0;
+  }
+  60% {
+    top: 0;
+  }
+  80% {
+    top: 0;
+  }
+  100% {
+    top: 0;
+  }
+}
+
 @media screen and (min-width: 768px) {
-  section .intro-text .text-position h1 {
+  section .intro-text .text-position .hello-text span {
     font-size: 10.5em;
     margin-bottom: 120px;
   }
 }
 
 @media screen and (min-width: 1460px) {
-  section .intro-text .text-position h1 {
+  section .intro-text .text-position .hello-text span {
     font-size: 18.75em;
   }
 }
