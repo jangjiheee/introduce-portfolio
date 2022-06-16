@@ -11,13 +11,16 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./js/scroll.js"></script>
 </head>
 <body>
     <header>
         <nav class="main-menu" >
-            <div class="main-filter" id="main-nav" onscroll="scrollF()">
+            <div class="main-filter"  id="main-nav">
                 <p id="logo">JIHEE</p>
-                <div class="navbar" id="makeNav">
+                <div class="navbar">
                     <div class="gnb">
                         <li><a href="#">INTRODUCE</a></li>
                         <li><a href="#">SKILL</a></li>
@@ -44,11 +47,13 @@
                     </ul>
                 </div>
             </div>
+            <script src="./js/scroll.js"></script>
         </nav>
         <script src="./js/hamburger.js"></script>
     </header>
     
     <main>
+
         <section>
             <div class="intro-text">
                 <div class="text-position">
@@ -68,10 +73,10 @@
                 <h2>INTRODUCE</h2>
                 <div class="confix">
                     <div class="intro-flex-box">
-                        <div class="img-box" id="photo">
+                        <div class="img-box" id="photoImg" data-aos="fade-down">
                             <img src="./images/photo.png" alt="main-photo" id="photo">
                         </div>
-                        <div class="explain">
+                        <div class="explain" data-aos="fade-up">
                             <h3>우주최강 퍼블리셔를 꿈꾸는</h3>
                             <p class="name">장지희</p>
                             <div class="eng-character">
@@ -89,28 +94,27 @@
                         </div>
                     </div>
                 </div>
-                <script src="./js/scroll.js"></script>
             </div> <!--introduce-->
 
             <div class="skill">
                 <h2>SKILL</h2>
                 <div class="skill-flex-box">
                     <div class="skill-explain">
-                        <div class="img-box">
-                            <img src="./images/code-images/html.JPG" alt="html">
+                        <div class="img-box" id="photo">
+                            <img src="./images/code-images/html.JPG" alt="html" data-aos="fade-left">
                             <p>html 태그의 속성을 이해하고 있으며 구조적인 코드 작업을 할 수 있습니다.</p>
                         </div>
                     </div>
                     <div class="skill-graph">
-                        <div class="flex-img">
-                            <img src="./images/html.png" alt="html">
-                            <img src="./images/css.png" alt="css">
-                            <img src="./images/photoshop.png" alt="photoshop">
-                            <img src="./images/illustrator.png" alt="illustrator">
-                            <img src="./images/javascript.png" alt="javascript">
-                            <img src="./images/jqeury.png" alt="jqeury">
-                            <img src="./images/sass.png" alt="sass">
-                            <img src="./images/sql.png" alt="sql">
+                        <div class="flex-img" id="skillImg">
+                            <img src="./images/html.png" alt="html" data-aos="fade-up">
+                            <img src="./images/css.png" alt="css"data-aos="fade-left">
+                            <img src="./images/photoshop.png" alt="photoshop" data-aos="fade-up-right">
+                            <img src="./images/illustrator.png" alt="illustrator" data-aos="slide-right">
+                            <img src="./images/javascript.png" alt="javascript" data-aos="flip-left">
+                            <img src="./images/jqeury.png" alt="jqeury" data-aos="flip-down">
+                            <img src="./images/sass.png" alt="sass" data-aos="zoom-in-out">
+                            <img src="./images/sql.png" alt="sql" data-aos="slide-down">
                         </div>
                     </div>
                 </div>
@@ -120,7 +124,7 @@
                 <h2>WOKRSPACE</h2>
                 <div class="portfolio01">
                     <div class="work-flex-box">
-                        <div class="port01-img">
+                        <div class="port01-img" id="port01" data-aos="fade-right" data-aos-offset="1000" data-aos-duration="500">
                             <img src="./images/port01.png" alt="portfolio01-img">
                         </div> <!--port01-img-->
                         <div class="port01-text">
@@ -223,5 +227,10 @@
     <footer>
         <p>ONLY MADE BY JIHEE</p>
     </footer>
+
+    <script>
+        AOS.init({});
+    </script>
+    <script src="./js/scrollAction.js"></script>
 </body>
 </html>
