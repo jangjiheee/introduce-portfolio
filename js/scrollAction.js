@@ -26,3 +26,9 @@ window.onload = function() {
         skillChildren[i].setAttribute('data-aos-duration', '2500')
     }
 }
+
+document.querySelector('#titleLine')
+.setAttribute('data-aos-duration', '2500');
+
+document.getElementById('titleText')
+.setAttribute('data-aos-duration', '3000')

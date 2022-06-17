@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/index.css">
-    <title>jihee's portfolio</title>
     <script src="./js/jquery.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
@@ -14,11 +13,12 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./js/scroll.js"></script>
+    <title>jihee's portfolio</title>
 </head>
 <body>
     <header>
         <nav class="main-menu" >
-            <div class="main-filter"  id="main-nav">
+            <div id="main-nav" class="main-filter">
                 <p id="logo">JIHEE</p>
                 <div class="navbar">
                     <div class="gnb">
@@ -47,7 +47,6 @@
                     </ul>
                 </div>
             </div>
-            <script src="./js/scroll.js"></script>
         </nav>
         <script src="./js/hamburger.js"></script>
     </header>
@@ -123,13 +122,15 @@
             <div class="workspace">
                 <h2>WOKRSPACE</h2>
                 <div class="portfolio01">
-                    <div class="work-flex-box">
-                        <div class="port01-img" id="port01" data-aos="fade-right" data-aos-offset="1000" data-aos-duration="500">
+                    <div class="work-flex-box" data-aos-offset="650" data-aos-duration="1000">
+                        <div class="port01-img" id="port01" data-aos="fade-right" data-aos-duration="1000">
                             <img src="./images/port01.png" alt="portfolio01-img">
                         </div> <!--port01-img-->
                         <div class="port01-text">
-                            <h3>리조트 홈페이지</h3>
-                            <div class="text-left-align">
+                            <hr id="titleLine" data-aos="fade-left" />
+                            <h3 id="titleText" data-aos="fade-up">리조트 홈페이지</h3>
+                            <hr id="titleLine" data-aos="fade-left" />
+                            <div class="text-left-align" data-aos="fade-up">
                                 <div class="source">
                                     <h4>사용 소스</h4>
                                     <p>HTML, CSS, CSS3</p>
@@ -138,15 +139,15 @@
                                     <h4>제작 기간</h4>
                                     <p>약 2주(디자인 1주 + 코딩 1주)</p>
                                 </div><!--period1-->
+                                <div class="btn">
+                                    <div class="btn1">
+                                        <a href="#">작업 가이드</a>
+                                    </div>
+                                    <div class="btn2" style="margin-bottom: 100px;">
+                                        <a href="#">사이트 바로가기</a>
+                                    </div>
+                                </div><!--btn-->
                             </div><!-- text-left-align -->
-                            <div class="btn">
-                                <div class="btn1">
-                                    <a href="#">작업 가이드</a>
-                                </div>
-                                <div class="btn2" style="margin-bottom: 100px;">
-                                    <a href="#">사이트 바로가기</a>
-                                </div>
-                            </div><!--btn-->
                         </div> <!--port01-text-->
                     </div><!--work-flex-box-->
                 </div><!--portfolio01-->
@@ -157,9 +158,11 @@
                             <img src="./images/port02.png" alt="portfolio02-img">
                         </div> <!--port02-img-->
                         <div class="port02-text">
-                            <h3 class="mobile-ver">경복궁 홈페이지<br>리뉴얼</h3>
-                            <h3 class="tablet-ver">경복궁 홈페이지 리뉴얼</h3>
-                            <div class="text-left-align">
+                            <hr id="titleLine" data-aos="fade-left" />
+                            <h3 id="titleText" class="mobile-ver" data-aos="fade-up">경복궁 홈페이지<br>리뉴얼</h3>
+                            <h3 id="titleText" class="tablet-ver" data-aos="fade-up">경복궁 홈페이지 리뉴얼</h3>
+                            <hr id="titleLine" data-aos="fade-left" />
+                            <div class="text-left-align" data-aos="fade-up">
                                 <div class="role">
                                     <h4>조별 포트폴리오 기여도</h4>
                                     <p>행사 페이지 디자인 및 코딩작업 100%,<br>
@@ -174,15 +177,15 @@
                                     <h4>제작 기간</h4>
                                     <p>약 2주(디자인 1주 + 코딩 10일)</p>
                                 </div><!--period2-->
+                                <div class="btn">
+                                    <div class="btn1">
+                                        <a href="#">작업 가이드</a>
+                                    </div>
+                                    <div class="btn2">
+                                        <a href="#">사이트 바로가기</a>
+                                    </div>
+                                </div><!--btn-->
                             </div> <!-- text-left-align -->
-                            <div class="btn">
-                                <div class="btn1">
-                                    <a href="#">작업 가이드</a>
-                                </div>
-                                <div class="btn2">
-                                    <a href="#">사이트 바로가기</a>
-                                </div>
-                            </div><!--btn-->
                         </div> <!--port02-text-->
                     </div><!--work-flex-box-->
                 </div><!--portfolio02--> 

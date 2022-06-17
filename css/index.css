@@ -1,8 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -57,48 +56,39 @@ ul, li {
 
 header .main-menu {
   margin: 0 auto;
-}
-
-header .main-menu .main-filter {
-  opacity: 0;
+  display: none;
+  width: 100vw;
+  position: fixed;
+  left: 0;
+  top: 0;
   z-index: 1;
+}
+header .main-menu .main-filter {
   background-color: #171717;
   width: 100%;
-  position: fixed;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   padding: 30px 0 30px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
-
 header .main-menu .main-filter #logo {
   margin-left: 11.2%;
   z-index: 100;
   font-size: 1.3em;
   font-weight: 600;
 }
-
 @media screen and (min-width: 768px) {
   header .main-menu .main-filter #logo {
     margin-left: 5%;
   }
 }
-
 header .main-menu .main-filter .gnb {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-right: 11.2%;
 }
-
 header .main-menu .main-filter .gnb li {
   display: none;
 }
-
 @media screen and (min-width: 1460px) {
   header .main-menu .main-filter .gnb li {
     display: inline-block;
@@ -108,27 +98,23 @@ header .main-menu .main-filter .gnb li {
     font-size: 1.25em;
   }
 }
-
 @media screen and (min-width: 1460px) and (min-width: 768px) {
   header .main-menu .main-filter .gnb li a {
     margin-right: 25px;
     font-size: 1.2em;
   }
 }
-
 @media screen and (min-width: 1460px) and (min-width: 1460px) {
   header .main-menu .main-filter .gnb li a {
     margin-right: 57px;
     font-size: 1.25em;
   }
 }
-
 @media screen and (min-width: 1460px) {
   header .main-menu .main-filter .gnb li a:hover {
     color: #ea894e;
   }
 }
-
 header .main-menu div.mobile-menu {
   position: absolute;
   z-index: 1;
@@ -136,7 +122,6 @@ header .main-menu div.mobile-menu {
   top: 0;
   background-color: #ea894e;
 }
-
 header .main-menu div.mobile-menu .hamburger {
   position: fixed;
   top: 38px;
@@ -147,101 +132,78 @@ header .main-menu div.mobile-menu .hamburger {
   margin-right: 20px;
   z-index: 100;
 }
-
 @media screen and (min-width: 768px) {
   header .main-menu div.mobile-menu .hamburger {
     right: 5%;
   }
 }
-
 @media screen and (min-width: 1460px) {
   header .main-menu div.mobile-menu .hamburger {
     display: none;
   }
 }
-
-header .main-menu div.mobile-menu .hamburger input[id="menu"] {
+header .main-menu div.mobile-menu .hamburger input[id=menu] {
   display: none;
 }
-
-header .main-menu div.mobile-menu .hamburger input[id="menu"] + label {
+header .main-menu div.mobile-menu .hamburger input[id=menu] + label {
   position: relative;
   display: block;
   width: 25px;
   height: 20px;
   cursor: pointer;
 }
-
-header .main-menu div.mobile-menu .hamburger input[id="menu"] + label span {
+header .main-menu div.mobile-menu .hamburger input[id=menu] + label span {
   position: absolute;
   display: block;
   width: 100%;
   height: 2px;
   background-color: #ffffff;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-
-header .main-menu div.mobile-menu .hamburger input[id="menu"] + label span:first-child {
+header .main-menu div.mobile-menu .hamburger input[id=menu] + label span:first-child {
   top: 0;
 }
-
-header .main-menu div.mobile-menu .hamburger input[id="menu"] + label span:nth-child(2) {
+header .main-menu div.mobile-menu .hamburger input[id=menu] + label span:nth-child(2) {
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
-
-header .main-menu div.mobile-menu .hamburger input[id="menu"] + label span:last-child {
+header .main-menu div.mobile-menu .hamburger input[id=menu] + label span:last-child {
   bottom: 0;
 }
-
-header .main-menu div.mobile-menu .hamburger input[id="menu"]:checked + label span:first-child {
+header .main-menu div.mobile-menu .hamburger input[id=menu]:checked + label span:first-child {
   top: 50%;
-  -webkit-transform: translateY(-50%) rotate(45deg);
-          transform: translateY(-50%) rotate(45deg);
+  transform: translateY(-50%) rotate(45deg);
 }
-
-header .main-menu div.mobile-menu .hamburger input[id="menu"]:checked + label span:nth-child(2) {
+header .main-menu div.mobile-menu .hamburger input[id=menu]:checked + label span:nth-child(2) {
   opacity: 0;
 }
-
-header .main-menu div.mobile-menu .hamburger input[id="menu"]:checked + label span:last-child {
+header .main-menu div.mobile-menu .hamburger input[id=menu]:checked + label span:last-child {
   bottom: 50%;
-  -webkit-transform: translateY(50%) rotate(-45deg);
-          transform: translateY(50%) rotate(-45deg);
+  transform: translateY(50%) rotate(-45deg);
 }
-
 header .main-menu div.mobile-menu ul.mobile-gnb {
   height: 0vh;
   padding: 0 20px;
   overflow: hidden;
-  -webkit-transition: height 0.6s linear;
   transition: height 0.6s linear;
 }
-
 header .main-menu div.mobile-menu ul.mobile-gnb .mobile-list {
   position: relative;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
-
 header .main-menu div.mobile-menu ul.mobile-gnb .mobile-list li {
   text-align: center;
   margin-bottom: 25px;
 }
-
 header .main-menu div.mobile-menu ul.mobile-gnb .mobile-list li a {
   color: #000;
   font-weight: 600;
   font-size: 1.5em;
 }
-
 header .main-menu div.mobile-menu ul.mobile-gnb .mobile-list li a:hover {
   color: #ffffff;
-  -webkit-transition: linear 0.2s;
   transition: linear 0.2s;
 }
 
@@ -250,35 +212,29 @@ section {
   /* intro text */
   /* introduce */
 }
-
 section .intro-text {
   margin-bottom: 100px;
   height: 100vh;
   display: block;
   z-index: -1;
 }
-
 @media screen and (min-width: 768px) {
   section .intro-text {
     margin-bottom: 200px;
   }
 }
-
 @media screen and (min-width: 1460px) {
   section .intro-text {
     margin-bottom: 300px;
   }
 }
-
 section .intro-text .text-position {
   width: 100%;
   position: absolute;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
-
 section .intro-text .text-position .hello-text span {
   position: relative;
   margin-bottom: 80px;
@@ -287,37 +243,30 @@ section .intro-text .text-position .hello-text span {
   font-size: 6em;
   font-weight: bolder;
 }
-
 section .intro-text .text-position .hello-text span:nth-child(1) {
-  -webkit-animation-delay: .1s;
-          animation-delay: .1s;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
 }
-
 section .intro-text .text-position .hello-text span:nth-child(2) {
-  -webkit-animation-delay: .2s;
-          animation-delay: .2s;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
 }
-
 section .intro-text .text-position .hello-text span:nth-child(3) {
-  -webkit-animation-delay: .3s;
-          animation-delay: .3s;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
 }
-
 section .intro-text .text-position .hello-text span:nth-child(4) {
-  -webkit-animation-delay: .4s;
-          animation-delay: .4s;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
 }
-
 section .intro-text .text-position .hello-text span:nth-child(5) {
-  -webkit-animation-delay: .5s;
-          animation-delay: .5s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
 }
-
 section .intro-text .text-position .hello-text span:nth-child(6) {
-  -webkit-animation-delay: .6s;
-          animation-delay: .6s;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
 }
-
 @-webkit-keyframes text-up {
   0% {
     top: 0;
@@ -338,7 +287,6 @@ section .intro-text .text-position .hello-text span:nth-child(6) {
     top: 0;
   }
 }
-
 @keyframes text-up {
   0% {
     top: 0;
@@ -359,61 +307,51 @@ section .intro-text .text-position .hello-text span:nth-child(6) {
     top: 0;
   }
 }
-
 @media screen and (min-width: 768px) {
   section .intro-text .text-position .hello-text span {
     font-size: 10.5em;
     margin-bottom: 120px;
   }
 }
-
 @media screen and (min-width: 1460px) {
   section .intro-text .text-position .hello-text span {
     font-size: 18.75em;
   }
 }
-
 section .intro-text .mobile-welcome {
   font-size: 3.5em;
   font-weight: 200;
 }
-
 @media screen and (min-width: 768px) {
   section .intro-text .mobile-welcome {
     font-size: 6.5em;
   }
 }
-
 @media screen and (min-width: 1460px) {
   section .intro-text .mobile-welcome {
     display: none;
   }
 }
-
 @media screen and (min-width: 320px) {
   section .intro-text .pc-welcome {
     display: none;
   }
 }
-
 @media screen and (min-width: 1460px) {
   section .intro-text .pc-welcome {
     display: block;
     font-size: 6.5em;
   }
 }
-
 section .introduce {
   width: 90%;
   margin: 0 auto;
   margin-bottom: 200px;
 }
-
 section .introduce h2 {
   font-size: 3em;
   margin-bottom: 60px;
 }
-
 @media screen and (min-width: 768px) {
   section .introduce h2 {
     text-align: left;
@@ -421,57 +359,41 @@ section .introduce h2 {
     font-size: 4.5em;
   }
 }
-
 @media screen and (min-width: 1460px) {
   section .introduce h2 {
     margin-left: 4%;
     font-size: 6.25em;
   }
 }
-
 section .introduce .intro-flex-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin: 0 auto;
 }
-
 @media screen and (min-width: 768px) {
   section .introduce .intro-flex-box {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     position: relative;
     margin: 0 auto;
   }
 }
-
 section .introduce .intro-flex-box .img-box {
   margin: 0 auto;
 }
-
 @media screen and (min-width: 768px) {
   section .introduce .intro-flex-box .img-box {
     width: 40%;
     margin-left: 3.5%;
   }
 }
-
 @media screen and (min-width: 1460px) {
   section .introduce .intro-flex-box .img-box {
     margin-left: 9%;
   }
 }
-
 section .introduce .intro-flex-box .explain {
   margin: 0 auto;
 }
-
 @media screen and (min-width: 768px) {
   section .introduce .intro-flex-box .explain {
     position: absolute;
@@ -480,73 +402,58 @@ section .introduce .intro-flex-box .explain {
     margin-right: 0;
   }
 }
-
 @media screen and (min-width: 1460px) {
   section .introduce .intro-flex-box .explain {
     left: 56%;
     bottom: 15%;
   }
 }
-
 section .introduce .intro-flex-box .explain h3 {
   color: #ea894e;
   font-size: 2em;
   margin: 30px 0 15px 0;
 }
-
 @media screen and (min-width: 768px) {
   section .introduce .intro-flex-box .explain h3 {
     font-size: 1.66em;
   }
 }
-
 @media screen and (min-width: 1460px) {
   section .introduce .intro-flex-box .explain h3 {
     font-size: 2.8em;
   }
 }
-
 section .introduce .intro-flex-box .explain .name {
   font-size: 3em;
   font-weight: bolder;
   margin-bottom: 67px;
 }
-
 @media screen and (min-width: 1460px) {
   section .introduce .intro-flex-box .explain .name {
     font-size: 5.7em;
     text-align: left;
   }
 }
-
 section .introduce .intro-flex-box .explain .eng-character {
   width: 100%;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 section .introduce .intro-flex-box .explain .eng-character div p {
   font-size: 1.5em;
   text-align: left;
   margin-bottom: 10px;
 }
-
 section .introduce .intro-flex-box .explain .eng-character div p:last-child {
   margin-bottom: 0;
 }
-
 @media screen and (min-width: 768px) {
   section .introduce .intro-flex-box .explain .eng-character div p {
     font-size: 1.57em;
     margin-bottom: 17px;
   }
 }
-
 @media screen and (min-width: 1460px) {
   section .introduce .intro-flex-box .explain .eng-character div p {
     font-size: 2.54em;
@@ -554,17 +461,14 @@ section .introduce .intro-flex-box .explain .eng-character div p:last-child {
     margin-bottom: 17px;
   }
 }
-
 section .skill {
   margin-bottom: 200px;
 }
-
 section .skill h2 {
   font-size: 3em;
   margin-bottom: 60px;
   z-index: 2;
 }
-
 @media screen and (min-width: 768px) {
   section .skill h2 {
     text-align: left;
@@ -572,26 +476,20 @@ section .skill h2 {
     font-size: 4.5em;
   }
 }
-
 @media screen and (min-width: 1460px) {
   section .skill h2 {
     margin-left: 8%;
     font-size: 6.25em;
   }
 }
-
 @media screen and (min-width: 1460px) {
   section .skill .skill-flex-box {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
 }
-
 section .skill .skill-flex-box .skill-explain {
   display: none;
 }
-
 @media screen and (min-width: 1460px) {
   section .skill .skill-flex-box .skill-explain {
     display: table;
@@ -612,53 +510,40 @@ section .skill .skill-flex-box .skill-explain {
     font-size: 1.25em;
   }
 }
-
 @media screen and (min-width: 1460px) {
   section .skill .skill-flex-box .skill-graph {
     border: 1px solid white;
     padding: 124px 0;
   }
 }
-
 section .skill .skill-flex-box .skill-graph .flex-img {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   width: 70%;
   margin: 0 auto;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 @media screen and (min-width: 768px) {
   section .skill .skill-flex-box .skill-graph .flex-img {
     width: 80%;
   }
 }
-
 section .skill .skill-flex-box .skill-graph img {
   width: 47%;
   margin-bottom: 25px;
 }
-
 @media screen and (min-width: 768px) {
   section .skill .skill-flex-box .skill-graph img {
     width: 21%;
   }
 }
-
 section .workspace {
   margin-bottom: 200px;
 }
-
 section .workspace h2 {
   font-size: 3em;
   margin-bottom: 60px;
 }
-
 @media screen and (min-width: 768px) {
   section .workspace h2 {
     text-align: left;
@@ -666,45 +551,32 @@ section .workspace h2 {
     font-size: 4.5em;
   }
 }
-
 @media screen and (min-width: 1460px) {
   section .workspace h2 {
     margin-left: 8%;
     font-size: 6.25em;
   }
 }
-
 section .workspace .portfolio01 .work-flex-box,
 section .workspace .portfolio02 .work-flex-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 @media screen and (min-width: 768px) {
   section .workspace .portfolio01 .work-flex-box,
-  section .workspace .portfolio02 .work-flex-box {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+section .workspace .portfolio02 .work-flex-box {
+    flex-direction: row;
     width: 90%;
     margin: 0 auto;
   }
 }
-
 @media screen and (min-width: 1460px) {
   section .workspace .portfolio01 .work-flex-box,
-  section .workspace .portfolio02 .work-flex-box {
+section .workspace .portfolio02 .work-flex-box {
     width: 90%;
     margin-left: 7%;
   }
 }
-
 section .workspace .portfolio01 .work-flex-box .port01-img,
 section .workspace .portfolio01 .work-flex-box .port02-img,
 section .workspace .portfolio02 .work-flex-box .port01-img,
@@ -712,25 +584,22 @@ section .workspace .portfolio02 .work-flex-box .port02-img {
   width: 90%;
   margin: 0 auto 20px auto;
 }
-
 @media screen and (min-width: 768px) {
   section .workspace .portfolio01 .work-flex-box .port01-img,
-  section .workspace .portfolio01 .work-flex-box .port02-img,
-  section .workspace .portfolio02 .work-flex-box .port01-img,
-  section .workspace .portfolio02 .work-flex-box .port02-img {
+section .workspace .portfolio01 .work-flex-box .port02-img,
+section .workspace .portfolio02 .work-flex-box .port01-img,
+section .workspace .portfolio02 .work-flex-box .port02-img {
     width: 55%;
   }
 }
-
 @media screen and (min-width: 1460px) {
   section .workspace .portfolio01 .work-flex-box .port01-img,
-  section .workspace .portfolio01 .work-flex-box .port02-img,
-  section .workspace .portfolio02 .work-flex-box .port01-img,
-  section .workspace .portfolio02 .work-flex-box .port02-img {
+section .workspace .portfolio01 .work-flex-box .port02-img,
+section .workspace .portfolio02 .work-flex-box .port01-img,
+section .workspace .portfolio02 .work-flex-box .port02-img {
     width: 45%;
   }
 }
-
 section .workspace .portfolio01 .work-flex-box .port01-text,
 section .workspace .portfolio01 .work-flex-box .port02-text,
 section .workspace .portfolio02 .work-flex-box .port01-text,
@@ -738,161 +607,141 @@ section .workspace .portfolio02 .work-flex-box .port02-text {
   width: 90%;
   text-align: left;
   margin: 0 auto;
-  /*.btn {
-                        
-                        @include responsive(pc-size) {
-                            display: flex;
-                        }
-                        /*.btn1,
-                        .btn2 {
-                            margin-left: 6%;
-                            margin-bottom: 10px;
-
-                            a {
-                                text-align: center;
-                                width: 165px;
-                                height: 40px;
-                                line-height: 36px;
-                                color: $orange;
-                                border: 2px solid $orange;
-                                font-weight: 600;
-
-                                &:hover {
-                                    background-color: $orange;
-                                    color: $white;
-                                }
-                            }
-                        }*/
 }
-
 @media screen and (min-width: 768px) {
   section .workspace .portfolio01 .work-flex-box .port01-text,
-  section .workspace .portfolio01 .work-flex-box .port02-text,
-  section .workspace .portfolio02 .work-flex-box .port01-text,
-  section .workspace .portfolio02 .work-flex-box .port02-text {
+section .workspace .portfolio01 .work-flex-box .port02-text,
+section .workspace .portfolio02 .work-flex-box .port01-text,
+section .workspace .portfolio02 .work-flex-box .port02-text {
     width: 43%;
   }
 }
-
 @media screen and (min-width: 1460px) {
   section .workspace .portfolio01 .work-flex-box .port01-text,
-  section .workspace .portfolio01 .work-flex-box .port02-text,
-  section .workspace .portfolio02 .work-flex-box .port01-text,
-  section .workspace .portfolio02 .work-flex-box .port02-text {
+section .workspace .portfolio01 .work-flex-box .port02-text,
+section .workspace .portfolio02 .work-flex-box .port01-text,
+section .workspace .portfolio02 .work-flex-box .port02-text {
     margin: 0 0 0 11px;
     width: 55%;
   }
 }
-
 section .workspace .portfolio01 .work-flex-box .port01-text h3,
 section .workspace .portfolio01 .work-flex-box .port02-text h3,
 section .workspace .portfolio02 .work-flex-box .port01-text h3,
 section .workspace .portfolio02 .work-flex-box .port02-text h3 {
   font-size: 2.2em;
   padding: 25px 0 25px 6%;
-  border: 1px solid #ffffff;
-  border-left: none;
-  border-right: none;
+}
+section .workspace .portfolio01 .work-flex-box .port01-text h3 + hr,
+section .workspace .portfolio01 .work-flex-box .port02-text h3 + hr,
+section .workspace .portfolio02 .work-flex-box .port01-text h3 + hr,
+section .workspace .portfolio02 .work-flex-box .port02-text h3 + hr {
   margin-bottom: 30px;
 }
-
 @media screen and (min-width: 1460px) {
   section .workspace .portfolio01 .work-flex-box .port01-text .mobile-ver,
-  section .workspace .portfolio01 .work-flex-box .port02-text .mobile-ver,
-  section .workspace .portfolio02 .work-flex-box .port01-text .mobile-ver,
-  section .workspace .portfolio02 .work-flex-box .port02-text .mobile-ver {
+section .workspace .portfolio01 .work-flex-box .port02-text .mobile-ver,
+section .workspace .portfolio02 .work-flex-box .port01-text .mobile-ver,
+section .workspace .portfolio02 .work-flex-box .port02-text .mobile-ver {
     display: none;
   }
 }
-
 section .workspace .portfolio01 .work-flex-box .port01-text .tablet-ver,
 section .workspace .portfolio01 .work-flex-box .port02-text .tablet-ver,
 section .workspace .portfolio02 .work-flex-box .port01-text .tablet-ver,
 section .workspace .portfolio02 .work-flex-box .port02-text .tablet-ver {
   display: none;
 }
-
 @media screen and (min-width: 1460px) {
   section .workspace .portfolio01 .work-flex-box .port01-text .tablet-ver,
-  section .workspace .portfolio01 .work-flex-box .port02-text .tablet-ver,
-  section .workspace .portfolio02 .work-flex-box .port01-text .tablet-ver,
-  section .workspace .portfolio02 .work-flex-box .port02-text .tablet-ver {
+section .workspace .portfolio01 .work-flex-box .port02-text .tablet-ver,
+section .workspace .portfolio02 .work-flex-box .port01-text .tablet-ver,
+section .workspace .portfolio02 .work-flex-box .port02-text .tablet-ver {
     display: block;
   }
 }
-
 section .workspace .portfolio01 .work-flex-box .port01-text .text-left-align,
 section .workspace .portfolio01 .work-flex-box .port02-text .text-left-align,
 section .workspace .portfolio02 .work-flex-box .port01-text .text-left-align,
 section .workspace .portfolio02 .work-flex-box .port02-text .text-left-align {
   padding-left: 6%;
 }
-
 section .workspace .portfolio01 .work-flex-box .port01-text .text-left-align div,
 section .workspace .portfolio01 .work-flex-box .port02-text .text-left-align div,
 section .workspace .portfolio02 .work-flex-box .port01-text .text-left-align div,
 section .workspace .portfolio02 .work-flex-box .port02-text .text-left-align div {
   margin-bottom: 70px;
 }
-
 section .workspace .portfolio01 .work-flex-box .port01-text .text-left-align div h4,
 section .workspace .portfolio01 .work-flex-box .port02-text .text-left-align div h4,
 section .workspace .portfolio02 .work-flex-box .port01-text .text-left-align div h4,
 section .workspace .portfolio02 .work-flex-box .port02-text .text-left-align div h4 {
   margin-bottom: 11px;
 }
-
-section .workspace .portfolio01 .work-flex-box .port01-text .btn1,
-section .workspace .portfolio01 .work-flex-box .port01-text .btn2,
-section .workspace .portfolio01 .work-flex-box .port02-text .btn1,
-section .workspace .portfolio01 .work-flex-box .port02-text .btn2,
-section .workspace .portfolio02 .work-flex-box .port01-text .btn1,
-section .workspace .portfolio02 .work-flex-box .port01-text .btn2,
-section .workspace .portfolio02 .work-flex-box .port02-text .btn1,
-section .workspace .portfolio02 .work-flex-box .port02-text .btn2 {
+@media screen and (min-width: 1460px) {
+  section .workspace .portfolio01 .work-flex-box .port01-text .btn,
+section .workspace .portfolio01 .work-flex-box .port02-text .btn,
+section .workspace .portfolio02 .work-flex-box .port01-text .btn,
+section .workspace .portfolio02 .work-flex-box .port02-text .btn {
+    display: flex;
+  }
+}
+section .workspace .portfolio01 .work-flex-box .port01-text .btn .btn1,
+section .workspace .portfolio01 .work-flex-box .port01-text .btn .btn2,
+section .workspace .portfolio01 .work-flex-box .port02-text .btn .btn1,
+section .workspace .portfolio01 .work-flex-box .port02-text .btn .btn2,
+section .workspace .portfolio02 .work-flex-box .port01-text .btn .btn1,
+section .workspace .portfolio02 .work-flex-box .port01-text .btn .btn2,
+section .workspace .portfolio02 .work-flex-box .port02-text .btn .btn1,
+section .workspace .portfolio02 .work-flex-box .port02-text .btn .btn2 {
   background: transparent;
   font-weight: 600;
   width: 165px;
   height: 40px;
-  -webkit-transition: all 0.7s ease-out;
   transition: all 0.7s ease-out;
-  background: -webkit-gradient(linear, right top, left top, from(rgba(223, 190, 106, 0.8)), color-stop(rgba(146, 111, 52, 0.8)), color-stop(rgba(34, 34, 34, 0)), to(rgba(34, 34, 34, 0)));
   background: linear-gradient(270deg, rgba(223, 190, 106, 0.8), rgba(146, 111, 52, 0.8), rgba(34, 34, 34, 0), rgba(34, 34, 34, 0));
   background-position: 1% 50%;
   background-size: 300% 300%;
   margin-bottom: 10px;
-  margin-left: 6%;
   border: 1px solid #ea894e;
   text-align: center;
   line-height: 40px;
 }
-
-section .workspace .portfolio01 .work-flex-box .port01-text .btn1:hover,
-section .workspace .portfolio01 .work-flex-box .port01-text .btn2:hover,
-section .workspace .portfolio01 .work-flex-box .port02-text .btn1:hover,
-section .workspace .portfolio01 .work-flex-box .port02-text .btn2:hover,
-section .workspace .portfolio02 .work-flex-box .port01-text .btn1:hover,
-section .workspace .portfolio02 .work-flex-box .port01-text .btn2:hover,
-section .workspace .portfolio02 .work-flex-box .port02-text .btn1:hover,
-section .workspace .portfolio02 .work-flex-box .port02-text .btn2:hover {
+@media screen and (min-width: 1460px) {
+  section .workspace .portfolio01 .work-flex-box .port01-text .btn .btn1,
+section .workspace .portfolio01 .work-flex-box .port01-text .btn .btn2,
+section .workspace .portfolio01 .work-flex-box .port02-text .btn .btn1,
+section .workspace .portfolio01 .work-flex-box .port02-text .btn .btn2,
+section .workspace .portfolio02 .work-flex-box .port01-text .btn .btn1,
+section .workspace .portfolio02 .work-flex-box .port01-text .btn .btn2,
+section .workspace .portfolio02 .work-flex-box .port02-text .btn .btn1,
+section .workspace .portfolio02 .work-flex-box .port02-text .btn .btn2 {
+    margin-right: 20px;
+  }
+}
+section .workspace .portfolio01 .work-flex-box .port01-text .btn .btn1:hover,
+section .workspace .portfolio01 .work-flex-box .port01-text .btn .btn2:hover,
+section .workspace .portfolio01 .work-flex-box .port02-text .btn .btn1:hover,
+section .workspace .portfolio01 .work-flex-box .port02-text .btn .btn2:hover,
+section .workspace .portfolio02 .work-flex-box .port01-text .btn .btn1:hover,
+section .workspace .portfolio02 .work-flex-box .port01-text .btn .btn2:hover,
+section .workspace .portfolio02 .work-flex-box .port02-text .btn .btn1:hover,
+section .workspace .portfolio02 .work-flex-box .port02-text .btn .btn2:hover {
   color: #fff;
   border: 1px solid rgba(223, 190, 106, 0);
   color: #ffffff;
   background-position: 99% 50%;
   cursor: pointer;
 }
-
 section .contact {
   margin-bottom: 200px;
   width: 90%;
   margin: 0 auto;
 }
-
 section .contact h2 {
   font-size: 3em;
   margin-bottom: 60px;
 }
-
 @media screen and (min-width: 768px) {
   section .contact h2 {
     text-align: left;
@@ -900,63 +749,49 @@ section .contact h2 {
     font-size: 4.5em;
   }
 }
-
 @media screen and (min-width: 1460px) {
   section .contact h2 {
     margin-left: 8%;
     font-size: 6.25em;
   }
 }
-
 @media screen and (min-width: 768px) {
   section .contact .mobile-contact {
     display: none;
   }
 }
-
 section .contact .tablet-contact {
   display: none;
 }
-
 @media screen and (min-width: 768px) {
   section .contact .tablet-contact {
     display: block;
   }
 }
-
 section .contact .icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin-bottom: 20px;
 }
-
 section .contact .icon img {
   width: 40px;
   margin-right: 15px;
 }
-
 section .contact .icon img:last-child {
   margin-right: 0;
 }
-
 section .contact .contact-form {
   border: 4px solid #ffffff;
   padding: 60px 35px;
   color: #ffffff;
   margin-bottom: 100px;
 }
-
 @media screen and (min-width: 768px) {
   section .contact .contact-form {
     width: 87%;
     margin: 0 auto 200px auto;
   }
 }
-
 @media screen and (min-width: 1460px) {
   section .contact .contact-form {
     width: 60%;
@@ -964,47 +799,31 @@ section .contact .contact-form {
     float: left;
   }
 }
-
 @media screen and (min-width: 1460px) {
   section .contact .contact-form .contact-flex-box {
     width: 80%;
     margin: 0 auto;
   }
 }
-
 section .contact .contact-form .contact-flex-box ul {
   text-align: left;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 @media screen and (min-width: 768px) {
   section .contact .contact-form .contact-flex-box ul {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
-
 @media screen and (min-width: 768px) {
   section .contact .contact-form .contact-flex-box ul .flex-group {
     width: 49%;
   }
 }
-
 section .contact .contact-form .contact-flex-box ul .flex-group li {
   margin-bottom: 20px;
 }
-
 section .contact .contact-form .contact-flex-box ul .flex-group li input {
   display: block;
   width: 100%;
@@ -1013,7 +832,6 @@ section .contact .contact-form .contact-flex-box ul .flex-group li input {
   border: 1px solid #ffffff;
   margin-top: 10px;
 }
-
 section .contact .contact-form .contact-flex-box ul .flex-group-message textarea {
   display: block;
   width: 100%;
@@ -1022,19 +840,16 @@ section .contact .contact-form .contact-flex-box ul .flex-group-message textarea
   border: 1px solid #ffffff;
   margin-top: 10px;
 }
-
 @media screen and (min-width: 768px) {
   section .contact .contact-form .contact-flex-box ul .flex-group-message textarea {
     height: 110px;
   }
 }
-
 @media screen and (min-width: 768px) {
   section .contact .contact-form .contact-flex-box ul .flex-group-message {
     width: 49%;
   }
 }
-
 section .contact .contact-form .contact-flex-box input {
   width: 100%;
   margin-top: 30px;
@@ -1051,16 +866,13 @@ footer {
   background-color: #ea894e;
   clear: both;
 }
-
 footer p {
   color: #000;
   font-weight: 600;
 }
-
 @media screen and (min-width: 1460px) {
   footer p {
     float: right;
     margin-right: 5%;
   }
-}
-/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index.css.map */

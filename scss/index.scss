@@ -7,12 +7,15 @@
 header {
     .main-menu {
         margin: 0 auto;
+        display: none;
+        width: 100vw;
+        position: fixed;
+        left: 0 ;
+        top: 0;
+        z-index: 1;
         .main-filter {
-            opacity: 0;
-            z-index: 1;
             background-color: $background;
             width: 100%;
-            position: fixed;
             display: flex;
             justify-content: space-between;
             padding: 30px 0 30px 0;
@@ -532,13 +535,12 @@ section {
                     h3 {
                         font-size: 2.2em;
                         padding: 25px 0 25px 6%;
-                        border: 1px solid $white;
-                        border-left: none;
-                        border-right: none;
-                        margin-bottom: 30px;
-
-                        @include responsive(pc-size) {
-                            // width: 100%;
+                        // border: 1px solid $white;
+                        // border-left: none;
+                        // border-right: none;
+                        // margin-bottom: 30px;
+                        & + hr {
+                            margin-bottom: 30px;
                         }
                     }
 
@@ -566,53 +568,36 @@ section {
                         }
                     }
 
-                    /*.btn {
-                        
+                    .btn { 
                         @include responsive(pc-size) {
                             display: flex;
                         }
-                        /*.btn1,
+                        
+                        .btn1,
                         .btn2 {
-                            margin-left: 6%;
+                            background: transparent;
+                            font-weight: 600;
+                            width: 165px;
+                            height: 40px;
+                            transition: all 0.7s ease-out;
+                            background: linear-gradient(270deg, rgba(223,190,106,0.8), rgba(146,111,52,0.8), rgba(34,34,34,0), rgba(34,34,34,0));
+                            background-position: 1% 50%;
+                            background-size: 300% 300%;
                             margin-bottom: 10px;
-
-                            a {
-                                text-align: center;
-                                width: 165px;
-                                height: 40px;
-                                line-height: 36px;
-                                color: $orange;
-                                border: 2px solid $orange;
-                                font-weight: 600;
-
-                                &:hover {
-                                    background-color: $orange;
-                                    color: $white;
-                                }
+                            border: 1px solid $orange;
+                            text-align: center;
+                            line-height: 40px;
+                            @include responsive(pc-size) {
+                                margin-right: 20px;
                             }
-                        }*/
-                    .btn1,
-                    .btn2 {
-                        background: transparent;
-                        font-weight: 600;
-                        width: 165px;
-                        height: 40px;
-                        transition: all 0.7s ease-out;
-                        background: linear-gradient(270deg, rgba(223,190,106,0.8), rgba(146,111,52,0.8), rgba(34,34,34,0), rgba(34,34,34,0));
-                        background-position: 1% 50%;
-                        background-size: 300% 300%;
-                        margin-bottom: 10px;
-                        margin-left: 6%;
-                        border: 1px solid $orange;
-                        text-align: center;
-                        line-height: 40px;
-
-                        &:hover {
-                            color: #fff;
-                            border: 1px solid rgba(223,190,106,0);
-                            color: $white;
-                            background-position: 99% 50%;
-                            cursor: pointer;
+                            
+                            &:hover {
+                                color: #fff;
+                                border: 1px solid rgba(223,190,106,0);
+                                color: $white;
+                                background-position: 99% 50%;
+                                cursor: pointer;
+                            }
                         }
                     }
                 } //.port01-text, .port02-text
