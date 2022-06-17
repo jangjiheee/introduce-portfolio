@@ -1,7 +1,7 @@
 $(function() {
     $(window).on("scroll", function() {
         console.log($(this).scrollTop());
-        if($(this).scrollTop() > 500) {
+        if($(this).scrollTop() > 700) {
             $(".main-menu").fadeIn();
         } else {
             $(".main-menu").fadeOut();

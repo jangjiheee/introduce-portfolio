@@ -28,7 +28,7 @@ window.onload = function() {
 }
 
 document.querySelector('#titleLine')
-.setAttribute('data-aos-duration', '2500');
+.setAttribute('data-aos-duration', '3000');
 
 document.getElementById('titleText')
 .setAttribute('data-aos-duration', '3000')
