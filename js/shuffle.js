@@ -1,23 +1,10 @@
-$(function() {
-    $(window).on("scroll", function() {
-        console.log($(this).scrollTop());
-        if($(this).scrollTop() > 650) {
-            $(".main-menu").fadeIn();
-        } else {
-            $(".main-menu").fadeOut();
-        }
-    });
-})
-
-
-$(function() {
-    var $ = function(id) {
+var $ = function(id) {
     return document.getElementById(id);
     };
     var inc = 0;
     var out = 0;
     var str = 'WELCOME TO MY AREA';
-    var chars = 'ABCDEFGHIJ';
+    var chars = 'AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz';
     var t;
 
     var anim = function() {
@@ -34,4 +21,9 @@ $(function() {
     };
     t = setInterval(anim, 50);
     $('anim').innerHTML = '';
-})
+
+    //Do it again
+    function reload() {
+    window.location.href = window.location.href;
+    }
+    document.getElementById('btn').onclick = reload;
