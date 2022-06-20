@@ -62,7 +62,7 @@ header .main-menu {
   position: fixed;
   left: 0;
   top: 0;
-  z-index: 1;
+  z-index: 10;
 }
 header .main-menu .main-filter {
   width: 100%;
@@ -70,6 +70,11 @@ header .main-menu .main-filter {
   justify-content: space-between;
   padding: 30px 0 30px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+@media screen and (min-width: 1460px) {
+  header .main-menu .main-filter {
+    padding: 50px 0 50px 0;
+  }
 }
 header .main-menu .main-filter #logo {
   margin-left: 11.2%;
@@ -216,7 +221,6 @@ section .intro-text {
   margin-bottom: 100px;
   height: 100vh;
   display: block;
-  z-index: -1;
 }
 @media screen and (min-width: 768px) {
   section .intro-text {
@@ -366,17 +370,20 @@ section .introduce h2 {
   margin-bottom: 60px;
   position: -webkit-sticky;
   position: sticky;
+  top: 5px;
 }
 @media screen and (min-width: 768px) {
   section .introduce h2 {
     text-align: left;
     margin-left: 7%;
     font-size: 4.5em;
+    top: -4px;
   }
 }
 @media screen and (min-width: 1460px) {
   section .introduce h2 {
     font-size: 6.25em;
+    top: -8px;
   }
 }
 section .introduce .intro-flex-box {
@@ -906,4 +913,4 @@ footer p {
     float: right;
     margin-right: 5%;
   }
-}
+}/*# sourceMappingURL=index.css.map */
