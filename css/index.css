@@ -65,7 +65,6 @@ header .main-menu {
   z-index: 1;
 }
 header .main-menu .main-filter {
-  background-color: #171717;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -365,6 +364,8 @@ section .introduce {
 section .introduce h2 {
   font-size: 3em;
   margin-bottom: 60px;
+  position: -webkit-sticky;
+  position: sticky;
 }
 @media screen and (min-width: 768px) {
   section .introduce h2 {
@@ -479,6 +480,8 @@ section .introduce .intro-flex-box .explain .eng-character div p:last-child {
   }
 }
 section .skill {
+  width: 90%;
+  margin: 0 auto;
   margin-bottom: 200px;
 }
 section .skill h2 {
@@ -559,6 +562,8 @@ section .skill .skill-flex-box .skill-graph .flex-img img:hover {
   transform: rotate(720deg);
 }
 section .workspace {
+  width: 90%;
+  margin: 0 auto;
   margin-bottom: 200px;
 }
 section .workspace h2 {
@@ -755,6 +760,8 @@ section .workspace .portfolio02 .work-flex-box .port02-text .btn .btn2:hover {
   cursor: pointer;
 }
 section .contact {
+  width: 90%;
+  margin: 0 auto;
   margin-bottom: 200px;
   width: 90%;
   margin: 0 auto;
@@ -899,4 +906,4 @@ footer p {
     float: right;
     margin-right: 5%;
   }
-}/*# sourceMappingURL=index.css.map */
+}

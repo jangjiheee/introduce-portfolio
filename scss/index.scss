@@ -14,7 +14,7 @@ header {
         top: 0;
         z-index: 1;
         .main-filter {
-            background-color: $background;
+            // background-color: $background;
             width: 100%;
             display: flex;
             justify-content: space-between;
@@ -297,6 +297,7 @@ section {
         h2 {
             font-size: 3em;
             margin-bottom: 60px;
+            position: sticky;
 
             @include responsive(tablet-size) {
                 text-align: left;
@@ -403,6 +404,7 @@ section {
     } //introduce
 
     .skill {
+        @include confix-tab();
         margin-bottom: 200px;
 
         h2 {
@@ -485,6 +487,7 @@ section {
     } //skill
 
     .workspace {
+        @include confix-tab();
         margin-bottom: 200px;
 
         h2 {
@@ -619,6 +622,7 @@ section {
     } //workspace
 
     .contact {
+        @include confix-tab();
         margin-bottom: 200px;
         width: 90%;
         margin: 0 auto;
