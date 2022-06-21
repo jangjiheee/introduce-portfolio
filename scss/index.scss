@@ -12,7 +12,7 @@ header {
         position: fixed;
         left: 0 ;
         top: 0;
-        z-index: 10;
+        z-index: 999;
         .main-filter {
             width: 100%;
             display: flex;
@@ -25,8 +25,8 @@ header {
             }
 
             #logo {
-                margin-left: 11.2%;
-                z-index: 100;
+                margin-left: 7%;
+                z-index: 999;
                 font: {
                     size: 1.3em;
                     weight: 600;
@@ -36,32 +36,41 @@ header {
                 }
             }
 
-            .gnb {
-                display: flex;
-                margin-right: 11.2%;
-            
-                li {
-                    display: none;
+            .navbar {
+                margin-right: 7%;
 
-                    @include responsive(pc-size) {
-                        display: inline-block;
-
-                        a {
-                            margin-right: 60px;
-                            font-size: 1.25em;
-
-                            @include responsive(tablet-size) {
-                                margin-right: 25px;
-                                font-size: 1.2em;
-                            }
-
-                            @include responsive(pc-size) {
-                                margin-right: 57px;
+                .gnb {
+                    display: flex;
+                    margin-right: 11.2%;
+                
+                    li {
+                        display: none;
+    
+                        @include responsive(pc-size) {
+                            display: inline-block;
+    
+                            a {
+                                margin-right: 60px;
                                 font-size: 1.25em;
+    
+                                @include responsive(tablet-size) {
+                                    margin-right: 25px;
+                                    font-size: 1.2em;
+                                }
+    
+                                @include responsive(pc-size) {
+                                    margin-right: 57px;
+                                    font-size: 1.25em;
+                                }
+    
+                                &:hover {
+                                    color: $orange;
+                                }
                             }
-
-                            &:hover {
-                                color: $orange;
+                        }
+                        &:last-child {
+                            a{
+                                margin-right: 0;
                             }
                         }
                     }
@@ -71,7 +80,7 @@ header {
         
         div.mobile-menu {
             position: absolute;
-            z-index: 1;
+            z-index: 999;
             width: 100%;
             top: 0;
             background-color: $orange;
@@ -81,11 +90,11 @@ header {
                 top: 38px;
                 // left: 88.8%;
                 float: right;
-                right: 11.2%;
+                right: 7%;
                 width: 25px;
                 height: 20px;
                 margin-right: 20px;
-                z-index: 100;
+                z-index: 999;
 
                 @include responsive(tablet-size) {
                     right: 5%;
@@ -295,25 +304,28 @@ section {
     /* introduce */
     .introduce {
         @include confix-tab();
-        margin-bottom: 200px;
+        margin-bottom: 400px;
 
         h2 {
             font-size: 3em;
-            margin-bottom: 60px;
+            margin-bottom: 400px;
             position: sticky;
-            top: 5px;
-            z-index: 100;
+            top: 10px;
+            z-index: 1;
 
             @include responsive(tablet-size) {
                 text-align: left;
-                margin-left: 7%;
+                margin-bottom: 500px;
+                margin-left: 12%;
                 font-size: 4.5em;
                 top: -4px;
             }
 
             @include responsive(pc-size) {
-                font-size: 6.25em;
-                top: -8px;
+                margin-left: 7%;
+                margin-bottom: 600px;
+                font-size: 6em;
+                top: 0px;
             }
         }
 
@@ -412,26 +424,28 @@ section {
 
     .skill {
         @include confix-tab();
-        margin-bottom: 200px;
+        margin-bottom: 400px;
 
         h2 {
             font-size: 3em;
-            margin-bottom: 60px;
+            margin-bottom: 400px;
             position: sticky;
-            top: 5px;
-            z-index: 100;
+            top: 10px;
+            z-index: 1;
 
             @include responsive(tablet-size) {
                 text-align: left;
                 margin-left: 12%;
+                margin-bottom: 500px;
                 font-size: 4.5em;
                 top: -4px;
             }
 
             @include responsive(pc-size) {
-                margin-left: 8%;
-                font-size: 6.25em;
-                top: -8px;
+                margin-left: 7%;
+                margin-bottom: 600px;
+                font-size: 6em;
+                top: 0px;
             }
         }
         
@@ -499,26 +513,28 @@ section {
 
     .workspace {
         @include confix-tab();
-        margin-bottom: 200px;
+        margin-bottom: 400px;
 
         h2 {
             font-size: 3em;
-            margin-bottom: 60px;
+            margin-bottom: 400px;
             position: sticky;
-            top: 5px;
-            z-index: 100;
+            top: 10px;
+            z-index: 1;
 
             @include responsive(tablet-size) {
                 text-align: left;
                 margin-left: 12%;
+                margin-bottom: 500px;
                 font-size: 4.5em;
                 top: -4px;
             }
 
             @include responsive(pc-size) {
-                margin-left: 8%;
-                font-size: 6.25em;
-                top: -8px;
+                margin-left: 7%;
+                margin-bottom: 600px;
+                font-size: 6em;
+                top: 0px;
             }
         }
 
@@ -562,6 +578,11 @@ section {
                     @include responsive(pc-size) {
                         margin: 0 0 0 11px;
                         width: 55%;
+                    }
+                    hr {
+                        border: 0;
+                        height: 1px;
+                        background-color: $white;
                     }
 
                     h3 {
@@ -639,28 +660,29 @@ section {
 
     .contact {
         @include confix-tab();
-        margin-bottom: 200px;
-        width: 90%;
+        margin-bottom: 400px;
         margin: 0 auto;
 
         h2 {
             font-size: 3em;
-            margin-bottom: 60px;
+            margin-bottom: 400px;
             position: sticky;
-            top: 5px;
-            z-index: 100;
+            top: 10px;
+            z-index: 1;
 
             @include responsive(tablet-size) {
                 text-align: left;
-                margin-left: 12%;
-                font-size: 4.5em;
+                margin-left: 11%;
+                margin-bottom: 500px;
+                font-size: 4.2em;
                 top: -4px;
             }
 
             @include responsive(pc-size) {
-                margin-left: 5%;
-                font-size: 6.25em;
-                top: -8px;
+                margin-left: 6%;
+                margin-bottom: 600px;
+                font-size: 6em;
+                top: -2px;
             }
         }
 

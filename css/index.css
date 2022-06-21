@@ -62,7 +62,7 @@ header .main-menu {
   position: fixed;
   left: 0;
   top: 0;
-  z-index: 10;
+  z-index: 999;
 }
 header .main-menu .main-filter {
   width: 100%;
@@ -77,8 +77,8 @@ header .main-menu .main-filter {
   }
 }
 header .main-menu .main-filter #logo {
-  margin-left: 11.2%;
-  z-index: 100;
+  margin-left: 7%;
+  z-index: 999;
   font-size: 1.3em;
   font-weight: 600;
 }
@@ -87,42 +87,48 @@ header .main-menu .main-filter #logo {
     margin-left: 5%;
   }
 }
-header .main-menu .main-filter .gnb {
+header .main-menu .main-filter .navbar {
+  margin-right: 7%;
+}
+header .main-menu .main-filter .navbar .gnb {
   display: flex;
   margin-right: 11.2%;
 }
-header .main-menu .main-filter .gnb li {
+header .main-menu .main-filter .navbar .gnb li {
   display: none;
 }
 @media screen and (min-width: 1460px) {
-  header .main-menu .main-filter .gnb li {
+  header .main-menu .main-filter .navbar .gnb li {
     display: inline-block;
   }
-  header .main-menu .main-filter .gnb li a {
+  header .main-menu .main-filter .navbar .gnb li a {
     margin-right: 60px;
     font-size: 1.25em;
   }
 }
 @media screen and (min-width: 1460px) and (min-width: 768px) {
-  header .main-menu .main-filter .gnb li a {
+  header .main-menu .main-filter .navbar .gnb li a {
     margin-right: 25px;
     font-size: 1.2em;
   }
 }
 @media screen and (min-width: 1460px) and (min-width: 1460px) {
-  header .main-menu .main-filter .gnb li a {
+  header .main-menu .main-filter .navbar .gnb li a {
     margin-right: 57px;
     font-size: 1.25em;
   }
 }
 @media screen and (min-width: 1460px) {
-  header .main-menu .main-filter .gnb li a:hover {
+  header .main-menu .main-filter .navbar .gnb li a:hover {
     color: #ea894e;
   }
 }
+header .main-menu .main-filter .navbar .gnb li:last-child a {
+  margin-right: 0;
+}
 header .main-menu div.mobile-menu {
   position: absolute;
-  z-index: 1;
+  z-index: 999;
   width: 100%;
   top: 0;
   background-color: #ea894e;
@@ -131,11 +137,11 @@ header .main-menu div.mobile-menu .hamburger {
   position: fixed;
   top: 38px;
   float: right;
-  right: 11.2%;
+  right: 7%;
   width: 25px;
   height: 20px;
   margin-right: 20px;
-  z-index: 100;
+  z-index: 999;
 }
 @media screen and (min-width: 768px) {
   header .main-menu div.mobile-menu .hamburger {
@@ -363,28 +369,31 @@ section .intro-text .mobile-welcome {
 section .introduce {
   width: 90%;
   margin: 0 auto;
-  margin-bottom: 200px;
+  margin-bottom: 400px;
 }
 section .introduce h2 {
   font-size: 3em;
-  margin-bottom: 60px;
+  margin-bottom: 400px;
   position: -webkit-sticky;
   position: sticky;
-  top: 5px;
-  z-index: 100;
+  top: 10px;
+  z-index: 1;
 }
 @media screen and (min-width: 768px) {
   section .introduce h2 {
     text-align: left;
-    margin-left: 7%;
+    margin-bottom: 500px;
+    margin-left: 12%;
     font-size: 4.5em;
     top: -4px;
   }
 }
 @media screen and (min-width: 1460px) {
   section .introduce h2 {
-    font-size: 6.25em;
-    top: -8px;
+    margin-left: 7%;
+    margin-bottom: 600px;
+    font-size: 6em;
+    top: 0px;
   }
 }
 section .introduce .intro-flex-box {
@@ -490,29 +499,31 @@ section .introduce .intro-flex-box .explain .eng-character div p:last-child {
 section .skill {
   width: 90%;
   margin: 0 auto;
-  margin-bottom: 200px;
+  margin-bottom: 400px;
 }
 section .skill h2 {
   font-size: 3em;
-  margin-bottom: 60px;
+  margin-bottom: 400px;
   position: -webkit-sticky;
   position: sticky;
-  top: 5px;
-  z-index: 100;
+  top: 10px;
+  z-index: 1;
 }
 @media screen and (min-width: 768px) {
   section .skill h2 {
     text-align: left;
     margin-left: 12%;
+    margin-bottom: 500px;
     font-size: 4.5em;
     top: -4px;
   }
 }
 @media screen and (min-width: 1460px) {
   section .skill h2 {
-    margin-left: 8%;
-    font-size: 6.25em;
-    top: -8px;
+    margin-left: 7%;
+    margin-bottom: 600px;
+    font-size: 6em;
+    top: 0px;
   }
 }
 @media screen and (min-width: 1460px) {
@@ -577,29 +588,31 @@ section .skill .skill-flex-box .skill-graph .flex-img img:hover {
 section .workspace {
   width: 90%;
   margin: 0 auto;
-  margin-bottom: 200px;
+  margin-bottom: 400px;
 }
 section .workspace h2 {
   font-size: 3em;
-  margin-bottom: 60px;
+  margin-bottom: 400px;
   position: -webkit-sticky;
   position: sticky;
-  top: 5px;
-  z-index: 100;
+  top: 10px;
+  z-index: 1;
 }
 @media screen and (min-width: 768px) {
   section .workspace h2 {
     text-align: left;
     margin-left: 12%;
+    margin-bottom: 500px;
     font-size: 4.5em;
     top: -4px;
   }
 }
 @media screen and (min-width: 1460px) {
   section .workspace h2 {
-    margin-left: 8%;
-    font-size: 6.25em;
-    top: -8px;
+    margin-left: 7%;
+    margin-bottom: 600px;
+    font-size: 6em;
+    top: 0px;
   }
 }
 section .workspace .portfolio01 .work-flex-box,
@@ -669,6 +682,14 @@ section .workspace .portfolio02 .work-flex-box .port02-text {
     margin: 0 0 0 11px;
     width: 55%;
   }
+}
+section .workspace .portfolio01 .work-flex-box .port01-text hr,
+section .workspace .portfolio01 .work-flex-box .port02-text hr,
+section .workspace .portfolio02 .work-flex-box .port01-text hr,
+section .workspace .portfolio02 .work-flex-box .port02-text hr {
+  border: 0;
+  height: 1px;
+  background-color: #ffffff;
 }
 section .workspace .portfolio01 .work-flex-box .port01-text h3,
 section .workspace .portfolio01 .work-flex-box .port02-text h3,
@@ -781,31 +802,32 @@ section .workspace .portfolio02 .work-flex-box .port02-text .btn .btn2:hover {
 section .contact {
   width: 90%;
   margin: 0 auto;
-  margin-bottom: 200px;
-  width: 90%;
+  margin-bottom: 400px;
   margin: 0 auto;
 }
 section .contact h2 {
   font-size: 3em;
-  margin-bottom: 60px;
+  margin-bottom: 400px;
   position: -webkit-sticky;
   position: sticky;
-  top: 5px;
-  z-index: 100;
+  top: 10px;
+  z-index: 1;
 }
 @media screen and (min-width: 768px) {
   section .contact h2 {
     text-align: left;
-    margin-left: 12%;
-    font-size: 4.5em;
+    margin-left: 11%;
+    margin-bottom: 500px;
+    font-size: 4.2em;
     top: -4px;
   }
 }
 @media screen and (min-width: 1460px) {
   section .contact h2 {
-    margin-left: 5%;
-    font-size: 6.25em;
-    top: -8px;
+    margin-left: 6%;
+    margin-bottom: 600px;
+    font-size: 6em;
+    top: -2px;
   }
 }
 @media screen and (min-width: 768px) {
