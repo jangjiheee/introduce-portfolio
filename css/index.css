@@ -130,7 +130,7 @@ header .main-menu .main-filter .navbar .gnb li:last-child a {
 }
 header .main-menu div.mobile-menu {
   position: absolute;
-  z-index: 9999;
+  z-index: 999;
   width: 100%;
   top: 0;
   background-color: #ea894e;
@@ -380,7 +380,6 @@ section .introduce h2 {
   position: -webkit-sticky;
   position: sticky;
   top: 10px;
-  z-index: 999;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;

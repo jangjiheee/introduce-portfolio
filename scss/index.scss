@@ -81,7 +81,7 @@ header {
         
         div.mobile-menu {
             position: absolute;
-            z-index: 9999;
+            z-index: 999;
             width: 100%;
             top: 0;
             background-color: $orange;
@@ -313,7 +313,7 @@ section {
             margin-bottom: 400px;
             position: sticky;
             top: 10px;
-            z-index: 999;
+            // z-index: 999;
             width: fit-content;
 
             @include responsive(tablet-size) {
