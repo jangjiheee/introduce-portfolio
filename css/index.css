@@ -371,6 +371,7 @@ section .introduce h2 {
   position: -webkit-sticky;
   position: sticky;
   top: 5px;
+  z-index: 100;
 }
 @media screen and (min-width: 768px) {
   section .introduce h2 {
@@ -494,19 +495,24 @@ section .skill {
 section .skill h2 {
   font-size: 3em;
   margin-bottom: 60px;
-  z-index: 2;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 5px;
+  z-index: 100;
 }
 @media screen and (min-width: 768px) {
   section .skill h2 {
     text-align: left;
     margin-left: 12%;
     font-size: 4.5em;
+    top: -4px;
   }
 }
 @media screen and (min-width: 1460px) {
   section .skill h2 {
     margin-left: 8%;
     font-size: 6.25em;
+    top: -8px;
   }
 }
 @media screen and (min-width: 1460px) {
@@ -576,18 +582,24 @@ section .workspace {
 section .workspace h2 {
   font-size: 3em;
   margin-bottom: 60px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 5px;
+  z-index: 100;
 }
 @media screen and (min-width: 768px) {
   section .workspace h2 {
     text-align: left;
     margin-left: 12%;
     font-size: 4.5em;
+    top: -4px;
   }
 }
 @media screen and (min-width: 1460px) {
   section .workspace h2 {
     margin-left: 8%;
     font-size: 6.25em;
+    top: -8px;
   }
 }
 section .workspace .portfolio01 .work-flex-box,
@@ -776,18 +788,24 @@ section .contact {
 section .contact h2 {
   font-size: 3em;
   margin-bottom: 60px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 5px;
+  z-index: 100;
 }
 @media screen and (min-width: 768px) {
   section .contact h2 {
     text-align: left;
     margin-left: 12%;
     font-size: 4.5em;
+    top: -4px;
   }
 }
 @media screen and (min-width: 1460px) {
   section .contact h2 {
     margin-left: 5%;
     font-size: 6.25em;
+    top: -8px;
   }
 }
 @media screen and (min-width: 768px) {

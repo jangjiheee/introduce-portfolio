@@ -302,12 +302,12 @@ section {
             margin-bottom: 60px;
             position: sticky;
             top: 5px;
+            z-index: 100;
 
             @include responsive(tablet-size) {
                 text-align: left;
                 margin-left: 7%;
                 font-size: 4.5em;
-                // position: sticky;
                 top: -4px;
             }
 
@@ -417,17 +417,21 @@ section {
         h2 {
             font-size: 3em;
             margin-bottom: 60px;
-            z-index: 2;
+            position: sticky;
+            top: 5px;
+            z-index: 100;
 
             @include responsive(tablet-size) {
                 text-align: left;
                 margin-left: 12%;
                 font-size: 4.5em;
+                top: -4px;
             }
 
             @include responsive(pc-size) {
                 margin-left: 8%;
                 font-size: 6.25em;
+                top: -8px;
             }
         }
         
@@ -500,16 +504,21 @@ section {
         h2 {
             font-size: 3em;
             margin-bottom: 60px;
+            position: sticky;
+            top: 5px;
+            z-index: 100;
 
             @include responsive(tablet-size) {
                 text-align: left;
                 margin-left: 12%;
                 font-size: 4.5em;
+                top: -4px;
             }
 
             @include responsive(pc-size) {
                 margin-left: 8%;
                 font-size: 6.25em;
+                top: -8px;
             }
         }
 
@@ -637,16 +646,21 @@ section {
         h2 {
             font-size: 3em;
             margin-bottom: 60px;
+            position: sticky;
+            top: 5px;
+            z-index: 100;
 
             @include responsive(tablet-size) {
                 text-align: left;
                 margin-left: 12%;
                 font-size: 4.5em;
+                top: -4px;
             }
 
             @include responsive(pc-size) {
                 margin-left: 5%;
                 font-size: 6.25em;
+                top: -8px;
             }
         }
 
