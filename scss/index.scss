@@ -19,6 +19,7 @@ header {
             justify-content: space-between;
             padding: 30px 0 30px 0;
             border-bottom: 1px solid rgba(255,255,255, 0.3);
+            backdrop-filter: blur(5px);
 
             @include responsive(pc-size) {
                 padding: 50px 0 50px 0;
@@ -26,7 +27,7 @@ header {
 
             #logo {
                 margin-left: 7%;
-                z-index: 999;
+                z-index: 9999;
                 font: {
                     size: 1.3em;
                     weight: 600;
@@ -80,7 +81,7 @@ header {
         
         div.mobile-menu {
             position: absolute;
-            z-index: 999;
+            z-index: 9999;
             width: 100%;
             top: 0;
             background-color: $orange;
@@ -307,11 +308,13 @@ section {
         margin-bottom: 400px;
 
         h2 {
+            margin: 0 auto;
             font-size: 3em;
             margin-bottom: 400px;
             position: sticky;
             top: 10px;
-            z-index: 1;
+            z-index: 999;
+            width: fit-content;
 
             @include responsive(tablet-size) {
                 text-align: left;
@@ -431,7 +434,8 @@ section {
             margin-bottom: 400px;
             position: sticky;
             top: 10px;
-            z-index: 1;
+            z-index: 999;
+            width: fit-content;
 
             @include responsive(tablet-size) {
                 text-align: left;
@@ -520,7 +524,8 @@ section {
             margin-bottom: 400px;
             position: sticky;
             top: 10px;
-            z-index: 1;
+            z-index: 999;
+            width: fit-content;
 
             @include responsive(tablet-size) {
                 text-align: left;
@@ -668,7 +673,8 @@ section {
             margin-bottom: 400px;
             position: sticky;
             top: 10px;
-            z-index: 1;
+            z-index: 999;
+            width: fit-content;
 
             @include responsive(tablet-size) {
                 text-align: left;

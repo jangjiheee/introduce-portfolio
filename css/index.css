@@ -70,6 +70,8 @@ header .main-menu .main-filter {
   justify-content: space-between;
   padding: 30px 0 30px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
 }
 @media screen and (min-width: 1460px) {
   header .main-menu .main-filter {
@@ -78,7 +80,7 @@ header .main-menu .main-filter {
 }
 header .main-menu .main-filter #logo {
   margin-left: 7%;
-  z-index: 999;
+  z-index: 9999;
   font-size: 1.3em;
   font-weight: 600;
 }
@@ -128,7 +130,7 @@ header .main-menu .main-filter .navbar .gnb li:last-child a {
 }
 header .main-menu div.mobile-menu {
   position: absolute;
-  z-index: 999;
+  z-index: 9999;
   width: 100%;
   top: 0;
   background-color: #ea894e;
@@ -372,12 +374,16 @@ section .introduce {
   margin-bottom: 400px;
 }
 section .introduce h2 {
+  margin: 0 auto;
   font-size: 3em;
   margin-bottom: 400px;
   position: -webkit-sticky;
   position: sticky;
   top: 10px;
-  z-index: 1;
+  z-index: 999;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 @media screen and (min-width: 768px) {
   section .introduce h2 {
@@ -507,7 +513,10 @@ section .skill h2 {
   position: -webkit-sticky;
   position: sticky;
   top: 10px;
-  z-index: 1;
+  z-index: 999;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 @media screen and (min-width: 768px) {
   section .skill h2 {
@@ -596,7 +605,10 @@ section .workspace h2 {
   position: -webkit-sticky;
   position: sticky;
   top: 10px;
-  z-index: 1;
+  z-index: 999;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 @media screen and (min-width: 768px) {
   section .workspace h2 {
@@ -811,7 +823,10 @@ section .contact h2 {
   position: -webkit-sticky;
   position: sticky;
   top: 10px;
-  z-index: 1;
+  z-index: 999;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 @media screen and (min-width: 768px) {
   section .contact h2 {
