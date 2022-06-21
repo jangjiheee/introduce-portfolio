@@ -130,7 +130,7 @@ header .main-menu .main-filter .navbar .gnb li:last-child a {
 }
 header .main-menu div.mobile-menu {
   position: absolute;
-  z-index: 999;
+  z-index: 1000;
   width: 100%;
   top: 0;
   background-color: #ea894e;
@@ -380,6 +380,7 @@ section .introduce h2 {
   position: -webkit-sticky;
   position: sticky;
   top: 10px;
+  z-index: 999;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -507,6 +508,7 @@ section .skill {
   margin-bottom: 400px;
 }
 section .skill h2 {
+  margin: 0 auto;
   font-size: 3em;
   margin-bottom: 400px;
   position: -webkit-sticky;
@@ -599,6 +601,7 @@ section .workspace {
   margin-bottom: 400px;
 }
 section .workspace h2 {
+  margin: 0 auto;
   font-size: 3em;
   margin-bottom: 400px;
   position: -webkit-sticky;
@@ -817,6 +820,7 @@ section .contact {
   margin: 0 auto;
 }
 section .contact h2 {
+  margin: 0 auto;
   font-size: 3em;
   margin-bottom: 400px;
   position: -webkit-sticky;

@@ -13,6 +13,7 @@ header {
         left: 0 ;
         top: 0;
         z-index: 999;
+
         .main-filter {
             width: 100%;
             display: flex;
@@ -81,7 +82,7 @@ header {
         
         div.mobile-menu {
             position: absolute;
-            z-index: 999;
+            z-index: 1000;
             width: 100%;
             top: 0;
             background-color: $orange;
@@ -313,7 +314,7 @@ section {
             margin-bottom: 400px;
             position: sticky;
             top: 10px;
-            // z-index: 999;
+            z-index: 999;
             width: fit-content;
 
             @include responsive(tablet-size) {
@@ -430,6 +431,7 @@ section {
         margin-bottom: 400px;
 
         h2 {
+            margin: 0 auto;
             font-size: 3em;
             margin-bottom: 400px;
             position: sticky;
@@ -520,6 +522,7 @@ section {
         margin-bottom: 400px;
 
         h2 {
+            margin: 0 auto;
             font-size: 3em;
             margin-bottom: 400px;
             position: sticky;
@@ -669,6 +672,7 @@ section {
         margin: 0 auto;
 
         h2 {
+            margin: 0 auto;
             font-size: 3em;
             margin-bottom: 400px;
             position: sticky;
