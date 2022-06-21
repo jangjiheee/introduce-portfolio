@@ -13,6 +13,8 @@ const hamburger = document.getElementById("menu");
 const menuBar = document.querySelector(".mobile-gnb");
 
 let subToggle = true;
+const hTag = document.getElementsByClassName("hTag");
+
 function showMenu() {
     const menuChild = document.querySelector(".menuChild");
     const mChild = menuChild.children;
@@ -25,7 +27,6 @@ function showMenu() {
             mySpan.style.backgroundColor = "black";
         }
         blackLogo.style.color = "black";
-       
     } else {
         menuBar.style.height = "0px";
         for (let i = 0; i < mChild.length; i++) {
@@ -34,8 +35,21 @@ function showMenu() {
         }
         blackLogo.style.color = "white";
     }
-    subToggle = !subToggle;
 
+    toggleHTag(subToggle);
+    subToggle = !subToggle;
+}
+
+function toggleHTag(subToggle) {
+    for (let j=0; j < hTag.length; j++) {
+        const tagNum = hTag[j];
+        if (subToggle) {
+            tagNum.style.color = "transparent";
+        } else {
+            tagNum.style.color = "white";
+        }
+        
+    }
 }
 
 hamburger.addEventListener("click", showMenu);
