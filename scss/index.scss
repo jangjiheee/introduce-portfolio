@@ -20,7 +20,7 @@ header {
             justify-content: space-between;
             padding: 30px 0 30px 0;
             border-bottom: 1px solid rgba(255,255,255, 0.3);
-            backdrop-filter: blur(5px);
+            backdrop-filter: blur(10px);
 
             @include responsive(pc-size) {
                 padding: 50px 0 50px 0;
@@ -548,6 +548,7 @@ section {
 
         .portfolio01,
         .portfolio02 {
+            margin-bottom: 50px;
             .work-flex-box {
                 display: flex;
                 flex-direction: column;

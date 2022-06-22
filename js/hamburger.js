@@ -46,9 +46,9 @@ function toggleHTag(subToggle) {
         if (subToggle) {
             tagNum.style.color = "transparent";
         } else {
-            tagNum.style.color = "white";
+            $('hTag').show();
+            tagNum.style.color = "#ea894e";
         }
-        
     }
 }
 

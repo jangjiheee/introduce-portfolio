@@ -22,7 +22,7 @@ h1 {
 
 h2 {
   font-size: 6.25em;
-  color: #ffffff;
+  color: #ea894e;
 }
 
 h3 {
@@ -70,8 +70,8 @@ header .main-menu .main-filter {
   justify-content: space-between;
   padding: 30px 0 30px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
 }
 @media screen and (min-width: 1460px) {
   header .main-menu .main-filter {
@@ -630,6 +630,10 @@ section .workspace h2 {
     top: 0px;
   }
 }
+section .workspace .portfolio01,
+section .workspace .portfolio02 {
+  margin-bottom: 50px;
+}
 section .workspace .portfolio01 .work-flex-box,
 section .workspace .portfolio02 .work-flex-box {
   display: flex;
@@ -975,4 +979,4 @@ footer p {
     float: right;
     margin-right: 5%;
   }
-}/*# sourceMappingURL=index.css.map */
+}
