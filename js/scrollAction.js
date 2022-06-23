@@ -19,12 +19,3 @@ window.onload = function() {
         );
     }
 }
-
-/*document.querySelector('#titleLine')
-.setAttribute('data-aos-offset','500');
-
-document.getElementById('titleText')
-.setAttribute('data-aos-offset','500')
-
-document.getElementsByClassName('text-left-align')
-.setAttribute('data-aos-offset','500')*/

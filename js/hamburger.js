@@ -1,13 +1,3 @@
-// 햄버거 
-/*window.onload = function() {
-    const hamburger = document.getElementById("menu");
-    const menuBar = document.querySelector("mobile-menu");
-    
-    $(hamburger).on("click", function() {
-        $(menuBar).slideDown(500);
-    });
-}*/
-
 // 모바일 햄버거 버튼
 const hamburger = document.getElementById("menu");
 const menuBar = document.querySelector(".mobile-gnb");
@@ -46,7 +36,6 @@ function toggleHTag(subToggle) {
         if (subToggle) {
             tagNum.style.color = "transparent";
         } else {
-            $('hTag').show();
             tagNum.style.color = "#ea894e";
         }
     }

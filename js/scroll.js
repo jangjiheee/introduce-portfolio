@@ -9,6 +9,13 @@ $(function() {
     });
 })
 
+/*$(function() {
+    var apos = document.getElementsByClassName('s');
+    $(window).on("scroll",function() {
+        if(apos)
+    })
+})*/
+
 
 $(function() {
     var $ = function(id) {
@@ -32,6 +39,6 @@ $(function() {
         }
         $('shuffle').innerHTML = chars[Math.floor(Math.random() * chars.length)];
     };
-    t = setInterval(anim, 50);
+    t = setInterval(anim, 20);
     $('anim').innerHTML = '';
 })
