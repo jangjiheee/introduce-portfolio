@@ -79,7 +79,7 @@ header .main-menu .main-filter {
   }
 }
 header .main-menu .main-filter #logo {
-  margin-left: 7%;
+  margin-left: 6.5%;
   z-index: 9999;
   font-size: 1.3em;
   font-weight: 600;
@@ -385,6 +385,7 @@ section .introduce h2 {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  transform: translateX(9px);
 }
 @media screen and (min-width: 768px) {
   section .introduce h2 {
@@ -571,30 +572,43 @@ section .skill .skill-flex-box .skill-explain {
     padding: 124px 0;
   }
 }
-section .skill .skill-flex-box .skill-graph .flex-img {
+section .skill .skill-flex-box .skill-graph .rectangles {
   display: flex;
   flex-wrap: wrap;
-  width: 70%;
-  margin: 0 auto;
-  justify-content: space-between;
+  justify-content: center;
 }
-@media screen and (min-width: 768px) {
-  section .skill .skill-flex-box .skill-graph .flex-img {
-    width: 80%;
-  }
+section .skill .skill-flex-box .skill-graph .rectangles .rectangle {
+  position: relative;
+  width: 100%;
+  margin-bottom: 50px;
 }
-section .skill .skill-flex-box .skill-graph .flex-img img {
+section .skill .skill-flex-box .skill-graph .rectangles .rectangle:hover {
   cursor: pointer;
-  width: 47%;
-  margin-bottom: 25px;
 }
-@media screen and (min-width: 768px) {
-  section .skill .skill-flex-box .skill-graph .flex-img img {
-    width: 21%;
-  }
+section .skill .skill-flex-box .skill-graph .rectangles .rectangle h3 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
 }
-section .skill .skill-flex-box .skill-graph .flex-img img:hover {
-  transform: rotate(720deg);
+section .skill .skill-flex-box .skill-graph .rectangles .rectangle svg {
+  width: 220px;
+  height: 220px;
+}
+section .skill .skill-flex-box .skill-graph .rectangles .rectangle svg rect {
+  width: 220px;
+  height: 220px;
+  fill: transparent;
+  stroke-width: 40;
+  /* 반지름의 두께 */
+  stroke-dasharray: 861;
+  stroke-dashoffset: 861;
+  /* forwards: 진행방향에서 멈춰있는 속성 */
+  /* animation: line 2s forwards; */
+  transform: rotate(0deg);
+  transform-origin: 50% 50%;
+  stroke: #ffffff;
 }
 section .workspace {
   width: 90%;
@@ -612,6 +626,7 @@ section .workspace h2 {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  transform: translateX(10px);
 }
 @media screen and (min-width: 768px) {
   section .workspace h2 {
@@ -826,15 +841,16 @@ section .contact {
 }
 section .contact h2 {
   margin: 0 auto;
-  font-size: 3em;
+  font-size: 2.5em;
   margin-bottom: 400px;
   position: -webkit-sticky;
   position: sticky;
-  top: 10px;
+  top: 15px;
   z-index: 999;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  transform: translateX(10px);
 }
 @media screen and (min-width: 768px) {
   section .contact h2 {
@@ -851,22 +867,6 @@ section .contact h2 {
     margin-bottom: 600px;
     font-size: 6em;
     top: -2px;
-  }
-}
-section .contact .mobile-contact {
-  display: block;
-}
-@media screen and (min-width: 768px) {
-  section .contact .mobile-contact {
-    display: none;
-  }
-}
-section .contact .tablet-contact {
-  display: none;
-}
-@media screen and (min-width: 768px) {
-  section .contact .tablet-contact {
-    display: block;
   }
 }
 section .contact .icon {

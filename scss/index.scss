@@ -27,7 +27,7 @@ header {
             }
 
             #logo {
-                margin-left: 7%;
+                margin-left: 6.5%;
                 z-index: 9999;
                 font: {
                     size: 1.3em;
@@ -316,6 +316,7 @@ section {
             top: 10px;
             z-index: 999;
             width: fit-content;
+            transform: translateX(9px);
 
             @include responsive(tablet-size) {
                 text-align: left;
@@ -490,29 +491,73 @@ section {
                     padding: 124px 0;
                 }
 
-                .flex-img {
+                .rectangles {
+                    // width: 80px;
+                    // margin: 3rem auto;
                     display: flex;
                     flex-wrap: wrap;
-                    width: 70%;
-                    margin: 0 auto;
-                    justify-content: space-between;
-    
-                    @include responsive(tablet-size) {
-                        width: 80%;
-                    }
-
-                    img {
-                        cursor: pointer;
-                        width: 47%;
-                        margin-bottom: 25px;
-                        @include responsive(tablet-size) {
-                            width: 21%;
-                        }
+                    justify-content: center;
+                    
+                    .rectangle {
+                        // margin-right: 0 20px;
+                        position: relative;
+                        width: 100%;
+                        margin-bottom: 50px;
+                        
                         &:hover {
-                            transform: rotate(720deg);
+                            cursor: pointer;
+                        }
+                        
+                        h3 {
+                            position: absolute;
+                            left: 50%;
+                            top: 50%;
+                            transform: translate(-50%, -50%);
+                            margin: 0;
+                        }
+                        svg {
+                            width: 220px;
+                            height: 220px;
+                            rect {
+                                width: 220px;
+                                height: 220px;
+                                fill : transparent;
+                                stroke-width: 40; /* 반지름의 두께 */
+                                stroke-dasharray: 861;
+                                stroke-dashoffset: 861;
+                                /* forwards: 진행방향에서 멈춰있는 속성 */
+                                /* animation: line 2s forwards; */
+                                transform: rotate(0deg);
+                                transform-origin: 50% 50%;
+                                stroke: $white;
+                            }
                         }
                     }
                 }
+
+                // .flex-img {
+                //     display: flex;
+                //     flex-wrap: wrap;
+                //     width: 70%;
+                //     margin: 0 auto;
+                //     justify-content: space-between;
+    
+                //     @include responsive(tablet-size) {
+                //         width: 80%;
+                //     }
+
+                //     img {
+                //         cursor: pointer;
+                //         width: 47%;
+                //         margin-bottom: 25px;
+                //         @include responsive(tablet-size) {
+                //             width: 21%;
+                //         }
+                //         &:hover {
+                //             transform: rotate(720deg);
+                //         }
+                //     }
+                // }
             }
         }
     } //skill
@@ -529,6 +574,7 @@ section {
             top: 10px;
             z-index: 999;
             width: fit-content;
+            transform: translateX(10px);
 
             @include responsive(tablet-size) {
                 text-align: left;
@@ -674,12 +720,13 @@ section {
 
         h2 {
             margin: 0 auto;
-            font-size: 3em;
+            font-size: 2.5em;
             margin-bottom: 400px;
             position: sticky;
-            top: 10px;
+            top: 15px;
             z-index: 999;
             width: fit-content;
+            transform: translateX(10px);
 
             @include responsive(tablet-size) {
                 text-align: left;
@@ -697,19 +744,19 @@ section {
             }
         }
 
-        .mobile-contact {
-            display: block;
-            @include responsive(tablet-size) {
-                display: none;
-            }
-        }
+        // .mobile-contact {
+        //     display: block;
+        //     @include responsive(tablet-size) {
+        //         display: none;
+        //     }
+        // }
 
-        .tablet-contact {
-            display: none;
-            @include responsive(tablet-size) {
-                display: block;
-            }
-        }
+        // .tablet-contact {
+        //     display: none;
+        //     @include responsive(tablet-size) {
+        //         display: block;
+        //     }
+        // }
 
         .icon {
             display: flex;

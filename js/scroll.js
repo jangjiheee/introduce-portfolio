@@ -9,14 +9,6 @@ $(function() {
     });
 })
 
-/*$(function() {
-    var apos = document.getElementsByClassName('s');
-    $(window).on("scroll",function() {
-        if(apos)
-    })
-})*/
-
-
 $(function() {
     var $ = function(id) {
     return document.getElementById(id);
