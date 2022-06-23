@@ -501,7 +501,7 @@ section {
                     .rectangle {
                         // margin-right: 0 20px;
                         position: relative;
-                        width: 100%;
+                        // width: 100%;
                         margin-bottom: 50px;
                         
                         &:hover {
@@ -516,20 +516,38 @@ section {
                             margin: 0;
                         }
                         svg {
-                            width: 220px;
-                            height: 220px;
+                            width: 300px;
+                            height: 300px;
+                            
+                            @include responsive(tablet-size) {
+                                width: 400px;
+                                height: 400px;
+                            }
+                            @include responsive(pc-size) {
+                                width: 250px;
+                                height: 250px;
+                            }
+
                             rect {
-                                width: 220px;
-                                height: 220px;
+                                width: 300px;
+                                height: 300px;
                                 fill : transparent;
-                                stroke-width: 40; /* 반지름의 두께 */
-                                stroke-dasharray: 861;
+                                stroke-width: 50; /* 반지름의 두께 */
+                                stroke-dasharray: 1219;
                                 stroke-dashoffset: 861;
                                 /* forwards: 진행방향에서 멈춰있는 속성 */
                                 /* animation: line 2s forwards; */
                                 transform: rotate(0deg);
                                 transform-origin: 50% 50%;
                                 stroke: $white;
+                                @include responsive(tablet-size) {
+                                    width: 400px;
+                                    height: 400px;
+                                }
+                                @include responsive(pc-size) {
+                                    width: 250px;
+                                    height: 250px;
+                                }
                             }
                         }
                     }
