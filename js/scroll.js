@@ -1,6 +1,6 @@
 $(function() {
     $(window).on("scroll", function() {
-        console.log($(this).scrollTop());
+        // console.log($(this).scrollTop());
         if($(this).scrollTop() > 650) {
             $(".main-menu").fadeIn();
         } else {

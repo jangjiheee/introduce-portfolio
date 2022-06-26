@@ -27,7 +27,7 @@ $(function() {
                 duration: 1500,
                 progress: function() { // 애니메이션이 변화할때마다 할일을 지정해준다.
                     var now = this.rate; // this는 애니메이트 전체를 말한다.
-                    console.log(now)
+                    // console.log(now)
                     title.text(Math.floor(now)); // title에서 받아온값을 text에 넣어라.
                     circle.css({strokeDashoffset: 861-(861*now/100)});
                 }
