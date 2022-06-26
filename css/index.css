@@ -505,8 +505,6 @@ section .introduce .intro-flex-box .explain .eng-character div p:last-child {
   }
 }
 section .skill {
-  width: 90%;
-  margin: 0 auto;
   margin-bottom: 400px;
 }
 section .skill h2 {
@@ -532,13 +530,13 @@ section .skill h2 {
 }
 @media screen and (min-width: 1460px) {
   section .skill h2 {
-    margin-left: 7%;
+    margin-left: 12%;
     margin-bottom: 600px;
     font-size: 6em;
     top: 0px;
   }
 }
-@media screen and (min-width: 1460px) {
+@media screen and (min-width: 768px) {
   section .skill .skill-flex-box {
     display: flex;
   }
@@ -546,8 +544,9 @@ section .skill h2 {
 section .skill .skill-flex-box .skill-explain {
   display: none;
 }
-@media screen and (min-width: 1460px) {
+@media screen and (min-width: 768px) {
   section .skill .skill-flex-box .skill-explain {
+    width: 50%;
     display: table;
     background-color: #2c2c2c;
   }
@@ -567,15 +566,41 @@ section .skill .skill-flex-box .skill-explain {
   }
 }
 @media screen and (min-width: 1460px) {
+  section .skill .skill-flex-box .skill-explain {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 768px) {
   section .skill .skill-flex-box .skill-graph {
+    width: 50%;
+    border: 1px solid white;
+    padding: 124px 0;
+  }
+}
+@media screen and (min-width: 1460px) {
+  section .skill .skill-flex-box .skill-graph {
+    width: 60%;
     border: 1px solid white;
     padding: 124px 0;
   }
 }
 section .skill .skill-flex-box .skill-graph .rectangles {
+  width: 45%;
+  margin: 3rem auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
+}
+@media screen and (min-width: 768px) {
+  section .skill .skill-flex-box .skill-graph .rectangles {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 1460px) {
+  section .skill .skill-flex-box .skill-graph .rectangles {
+    width: 70%;
+    justify-content: space-between;
+  }
 }
 section .skill .skill-flex-box .skill-graph .rectangles .rectangle {
   position: relative;
@@ -592,29 +617,28 @@ section .skill .skill-flex-box .skill-graph .rectangles .rectangle h3 {
   margin: 0;
 }
 section .skill .skill-flex-box .skill-graph .rectangles .rectangle svg {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
 }
 @media screen and (min-width: 768px) {
   section .skill .skill-flex-box .skill-graph .rectangles .rectangle svg {
-    width: 400px;
-    height: 400px;
+    width: 150px;
+    height: 150px;
   }
 }
 @media screen and (min-width: 1460px) {
   section .skill .skill-flex-box .skill-graph .rectangles .rectangle svg {
-    width: 250px;
-    height: 250px;
+    width: 220px;
+    height: 220px;
   }
 }
 section .skill .skill-flex-box .skill-graph .rectangles .rectangle svg rect {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   fill: transparent;
   stroke-width: 50;
   /* 반지름의 두께 */
-  stroke-dasharray: 1219;
-  stroke-dashoffset: 861;
+  stroke-dasharray: 976;
   /* forwards: 진행방향에서 멈춰있는 속성 */
   /* animation: line 2s forwards; */
   transform: rotate(0deg);
@@ -623,15 +647,34 @@ section .skill .skill-flex-box .skill-graph .rectangles .rectangle svg rect {
 }
 @media screen and (min-width: 768px) {
   section .skill .skill-flex-box .skill-graph .rectangles .rectangle svg rect {
-    width: 400px;
-    height: 400px;
+    stroke-width: 30;
+    /* 반지름의 두께 */
+    width: 150px;
+    height: 150px;
   }
 }
 @media screen and (min-width: 1460px) {
   section .skill .skill-flex-box .skill-graph .rectangles .rectangle svg rect {
-    width: 250px;
-    height: 250px;
+    width: 220px;
+    height: 220px;
+    stroke-width: 40;
+    stroke-dasharray: 781;
   }
+}
+section .skill .skill-flex-box .skill-graph .rectangles .rectangle .skill-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 4em;
+  font-weight: 600;
+  background-color: #ea894e;
+  width: 250px;
+  height: 250px;
+}
+section .skill .skill-flex-box .skill-graph .rectangles .rectangle .skill-hover p {
+  color: #171717;
+  text-align: center;
+  line-height: 250px;
 }
 section .workspace {
   width: 90%;
