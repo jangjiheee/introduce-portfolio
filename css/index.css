@@ -647,10 +647,11 @@ section .skill .skill-flex-box .skill-graph .rectangles .rectangle svg rect {
 }
 @media screen and (min-width: 768px) {
   section .skill .skill-flex-box .skill-graph .rectangles .rectangle svg rect {
-    stroke-width: 30;
-    /* 반지름의 두께 */
     width: 150px;
     height: 150px;
+    stroke-width: 30;
+    /* 반지름의 두께 */
+    stroke-dasharray: 586;
   }
 }
 @media screen and (min-width: 1460px) {
@@ -658,7 +659,7 @@ section .skill .skill-flex-box .skill-graph .rectangles .rectangle svg rect {
     width: 220px;
     height: 220px;
     stroke-width: 40;
-    stroke-dasharray: 781;
+    stroke-dasharray: 861;
   }
 }
 section .skill .skill-flex-box .skill-graph .rectangles .rectangle .skill-hover {
@@ -675,6 +676,24 @@ section .skill .skill-flex-box .skill-graph .rectangles .rectangle .skill-hover 
   color: #171717;
   text-align: center;
   line-height: 250px;
+}
+@media screen and (min-width: 768px) {
+  section .skill .skill-flex-box .skill-graph .rectangles .rectangle .skill-hover {
+    width: 150px;
+    height: 150px;
+  }
+  section .skill .skill-flex-box .skill-graph .rectangles .rectangle .skill-hover p {
+    line-height: 150px;
+  }
+}
+@media screen and (min-width: 1460px) {
+  section .skill .skill-flex-box .skill-graph .rectangles .rectangle .skill-hover {
+    width: 220px;
+    height: 220px;
+  }
+  section .skill .skill-flex-box .skill-graph .rectangles .rectangle .skill-hover p {
+    line-height: 220px;
+  }
 }
 section .workspace {
   width: 90%;
@@ -1045,4 +1064,4 @@ footer p {
     float: right;
     margin-right: 5%;
   }
-}
+}/*# sourceMappingURL=index.css.map */

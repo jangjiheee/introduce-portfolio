@@ -562,16 +562,17 @@ section {
                                 stroke: $white;
 
                                 @include responsive(tablet-size) {
-                                    stroke-width: 30; /* 반지름의 두께 */
                                     width: 150px;
                                     height: 150px;
+                                    stroke-width: 30; /* 반지름의 두께 */
+                                    stroke-dasharray: 586;
                                 }
 
                                 @include responsive(pc-size) {
                                     width: 220px;
                                     height: 220px;
                                     stroke-width: 40;
-                                    stroke-dasharray: 781;
+                                    stroke-dasharray: 861;
                                 }
                             }
                         }
@@ -589,6 +590,21 @@ section {
                                 color: $background;
                                 text-align: center;
                                 line-height: 250px;
+                            }
+
+                            @include responsive(tablet-size) {
+                                width: 150px;
+                                height: 150px;
+                                p {
+                                    line-height: 150px;
+                                }
+                            }
+                            @include responsive(pc-size) {
+                                width: 220px;
+                                height: 220px;
+                                p {
+                                    line-height: 220px;
+                                }
                             }
                         }
                     }
