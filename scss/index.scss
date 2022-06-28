@@ -795,111 +795,113 @@ section {
             }
         }
 
-        // .mobile-contact {
-        //     display: block;
-        //     @include responsive(tablet-size) {
-        //         display: none;
-        //     }
-        // }
-
-        // .tablet-contact {
-        //     display: none;
-        //     @include responsive(tablet-size) {
-        //         display: block;
-        //     }
-        // }
-
-        .icon {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 20px;
-            
-            img {
-                width: 40px;
-                margin-right: 15px;
-                &:last-child {
-                    margin-right: 0;
+        .icon-zip {
+            .icon {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 20px;
+                
+                img {
+                    width: 40px;
+                    margin-right: 15px;
+                    &:last-child {
+                        margin-right: 0;
+                    }
                 }
             }
         }
 
-        .contact-form {
-            border: 4px solid $white;
-            padding: 60px 35px;
-            color: $white;
-            margin: 100px;
-
-            @include responsive(tablet-size) {
-                width: 87%;
-                margin: 0 auto 200px auto;
-            }
-
+        .form-gif-flex {
             @include responsive(pc-size) {
-                width: 60%;
-                margin: 0 auto 200px 7%;
+                display: flex;
+                justify-content: space-around;
             }
+            .contact-form {
 
-            .contact-flex-box {
-                @include responsive(pc-size) {
-                    width: 80%;
-                    margin: 0 auto;
+                border: 4px solid $white;
+                padding: 60px 35px;
+                color: $white;
+                margin: 100px;
+    
+                @include responsive(tablet-size) {
+                    width: 87%;
+                    margin: 0 auto 200px auto;
                 }
-
-                ul {
-                    text-align: left;
-                    display: flex;
-                    flex-direction: column;
-
-                    @include responsive(tablet-size) {
-                        flex-direction: row;
-                        justify-content: space-between;
+    
+                @include responsive(pc-size) {
+                    width: 60%;
+                    margin: 0 auto 200px 7%;
+                }
+    
+                .contact-flex-box {
+                    @include responsive(pc-size) {
+                        width: 80%;
+                        margin: 0 auto;
                     }
-
-                    .flex-group {
+    
+                    ul {
+                        text-align: left;
+                        display: flex;
+                        flex-direction: column;
+    
                         @include responsive(tablet-size) {
-                            width: 49%
+                            flex-direction: row;
+                            justify-content: space-between;
                         }
-                        li {
-                            margin-bottom: 20px;
-
-                            input {
+    
+                        .flex-group {
+                            @include responsive(tablet-size) {
+                                width: 49%
+                            }
+                            li {
+                                margin-bottom: 20px;
+    
+                                input {
+                                    display: block;
+                                    width: 100%;
+                                    height: 30px;
+                                    background-color: transparent;
+                                    border: 1px solid $white;
+                                    margin-top: 10px;
+                                    color: $white;
+                                }
+                            }
+                        }
+                        .flex-group-message {
+                            textarea {
+                                color: $white;
+                                font-family: '궁서체';
                                 display: block;
                                 width: 100%;
-                                height: 30px;
+                                height: 100px;
                                 background-color: transparent;
                                 border: 1px solid $white;
                                 margin-top: 10px;
-                                color: $white;
+                                @include responsive(tablet-size) {
+                                    height: 110px;
+                                }
+                            }
+                            @include responsive(tablet-size) {
+                                width: 49%
                             }
                         }
                     }
-                    .flex-group-message {
-                        textarea {
-                            color: $white;
-                            font-family: '궁서체';
-                            display: block;
-                            width: 100%;
-                            height: 100px;
-                            background-color: transparent;
-                            border: 1px solid $white;
-                            margin-top: 10px;
-                            @include responsive(tablet-size) {
-                                height: 110px;
-                            }
-                        }
-                        @include responsive(tablet-size) {
-                            width: 49%
-                        }
+                    button {
+                        width: 100%;
+                        margin-top: 30px;
+                        background-color: transparent;
+                        border: 1px solid $orange;
+                        color: $orange;
+                        padding: 10px 0;
+                        cursor: pointer;
                     }
                 }
-                button {
-                    width: 100%;
-                    margin-top: 30px;
-                    background-color: transparent;
-                    border: 1px solid $orange;
-                    color: $orange;
-                    padding: 10px 0;
-                    cursor: pointer;
+            }
+
+            .icon-dog {
+                display: none;
+                @include responsive(pc-size) {
+                    display: block;
                 }
             }
         }
