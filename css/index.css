@@ -969,7 +969,7 @@ section .contact .icon-zip .icon img:last-child {
 @media screen and (min-width: 1460px) {
   section .contact .form-gif-flex {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
   }
 }
 section .contact .form-gif-flex .contact-form {
@@ -986,8 +986,8 @@ section .contact .form-gif-flex .contact-form {
 }
 @media screen and (min-width: 1460px) {
   section .contact .form-gif-flex .contact-form {
-    width: 60%;
-    margin: 0 auto 200px 7%;
+    width: 65%;
+    margin: 0 3% 200px 7%;
   }
 }
 @media screen and (min-width: 1460px) {
@@ -1059,7 +1059,12 @@ section .contact .form-gif-flex .icon-dog {
 @media screen and (min-width: 1460px) {
   section .contact .form-gif-flex .icon-dog {
     display: block;
+    height: 357px;
+    display: flex;
   }
+}
+section .contact .form-gif-flex .icon-dog .img {
+  vertical-align: middle;
 }
 
 footer {
@@ -1078,4 +1083,4 @@ footer p {
     float: right;
     margin-right: 5%;
   }
-}/*# sourceMappingURL=index.css.map */
+}

@@ -814,10 +814,10 @@ section {
         .form-gif-flex {
             @include responsive(pc-size) {
                 display: flex;
-                justify-content: space-around;
+                justify-content: center;
             }
-            .contact-form {
 
+            .contact-form {
                 border: 4px solid $white;
                 padding: 60px 35px;
                 color: $white;
@@ -829,8 +829,8 @@ section {
                 }
     
                 @include responsive(pc-size) {
-                    width: 60%;
-                    margin: 0 auto 200px 7%;
+                    width: 65%;
+                    margin: 0 3% 200px 7%;
                 }
     
                 .contact-flex-box {
@@ -902,6 +902,11 @@ section {
                 display: none;
                 @include responsive(pc-size) {
                     display: block;
+                    height: 357px;
+                    display: flex;
+                }
+                .img {
+                    vertical-align: middle;
                 }
             }
         }
