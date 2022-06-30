@@ -666,7 +666,7 @@ section .skill .skill-flex-box .skill-graph .rectangles .rectangle .skill-hover 
   position: absolute;
   top: 0;
   left: 0;
-  font-size: 4em;
+  font-size: 3em;
   font-weight: 600;
   background-color: #ea894e;
   width: 250px;
@@ -681,6 +681,7 @@ section .skill .skill-flex-box .skill-graph .rectangles .rectangle .skill-hover 
   section .skill .skill-flex-box .skill-graph .rectangles .rectangle .skill-hover {
     width: 150px;
     height: 150px;
+    font-size: 1.7em;
   }
   section .skill .skill-flex-box .skill-graph .rectangles .rectangle .skill-hover p {
     line-height: 150px;
@@ -690,6 +691,7 @@ section .skill .skill-flex-box .skill-graph .rectangles .rectangle .skill-hover 
   section .skill .skill-flex-box .skill-graph .rectangles .rectangle .skill-hover {
     width: 220px;
     height: 220px;
+    font-size: 2.5em;
   }
   section .skill .skill-flex-box .skill-graph .rectangles .rectangle .skill-hover p {
     line-height: 220px;

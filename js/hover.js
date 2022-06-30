@@ -1,24 +1,15 @@
-$(function() {
+window.onload = function() {
     var rect = document.getElementsByClassName('rectangle');
     var hoverT = document.getElementsByClassName('skill-hover');
 
-    console.log(rect);
-    console.log(hoverT);
+    for (let i=0; i<8; i++) {
+        hoverT[i].style.display = "none";
 
-    for (j=0; j<hoverT.length; j++) {
-        hoverT[j].style.display = 'none';
-        rect[j].addEventListener('click', () => clickedEvent(j-1));
+        rect[i].addEventListener("mouseover", function() {
+            hoverT[i].style.display = "block";
+        });
+        rect[i].addEventListener("mouseout", function() {
+            hoverT[i].style.display = "none";
+        })
     }
-
-    function clickedEvent(position) {
-        console.log("position", position);
-        for (let i = 0; i < hoverT.length; i++) {
-            if (position == i) {
-                hoverT[position].style.display = 'block';
-            } else {
-                hoverT[position].style.display = 'none';
-            }
-        }
-        
-    }
-})
+}
