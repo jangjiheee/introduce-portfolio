@@ -7,6 +7,7 @@
 
 html {
   background-color: #171717;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -370,14 +371,12 @@ section .intro-text .mobile-welcome {
   }
 }
 section .introduce {
-  width: 90%;
-  margin: 0 auto;
   margin-bottom: 400px;
 }
 section .introduce h2 {
   margin: 0 auto;
   font-size: 3em;
-  margin-bottom: 400px;
+  margin-bottom: 200px;
   position: -webkit-sticky;
   position: sticky;
   top: 10px;
@@ -398,11 +397,16 @@ section .introduce h2 {
 }
 @media screen and (min-width: 1460px) {
   section .introduce h2 {
-    margin-left: 7%;
-    margin-bottom: 600px;
+    margin-left: 12%;
+    margin-bottom: 400px;
     font-size: 6em;
     top: 0px;
   }
+}
+section .introduce .confix {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 250px;
 }
 section .introduce .intro-flex-box {
   display: flex;
@@ -535,6 +539,9 @@ section .skill h2 {
     font-size: 6em;
     top: 0px;
   }
+}
+section .skill .skill-flex-box {
+  padding-top: 120px;
 }
 @media screen and (min-width: 768px) {
   section .skill .skill-flex-box {
@@ -741,6 +748,7 @@ section .workspace h2 {
 }
 section .workspace .portfolio01,
 section .workspace .portfolio02 {
+  padding-top: 200px;
   margin-bottom: 50px;
 }
 section .workspace .portfolio01 .work-flex-box,

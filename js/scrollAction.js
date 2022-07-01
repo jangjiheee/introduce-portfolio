@@ -14,3 +14,7 @@ window.onload = function() {
         );
     }
 };
+
+$('#moveI').on('click', function() {  
+    $('html, body').scrollTop(1744);
+});

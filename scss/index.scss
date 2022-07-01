@@ -305,19 +305,18 @@ section {
 
     /* introduce */
     .introduce {
-        @include confix-tab();
         margin-bottom: 400px;
-
+        
         h2 {
             margin: 0 auto;
             font-size: 3em;
-            margin-bottom: 400px;
+            margin-bottom: 200px;
             position: sticky;
             top: 10px;
             z-index: 999;
             width: fit-content;
             transform: translateX(9px);
-
+            
             @include responsive(tablet-size) {
                 text-align: left;
                 margin-bottom: 500px;
@@ -325,15 +324,18 @@ section {
                 font-size: 4.5em;
                 top: -4px;
             }
-
+            
             @include responsive(pc-size) {
-                margin-left: 7%;
-                margin-bottom: 600px;
+                margin-left: 12%;
+                margin-bottom: 400px;
                 font-size: 6em;
                 top: 0px;
             }
         }
-
+        .confix {
+            @include confix-tab();
+            padding-top: 250px;
+        }
         .intro-flex-box {
             display: flex;
             flex-direction: column;
@@ -456,6 +458,7 @@ section {
         }
         
         .skill-flex-box {
+            padding-top: 120px;
             @include responsive(tablet-size) {
                 display: flex;
             }
@@ -662,6 +665,7 @@ section {
 
         .portfolio01,
         .portfolio02 {
+            padding-top: 200px;
             margin-bottom: 50px;
             .work-flex-box {
                 display: flex;
