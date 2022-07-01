@@ -1,8 +1,3 @@
-/*AOS.init({
-    easing: 'ease-in-out-sine'
-});
-
-setInterval(addIetm,300);*/
 document.getElementById('photoImg')
 .setAttribute('data-aos-duration', '2000');
 
@@ -18,4 +13,4 @@ window.onload = function() {
         skillChildren[i].setAttribute('data-aos-duration', '2500'
         );
     }
-}
+};

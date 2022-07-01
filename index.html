@@ -12,7 +12,8 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
+    <script src="./js/main.js"></script>
     <script src="./js/scroll.js"></script>
     <script src="./js/skill.js"></script>
     <script src="./js/hover.js"></script>
@@ -25,8 +26,8 @@
                 <p id="logo">JIHEE</p>
                 <div class="navbar">
                     <div class="gnb">
-                        <li><a href="#introduce">INTRODUCE</a></li>
-                        <li><a href="#skill">SKILL</a></li>
+                        <li><a href="#introduce" class="move_menu">INTRODUCE</a></li>
+                        <li><a href="#skill" class="move_menu">SKILL</a></li>
                         <li><a href="#workspace">WOKRSPACE</a></li>
                         <li><a href="#contact">CONTACT&nbsp;POINT</a></li>
                     </div> <!--gnb-->
@@ -70,12 +71,10 @@
                     <p class="shuffle-text">
                         <span id="anim"></span><span id="shuffle"></span>
                     </p>
-                    <!--<h2 class="mobile-welcome">WELCOME TO<br> MY AREA</h2>
-                    <h2 class="pc-welcome">WELCOME TO MY AREA</h2>-->
                 </div>
             </div>
-            <div class="introduce" id="introduce">
-                <h2 class="hTag">INTRODUCE</h2>
+            <div class="introduce">
+                <h2 class="hTag" id="introduce">INTRODUCE</h2>
                 <div class="confix">
                     <div class="intro-flex-box">
                         <div class="img-box" id="photoImg" data-aos-offset="500" data-aos="fade-right">
@@ -101,19 +100,57 @@
                 </div>
             </div> <!--introduce-->
 
-            <div class="skill" id="skill">
+            <div class="skill">
                 <h2 class="hTag">SKILL</h2>
                 <div class="skill-flex-box">
-                    <div class="skill-explain">
+                    <div class="skill-explain" id="skill">
                         <div class="img-box" id="photo">
-                            <img src="./images/code-images/html.JPG" alt="html" data-aos="fade-down">
-                            <p>html 태그의 속성을 이해하고 있으며 구조적인 코드 작업을 할 수 있습니다.</p>
+                            <div class="img-box1 skill-text">
+                                <img src="./images/code-images/html.JPG" alt="html" data-aos="fade-down">
+                                <h3>[HTML]</h3>
+                                <p>html 태그의 속성을 이해하고 있으며 구조적인 코드 작업과 표준을 따르는 코드작업을 할 수 있습니다.</p>
+                            </div>
+                            <div class="img-box2 skill-text">
+                                <img src="./images/code-images/html.JPG" alt="css" data-aos="fade-down">
+                                <h3>[CSS]</h3>
+                                <p>웹 문서를 다양하게 설계하고 CSS3 선택자사용과 애니메이션 효과 등을 통해 화려한 면모를 추가하며 반응형 웹페이지를 제작할 수 있습니다.</p>
+                            </div>
+                            <div class="img-box3 skill-text">
+                                <img src="./images/code-images/html.JPG" alt="photoshop" data-aos="fade-down">
+                                <h3>[PHOTOSHOP]</h3>
+                                <p>그리드 시스템을 통해 웹 페이지 제작에 필요한 콘텐츠를 논리적이고 질서정렬한 구조로 디자인할 수 있습니다.</p>
+                            </div>
+                            <div class="img-box4 skill-text">
+                                <img src="./images/code-images/html.JPG" alt="illustrator" data-aos="fade-down">
+                                <h3>[ILLUSTRATOR]</h3>
+                                <p>정교한 작업으로 반본적인 효과만들기를 구현할 수 있으며 이를 통해 페이지 로고제작이 가능합니다.</p>
+                            </div>
+                            <div class="img-box5 skill-text">
+                                <img src="./images/code-images/html.JPG" alt="javascript" data-aos="fade-down">
+                                <h3>[JAVASCRIPT]</h3>
+                                <p>동적인 UI구현을 위해 에니메이션을 추가하고 클릭이나 호버에 따른 이벤트 변화를 구현할 수 있습니다.</p>
+                            </div>
+                            <div class="img-box6 skill-text">
+                                <img src="./images/code-images/html.JPG" alt="jquery" data-aos="fade-down">
+                                <h3>[JQUERY]</h3>
+                                <p>선택자를 직접 불러와 색깔이나 position 값을 변화시키는 작업으로 모달창 기능을 구현할 수 있습니다.</p>
+                            </div>
+                            <div class="img-box7 skill-text">
+                                <img src="./images/code-images/html.JPG" alt="sass" data-aos="fade-down">
+                                <h3>[SASS]</h3>
+                                <p>계층구조를 정확하게 파악하고 있으며 반응형에 따른 코드작업과 가독성을 높이는 코드, 중복적인 코드에 특정 키워드로 재활용성을 올릴 수 있습니다.</p>
+                            </div>
+                            <div class="img-box8 skill-text">
+                                <img src="./images/code-images/html.JPG" alt="sql" data-aos="fade-down">
+                                <h3>[SQL]</h3>
+                                <p>html 태그의 속성을 이해하고 있으며 구조적인 코드 작업과 표준을 따르는 코드작업을 할 수 있습니다.</p>
+                            </div>
                         </div>
                     </div>
                     <div class="skill-graph">
                         <div class="rectangles">
                             <div class="rectangle">
-                                <h3 date-num="100"></h3>
+                                <h3 date-num="99"></h3>
                                 <!-- <img src="./images/html.jpg" alt="jpg"> -->
                                 <svg style="position: relative;">
                                     <rect fill="transparent"></rect>
@@ -134,7 +171,7 @@
                                 </div>
                             </div>
                             <div class="rectangle">
-                                <h3 date-num="75"></h3>
+                                <h3 date-num="80"></h3>
                                 <svg>
                                     <rect></rect>
                                 </svg>
@@ -152,7 +189,7 @@
                                 </div>
                             </div>
                             <div class="rectangle">
-                                <h3 date-num="90"></h3>
+                                <h3 date-num="75"></h3>
                                 <svg>
                                     <rect></rect>
                                 </svg>
@@ -161,7 +198,7 @@
                                 </div>
                             </div>
                             <div class="rectangle">
-                                <h3 date-num="90"></h3>
+                                <h3 date-num="75"></h3>
                                 <svg>
                                     <rect></rect>
                                 </svg>
@@ -170,7 +207,7 @@
                                 </div>
                             </div>
                             <div class="rectangle">
-                                <h3 date-num="70"></h3>
+                                <h3 date-num="95"></h3>
                                 <svg>
                                     <rect></rect>
                                 </svg>
@@ -179,7 +216,7 @@
                                 </div>
                             </div>
                             <div class="rectangle">
-                                <h3 date-num="80"></h3>
+                                <h3 date-num="65"></h3>
                                 <svg>
                                     <rect></rect>
                                 </svg>
@@ -187,27 +224,16 @@
                                     <p>SQL</p>
                                 </div>
                             </div>
-
                         </div>
-                        <!--<div class="flex-img" id="skillImg" data-aos-offset="100">
-                            <img src="./images/html.png" alt="html" data-aos="fade-up">               
-                            <img src="./images/css.png" alt="css"data-aos="zoom-out-down">
-                            <img src="./images/photoshop.png" alt="photoshop" data-aos="fade-up-right">
-                            <img src="./images/illustrator.png" alt="illustrator" data-aos="slide-right">
-                            <img src="./images/javascript.png" alt="javascript" data-aos="flip-left">
-                            <img src="./images/jqeury.png" alt="jqeury" data-aos="flip-down">
-                            <img src="./images/sass.png" alt="sass" data-aos="zoom-in-out">
-                            <img src="./images/sql.png" alt="sql" data-aos="fade-right">
-                        </div>-->
                     </div>
                 </div>
             </div> <!--skill-->
 
-            <div class="workspace" id="workspace">
+            <div class="workspace">
                 <h2 class="hTag">WOKRSPACE</h2>
                 <div class="portfolio01">
                     <div class="work-flex-box">
-                        <div class="port01-img" data-aos="fade-right">
+                        <div class="port01-img" data-aos="fade-right"  id="workspace">
                             <img src="./images/port01.png" alt="portfolio01-img">
                         </div> <!--port01-img-->
                         <div class="port01-text">
@@ -275,9 +301,9 @@
                 </div><!--portfolio02--> 
             </div><!-- workspace -->
         
-            <div class="contact" id="contact">
+            <div class="contact">
                 <h2 class="hTag">CONTACT POINT</h2>
-                <div class="icon-zip">
+                <div class="icon-zip" id="contact">
                     <div class="icon">
                         <img src="./images/phone.png" alt="phone-icon">
                         <img src="./images/talk.png" alt="talk-icon">
