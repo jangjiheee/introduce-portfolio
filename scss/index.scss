@@ -336,6 +336,7 @@ section {
             @include confix-tab();
             padding-top: 250px;
         }
+
         .intro-flex-box {
             display: flex;
             flex-direction: column;
@@ -344,6 +345,7 @@ section {
             @include responsive(tablet-size) {
                 flex-direction: row;
                 position: relative;
+                // margin-left: 5%;
                 margin: 0 auto;
             }
             @include responsive(pc-size) {
@@ -355,7 +357,7 @@ section {
 
                 @include responsive(tablet-size) {
                     width: 40%;
-                    margin-left: 3.5%;
+                    margin-left: 7%;
                 }
                 @include responsive(pc-size) {
                     width: 400px;
