@@ -666,7 +666,8 @@ section {
         }
 
         .portfolio01,
-        .portfolio02 {
+        .portfolio02,
+        .portfolio03 {
             padding-top: 200px;
             margin-bottom: 50px;
             .work-flex-box {
@@ -683,7 +684,8 @@ section {
                 }
 
                 .port01-img,
-                .port02-img {
+                .port02-img,
+                .port03-img {
                     width: 90%;
                     margin: 0 auto 20px auto;
                     @include responsive(tablet-size) {
@@ -695,8 +697,13 @@ section {
                     }
                 }
 
+                .port03-img {
+                    border: 5px solid $white;
+                }
+
                 .port01-text,
-                .port02-text {
+                .port02-text,
+                .port03-text {
                     width: 90%;
                     text-align: left;
                     margin: 0 auto;
@@ -782,9 +789,9 @@ section {
                             }
                         }
                     }
-                } //.port01-text, .port02-text
+                } //.port01-text, .port02-text, .port03-text
             } //work-flex-box
-        } //portfolio 1,2
+        } //portfolio 1,2,3
     } //workspace
 
     .contact {
