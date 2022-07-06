@@ -684,8 +684,7 @@ section {
                 }
 
                 .port01-img,
-                .port02-img,
-                .port03-img {
+                .port02-img {
                     width: 90%;
                     margin: 0 auto 20px auto;
                     @include responsive(tablet-size) {
@@ -695,6 +694,9 @@ section {
                     @include responsive(pc-size) {
                         width: 45%;
                     }
+                }
+                .port03-img {
+                    margin-bottom: 0;
                 }
 
                 .port03-img {
@@ -788,6 +790,9 @@ section {
                                 cursor: pointer;
                             }
                         }
+                    }
+                    .vertical-text {
+                        @include vertical();
                     }
                 } //.port01-text, .port02-text, .port03-text
             } //work-flex-box
