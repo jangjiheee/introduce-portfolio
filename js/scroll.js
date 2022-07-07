@@ -7,6 +7,14 @@ $(function() {
             $(".main-menu").fadeOut();
         }
     });
+
+    $(window).on("scoll", function() {
+        if($(this).scrollTop()>1000) {
+            $(".s").fadeIn();
+        } else {
+            $(".s").fadeOutn();
+        }
+    })
 })
 
 $(function() {
