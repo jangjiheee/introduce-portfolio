@@ -734,7 +734,7 @@ section .workspace h2 {
     text-align: left;
     margin-left: 12%;
     margin-bottom: 500px;
-    font-size: 4.5em;
+    font-size: 5em;
     top: -4px;
   }
 }
@@ -1061,7 +1061,7 @@ section .workspace .portfolio03 .work-flex-box .port02-text .vertical-text,
 section .workspace .portfolio03 .work-flex-box .port03-text .vertical-text {
   display: none;
   text-align: right;
-  opacity: 0.08;
+  opacity: 0.07;
 }
 section .workspace .portfolio01 .work-flex-box .port01-text .vertical-text p,
 section .workspace .portfolio01 .work-flex-box .port02-text .vertical-text p,
@@ -1161,46 +1161,6 @@ section .workspace .portfolio03 .work-flex-box .port03-text .vertical-text p:nth
   -webkit-animation-delay: 0.6s;
           animation-delay: 0.6s;
 }
-@-webkit-keyframes text-left {
-  0% {
-    left: 0;
-  }
-  20% {
-    left: -3rem;
-  }
-  40% {
-    left: 0;
-  }
-  60% {
-    left: 0;
-  }
-  80% {
-    left: 0;
-  }
-  100% {
-    left: 0;
-  }
-}
-@keyframes text-left {
-  0% {
-    left: 0;
-  }
-  20% {
-    left: -3rem;
-  }
-  40% {
-    left: 0;
-  }
-  60% {
-    left: 0;
-  }
-  80% {
-    left: 0;
-  }
-  100% {
-    left: 0;
-  }
-}
 @media screen and (min-width: 768px) {
   section .workspace .portfolio01 .work-flex-box .port01-text .vertical-text,
 section .workspace .portfolio01 .work-flex-box .port02-text .vertical-text,
@@ -1217,6 +1177,46 @@ section .workspace .portfolio03 .work-flex-box .port03-text .vertical-text {
     font-weight: bolder;
     line-height: 0.8em;
   }
+  @-webkit-keyframes text-left {
+    0% {
+      left: 0;
+    }
+    20% {
+      left: -1rem;
+    }
+    40% {
+      left: 0;
+    }
+    60% {
+      left: 0;
+    }
+    80% {
+      left: 0;
+    }
+    100% {
+      left: 0;
+    }
+  }
+  @keyframes text-left {
+    0% {
+      left: 0;
+    }
+    20% {
+      left: -1rem;
+    }
+    40% {
+      left: 0;
+    }
+    60% {
+      left: 0;
+    }
+    80% {
+      left: 0;
+    }
+    100% {
+      left: 0;
+    }
+  }
 }
 @media screen and (min-width: 1460px) {
   section .workspace .portfolio01 .work-flex-box .port01-text .vertical-text,
@@ -1228,7 +1228,48 @@ section .workspace .portfolio02 .work-flex-box .port03-text .vertical-text,
 section .workspace .portfolio03 .work-flex-box .port01-text .vertical-text,
 section .workspace .portfolio03 .work-flex-box .port02-text .vertical-text,
 section .workspace .portfolio03 .work-flex-box .port03-text .vertical-text {
-    font-size: 16em;
+    transform: translateY(-520px);
+    font-size: 16.5em;
+  }
+  @-webkit-keyframes text-left {
+    0% {
+      left: 0;
+    }
+    20% {
+      left: -3rem;
+    }
+    40% {
+      left: 0;
+    }
+    60% {
+      left: 0;
+    }
+    80% {
+      left: 0;
+    }
+    100% {
+      left: 0;
+    }
+  }
+  @keyframes text-left {
+    0% {
+      left: 0;
+    }
+    20% {
+      left: -3rem;
+    }
+    40% {
+      left: 0;
+    }
+    60% {
+      left: 0;
+    }
+    80% {
+      left: 0;
+    }
+    100% {
+      left: 0;
+    }
   }
 }
 section .contact {
