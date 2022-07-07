@@ -44,6 +44,7 @@ function toggleHTag(subToggle) {
 }
 
 $(".mob").on("click", function() {
-    subToggle = !subToggle;
-    menuBar.style.height="0px";
+    // subToggle = !subToggle;
+    // menuBar.style.height="0px";
+    showMenu();  
 })
