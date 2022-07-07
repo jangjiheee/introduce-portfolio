@@ -1142,7 +1142,7 @@ section .workspace .portfolio03 .work-flex-box .port02-text .text-left-align .ve
 section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .vertical-text p:nth-child(3) {
   -webkit-animation-delay: 0.4s;
           animation-delay: 0.4s;
-  transform: translate(15px);
+  transform: translate(22px);
 }
 section .workspace .portfolio01 .work-flex-box .port01-text .text-left-align .vertical-text p:nth-child(4),
 section .workspace .portfolio01 .work-flex-box .port02-text .text-left-align .vertical-text p:nth-child(4),
@@ -1179,6 +1179,7 @@ section .workspace .portfolio03 .work-flex-box .port02-text .text-left-align .ve
 section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .vertical-text p:nth-child(6) {
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s;
+  transform: translate(22px);
 }
 section .workspace .portfolio01 .work-flex-box .port01-text .text-left-align .vertical-text p:nth-child(7),
 section .workspace .portfolio01 .work-flex-box .port02-text .text-left-align .vertical-text p:nth-child(7),
@@ -1217,7 +1218,7 @@ section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .ve
     display: block;
     font-size: 15em;
     font-weight: bolder;
-    line-height: 0.9em;
+    line-height: 0.8em;
   }
   @-webkit-keyframes text-left {
     0% {
@@ -1336,7 +1337,7 @@ section .workspace .portfolio03 .work-flex-box .port02-text .text-left-align .ve
 section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .vertical-text-zindex p:nth-child(3) {
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s;
-  transform: translate(15px);
+  transform: translate(20px);
 }
 section .workspace .portfolio01 .work-flex-box .port01-text .text-left-align .vertical-text-zindex p:nth-child(4),
 section .workspace .portfolio01 .work-flex-box .port02-text .text-left-align .vertical-text-zindex p:nth-child(4),
@@ -1373,6 +1374,7 @@ section .workspace .portfolio03 .work-flex-box .port02-text .text-left-align .ve
 section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .vertical-text-zindex p:nth-child(6) {
   -webkit-animation-delay: 0.2s;
           animation-delay: 0.2s;
+  transform: translate(20px);
 }
 section .workspace .portfolio01 .work-flex-box .port01-text .text-left-align .vertical-text-zindex p:nth-child(7),
 section .workspace .portfolio01 .work-flex-box .port02-text .text-left-align .vertical-text-zindex p:nth-child(7),
@@ -1587,11 +1589,18 @@ section .contact .form-gif-flex .contact-form .contact-flex-box ul .flex-group-m
 section .contact .form-gif-flex .contact-form .contact-flex-box button {
   width: 100%;
   margin-top: 30px;
-  background-color: transparent;
   border: 1px solid #ea894e;
+  background-color: transparent;
   color: #ea894e;
-  padding: 10px 0;
+  padding: 15px 0;
   cursor: pointer;
+  font-size: 1em;
+  font-family: "Poppins", sans-serif;
+}
+section .contact .form-gif-flex .contact-form .contact-flex-box button:hover {
+  background-color: #ffffff;
+  border: 1px solid #171717;
+  transition: 0.9s ease-in-out;
 }
 section .contact .form-gif-flex .icon-dog {
   display: none;
