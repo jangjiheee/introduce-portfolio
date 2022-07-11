@@ -29,4 +29,18 @@ window.onload = function() {
 
     skillT[0].style.display = "block";
     hoverT[0].style.display = "block";
+
+
+    const openModal = document.querySelector(".design-modal");
+    const closeModal = document.querySelector(".design-modal-box");
+
+    for(let i = 0; i <= 5; i ++) {
+        closeModal[i].children[0].addEventListener("click", function() {
+
+            for(let j = 0; j <=5; j++) {
+                closeModal[j].style.display = "none";
+                openModal.classList.remove("modal-on");
+            };
+        });
+    };
 }
