@@ -4,6 +4,7 @@ const menuBar = document.querySelector(".mobile-gnb");
 
 let subToggle = true;
 const hTag = document.getElementsByClassName("hTag");
+
 function showMenu() {
     const menuChild = document.querySelector(".menuChild");
     const mChild = menuChild.children;
@@ -27,8 +28,6 @@ function showMenu() {
 
     toggleHTag(subToggle);
     subToggle = !subToggle;
-
-
 }
 hamburger.addEventListener("click", showMenu);
 
@@ -44,7 +43,5 @@ function toggleHTag(subToggle) {
 }
 
 $(".mob").on("click", function() {
-    // subToggle = !subToggle;
-    // menuBar.style.height="0px";
-    showMenu();  
+    showMenu();
 })
