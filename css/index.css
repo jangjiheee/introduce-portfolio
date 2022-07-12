@@ -568,7 +568,7 @@ section .skill .skill-flex-box .skill-explain {
   }
   section .skill .skill-flex-box .skill-explain .img-box .skill-text {
     margin: 0 auto;
-    display: table-cell;
+    display: none;
     vertical-align: middle;
   }
   section .skill .skill-flex-box .skill-explain .img-box .skill-text img {
@@ -627,8 +627,48 @@ section .skill .skill-flex-box .skill-graph .rectangles .rectangle {
   position: relative;
   margin-bottom: 50px;
 }
+section .skill .skill-flex-box .skill-graph .rectangles .rectangle .skill-hover {
+  display: none;
+}
 section .skill .skill-flex-box .skill-graph .rectangles .rectangle:hover {
   cursor: pointer;
+  transition: 1s ease-in;
+}
+section .skill .skill-flex-box .skill-graph .rectangles .rectangle:hover .skill-hover {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 2.5em;
+  font-weight: 600;
+  background-color: #ea894e;
+  width: 250px;
+  height: 250px;
+}
+section .skill .skill-flex-box .skill-graph .rectangles .rectangle:hover .skill-hover p {
+  color: #171717;
+  text-align: center;
+  line-height: 250px;
+}
+@media screen and (min-width: 768px) {
+  section .skill .skill-flex-box .skill-graph .rectangles .rectangle:hover .skill-hover {
+    width: 150px;
+    height: 150px;
+    font-size: 1.7em;
+  }
+  section .skill .skill-flex-box .skill-graph .rectangles .rectangle:hover .skill-hover p {
+    line-height: 150px;
+  }
+}
+@media screen and (min-width: 1460px) {
+  section .skill .skill-flex-box .skill-graph .rectangles .rectangle:hover .skill-hover {
+    width: 220px;
+    height: 220px;
+    font-size: 2.5em;
+  }
+  section .skill .skill-flex-box .skill-graph .rectangles .rectangle:hover .skill-hover p {
+    line-height: 220px;
+  }
 }
 section .skill .skill-flex-box .skill-graph .rectangles .rectangle h3 {
   position: absolute;
@@ -679,41 +719,6 @@ section .skill .skill-flex-box .skill-graph .rectangles .rectangle svg rect {
     height: 220px;
     stroke-width: 40;
     stroke-dasharray: 861;
-  }
-}
-section .skill .skill-flex-box .skill-graph .rectangles .rectangle .skill-hover {
-  position: absolute;
-  top: 0;
-  left: 0;
-  font-size: 2.5em;
-  font-weight: 600;
-  background-color: #ea894e;
-  width: 250px;
-  height: 250px;
-}
-section .skill .skill-flex-box .skill-graph .rectangles .rectangle .skill-hover p {
-  color: #171717;
-  text-align: center;
-  line-height: 250px;
-}
-@media screen and (min-width: 768px) {
-  section .skill .skill-flex-box .skill-graph .rectangles .rectangle .skill-hover {
-    width: 150px;
-    height: 150px;
-    font-size: 1.7em;
-  }
-  section .skill .skill-flex-box .skill-graph .rectangles .rectangle .skill-hover p {
-    line-height: 150px;
-  }
-}
-@media screen and (min-width: 1460px) {
-  section .skill .skill-flex-box .skill-graph .rectangles .rectangle .skill-hover {
-    width: 220px;
-    height: 220px;
-    font-size: 2.5em;
-  }
-  section .skill .skill-flex-box .skill-graph .rectangles .rectangle .skill-hover p {
-    line-height: 220px;
   }
 }
 section .workspace {
@@ -1564,11 +1569,18 @@ section .design .design-modal .design-modal-box {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 400px;
+  height: 450px;
 }
 @media screen and (min-width: 768px) {
   section .design .design-modal .design-modal-box {
     width: 600px;
     height: 550px;
+  }
+}
+@media screen and (min-width: 1460px) {
+  section .design .design-modal .design-modal-box {
+    width: 1000px;
+    height: 750px;
   }
 }
 section .design .design-modal .design-modal-box:last-child {
@@ -1579,6 +1591,12 @@ section .design .design-modal .design-modal-box:last-child {
     width: 600px;
     height: 510px;
     overflow-y: scroll;
+  }
+}
+@media screen and (min-width: 1460px) {
+  section .design .design-modal .design-modal-box:last-child .modal-image {
+    width: 1000px;
+    height: 650px;
   }
 }
 section .design .design-modal .design-modal-box .closeBtn {
