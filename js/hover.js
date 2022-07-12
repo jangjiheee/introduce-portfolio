@@ -32,15 +32,23 @@ window.onload = function() {
 
 
     const openModal = document.querySelector(".design-modal");
-    const closeModal = document.querySelector(".design-modal-box");
+    const closeModal = document.querySelectorAll(".design-modal-box");
+    // console.log(closeModal[0].children[0]);
 
     for(let i = 0; i <= 5; i ++) {
         closeModal[i].children[0].addEventListener("click", function() {
-
             for(let j = 0; j <=5; j++) {
                 closeModal[j].style.display = "none";
-                openModal.classList.remove("modal-on");
+                openModal.classList.remove("design-modal-bgChange")
             };
         });
     };
+}
+
+function dog() {
+    const modalDog = document.getElementById("dog");
+    const modalDogBackground = document.querySelector(".design-modal");
+    modalDog.style.display = "block";
+    modalDogBackground.classList.add("design-modal-bgChange");
+    console.log(modalDog);
 }

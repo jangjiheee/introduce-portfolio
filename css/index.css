@@ -1545,8 +1545,8 @@ section .design .confix .design-flex-box div:hover p {
   color: #171717;
   font-weight: 600;
 }
-section .design .design-modal {
-  display: none;
+section .design .design-modal-bgChange {
+  display: block;
   top: 0;
   left: 0;
   position: fixed;
@@ -1555,13 +1555,21 @@ section .design .design-modal {
   z-index: 1000;
   background-color: rgba(0, 0, 0, 0.4);
 }
-section .design .design-modal .design-modal-box {
+section .design .design-modal-bgChange .design-modal-box, section .design .design-modal-bgChange #dog {
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  display: none;
   width: 500px;
   margin: 0 auto;
-  top: 50%;
-  transform: translateY(-50%);
-  position: relative;
+  position: absolute;
   padding: 35px;
+}
+section .design .design-modal-bgChange .design-modal-box .clostBtn, section .design .design-modal-bgChange #dog .clostBtn {
+  font-size: 2rem;
+  cursor: pointer;
+  text-align: right;
+  padding-right: 10px;
 }
 section .contact {
   width: 90%;
