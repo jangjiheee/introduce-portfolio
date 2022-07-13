@@ -1777,6 +1777,7 @@ footer {
 }
 footer p {
   color: #000;
+  font-size: 1.2em;
   font-weight: 600;
 }
 @media screen and (min-width: 1460px) {
