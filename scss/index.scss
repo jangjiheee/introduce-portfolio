@@ -479,10 +479,10 @@ section {
                     
                     .img-box {
                         .skill-text {
-                                margin: 0 auto;
-                                // display: table-cell;
-                                display: none;
-                                vertical-align: middle;
+                            display: none;
+                            margin: 0 auto;
+                            // display: table-cell;
+                            vertical-align: middle;
 
                             img {
                                 width: 85%;
@@ -528,14 +528,17 @@ section {
                     display: flex;
                     flex-wrap: wrap;
                     justify-content: space-around;
-
+                    
                     @include responsive(tablet-size) {
-                        width: 90%;
+                        gap: 5%;
+                        width: 85%;
+                        justify-content: space-around;
                     }
 
                     @include responsive(pc-size) {
+                        gap: 6%;
                         width: 70%;
-                        justify-content: space-between;
+                        justify-content: flex-start;
                     }
                     
                     .rectangle {
@@ -570,8 +573,8 @@ section {
                                 }
     
                                 @include responsive(tablet-size) {
-                                    width: 150px;
-                                    height: 150px;
+                                    width: 170px;
+                                    height: 170px;
                                     font-size: 1.7em;
                                     p {
                                         line-height: 150px;
@@ -601,8 +604,8 @@ section {
                             height: 250px;
 
                             @include responsive(tablet-size) {
-                                width: 150px;
-                                height: 150px;
+                                width: 170px;
+                                height: 170px;
                             }
 
                             @include responsive(pc-size) {
@@ -615,7 +618,7 @@ section {
                                 height: 250px;
                                 fill : transparent;
                                 stroke-width: 50; /* 반지름의 두께 */
-                                stroke-dasharray: 976;
+                                stroke-dasharray: 980;
                                 // stroke-dashoffset: 861;
                                 /* forwards: 진행방향에서 멈춰있는 속성 */
                                 /* animation: line 2s forwards; */
@@ -624,10 +627,10 @@ section {
                                 stroke: $white;
 
                                 @include responsive(tablet-size) {
-                                    width: 150px;
-                                    height: 150px;
-                                    stroke-width: 30; /* 반지름의 두께 */
-                                    stroke-dasharray: 586;
+                                    width: 170px;
+                                    height: 170px;
+                                    stroke-width: 35; /* 반지름의 두께 */
+                                    stroke-dasharray: 666;
                                 }
 
                                 @include responsive(pc-size) {
