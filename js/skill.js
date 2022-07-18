@@ -3,7 +3,6 @@ $(function() {
     var chart = $('.rectangle');
     var chartOST = chart.offset().top - 950; // chart의 화면에서 떨어진 높이가 1000
 
-
     $(window).scroll(function() {
         var currentSCT = $(this).scrollTop();
         if(currentSCT >= chartOST) {
