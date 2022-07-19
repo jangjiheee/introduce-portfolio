@@ -817,20 +817,23 @@ section .workspace h2 {
 }
 section .workspace .portfolio01,
 section .workspace .portfolio02,
-section .workspace .portfolio03 {
+section .workspace .portfolio03,
+section .workspace .portfolio04 {
   padding-top: 200px;
   margin-bottom: 50px;
 }
 section .workspace .portfolio01 .work-flex-box,
 section .workspace .portfolio02 .work-flex-box,
-section .workspace .portfolio03 .work-flex-box {
+section .workspace .portfolio03 .work-flex-box,
+section .workspace .portfolio04 .work-flex-box {
   display: flex;
   flex-direction: column;
 }
 @media screen and (min-width: 768px) {
   section .workspace .portfolio01 .work-flex-box,
 section .workspace .portfolio02 .work-flex-box,
-section .workspace .portfolio03 .work-flex-box {
+section .workspace .portfolio03 .work-flex-box,
+section .workspace .portfolio04 .work-flex-box {
     flex-direction: row;
     width: 90%;
     margin: 0 auto;
@@ -839,7 +842,8 @@ section .workspace .portfolio03 .work-flex-box {
 @media screen and (min-width: 1460px) {
   section .workspace .portfolio01 .work-flex-box,
 section .workspace .portfolio02 .work-flex-box,
-section .workspace .portfolio03 .work-flex-box {
+section .workspace .portfolio03 .work-flex-box,
+section .workspace .portfolio04 .work-flex-box {
     width: 90%;
     margin-left: 7%;
   }
@@ -852,7 +856,10 @@ section .workspace .portfolio02 .work-flex-box .port02-img,
 section .workspace .portfolio02 .work-flex-box .port03-img,
 section .workspace .portfolio03 .work-flex-box .port01-img,
 section .workspace .portfolio03 .work-flex-box .port02-img,
-section .workspace .portfolio03 .work-flex-box .port03-img {
+section .workspace .portfolio03 .work-flex-box .port03-img,
+section .workspace .portfolio04 .work-flex-box .port01-img,
+section .workspace .portfolio04 .work-flex-box .port02-img,
+section .workspace .portfolio04 .work-flex-box .port03-img {
   width: 90%;
   margin: 0 auto 20px auto;
 }
@@ -865,7 +872,10 @@ section .workspace .portfolio02 .work-flex-box .port02-img,
 section .workspace .portfolio02 .work-flex-box .port03-img,
 section .workspace .portfolio03 .work-flex-box .port01-img,
 section .workspace .portfolio03 .work-flex-box .port02-img,
-section .workspace .portfolio03 .work-flex-box .port03-img {
+section .workspace .portfolio03 .work-flex-box .port03-img,
+section .workspace .portfolio04 .work-flex-box .port01-img,
+section .workspace .portfolio04 .work-flex-box .port02-img,
+section .workspace .portfolio04 .work-flex-box .port03-img {
     width: 55%;
   }
 }
@@ -878,24 +888,61 @@ section .workspace .portfolio02 .work-flex-box .port02-img,
 section .workspace .portfolio02 .work-flex-box .port03-img,
 section .workspace .portfolio03 .work-flex-box .port01-img,
 section .workspace .portfolio03 .work-flex-box .port02-img,
-section .workspace .portfolio03 .work-flex-box .port03-img {
+section .workspace .portfolio03 .work-flex-box .port03-img,
+section .workspace .portfolio04 .work-flex-box .port01-img,
+section .workspace .portfolio04 .work-flex-box .port02-img,
+section .workspace .portfolio04 .work-flex-box .port03-img {
     width: 45%;
   }
 }
 section .workspace .portfolio01 .work-flex-box .port03-img,
 section .workspace .portfolio02 .work-flex-box .port03-img,
-section .workspace .portfolio03 .work-flex-box .port03-img {
+section .workspace .portfolio03 .work-flex-box .port03-img,
+section .workspace .portfolio04 .work-flex-box .port03-img {
   border: 5px solid #ffffff;
+}
+section .workspace .portfolio01 .work-flex-box .port04-img,
+section .workspace .portfolio02 .work-flex-box .port04-img,
+section .workspace .portfolio03 .work-flex-box .port04-img,
+section .workspace .portfolio04 .work-flex-box .port04-img {
+  width: 80%;
+  height: 1000px;
+  overflow-y: scroll;
+  margin: 0 auto 20px auto;
+}
+@media screen and (min-width: 768px) {
+  section .workspace .portfolio01 .work-flex-box .port04-img,
+section .workspace .portfolio02 .work-flex-box .port04-img,
+section .workspace .portfolio03 .work-flex-box .port04-img,
+section .workspace .portfolio04 .work-flex-box .port04-img {
+    width: 55%;
+  }
+}
+@media screen and (min-width: 1460px) {
+  section .workspace .portfolio01 .work-flex-box .port04-img,
+section .workspace .portfolio02 .work-flex-box .port04-img,
+section .workspace .portfolio03 .work-flex-box .port04-img,
+section .workspace .portfolio04 .work-flex-box .port04-img {
+    width: 45%;
+    height: 1800px;
+  }
 }
 section .workspace .portfolio01 .work-flex-box .port01-text,
 section .workspace .portfolio01 .work-flex-box .port02-text,
 section .workspace .portfolio01 .work-flex-box .port03-text,
+section .workspace .portfolio01 .work-flex-box .port04-text,
 section .workspace .portfolio02 .work-flex-box .port01-text,
 section .workspace .portfolio02 .work-flex-box .port02-text,
 section .workspace .portfolio02 .work-flex-box .port03-text,
+section .workspace .portfolio02 .work-flex-box .port04-text,
 section .workspace .portfolio03 .work-flex-box .port01-text,
 section .workspace .portfolio03 .work-flex-box .port02-text,
-section .workspace .portfolio03 .work-flex-box .port03-text {
+section .workspace .portfolio03 .work-flex-box .port03-text,
+section .workspace .portfolio03 .work-flex-box .port04-text,
+section .workspace .portfolio04 .work-flex-box .port01-text,
+section .workspace .portfolio04 .work-flex-box .port02-text,
+section .workspace .portfolio04 .work-flex-box .port03-text,
+section .workspace .portfolio04 .work-flex-box .port04-text {
   width: 90%;
   text-align: left;
   margin: 0 auto;
@@ -904,12 +951,19 @@ section .workspace .portfolio03 .work-flex-box .port03-text {
   section .workspace .portfolio01 .work-flex-box .port01-text,
 section .workspace .portfolio01 .work-flex-box .port02-text,
 section .workspace .portfolio01 .work-flex-box .port03-text,
+section .workspace .portfolio01 .work-flex-box .port04-text,
 section .workspace .portfolio02 .work-flex-box .port01-text,
 section .workspace .portfolio02 .work-flex-box .port02-text,
 section .workspace .portfolio02 .work-flex-box .port03-text,
+section .workspace .portfolio02 .work-flex-box .port04-text,
 section .workspace .portfolio03 .work-flex-box .port01-text,
 section .workspace .portfolio03 .work-flex-box .port02-text,
-section .workspace .portfolio03 .work-flex-box .port03-text {
+section .workspace .portfolio03 .work-flex-box .port03-text,
+section .workspace .portfolio03 .work-flex-box .port04-text,
+section .workspace .portfolio04 .work-flex-box .port01-text,
+section .workspace .portfolio04 .work-flex-box .port02-text,
+section .workspace .portfolio04 .work-flex-box .port03-text,
+section .workspace .portfolio04 .work-flex-box .port04-text {
     width: 43%;
   }
 }
@@ -917,12 +971,19 @@ section .workspace .portfolio03 .work-flex-box .port03-text {
   section .workspace .portfolio01 .work-flex-box .port01-text,
 section .workspace .portfolio01 .work-flex-box .port02-text,
 section .workspace .portfolio01 .work-flex-box .port03-text,
+section .workspace .portfolio01 .work-flex-box .port04-text,
 section .workspace .portfolio02 .work-flex-box .port01-text,
 section .workspace .portfolio02 .work-flex-box .port02-text,
 section .workspace .portfolio02 .work-flex-box .port03-text,
+section .workspace .portfolio02 .work-flex-box .port04-text,
 section .workspace .portfolio03 .work-flex-box .port01-text,
 section .workspace .portfolio03 .work-flex-box .port02-text,
-section .workspace .portfolio03 .work-flex-box .port03-text {
+section .workspace .portfolio03 .work-flex-box .port03-text,
+section .workspace .portfolio03 .work-flex-box .port04-text,
+section .workspace .portfolio04 .work-flex-box .port01-text,
+section .workspace .portfolio04 .work-flex-box .port02-text,
+section .workspace .portfolio04 .work-flex-box .port03-text,
+section .workspace .portfolio04 .work-flex-box .port04-text {
     margin: 0 0 0 11px;
     width: 55%;
   }
@@ -930,12 +991,19 @@ section .workspace .portfolio03 .work-flex-box .port03-text {
 section .workspace .portfolio01 .work-flex-box .port01-text hr,
 section .workspace .portfolio01 .work-flex-box .port02-text hr,
 section .workspace .portfolio01 .work-flex-box .port03-text hr,
+section .workspace .portfolio01 .work-flex-box .port04-text hr,
 section .workspace .portfolio02 .work-flex-box .port01-text hr,
 section .workspace .portfolio02 .work-flex-box .port02-text hr,
 section .workspace .portfolio02 .work-flex-box .port03-text hr,
+section .workspace .portfolio02 .work-flex-box .port04-text hr,
 section .workspace .portfolio03 .work-flex-box .port01-text hr,
 section .workspace .portfolio03 .work-flex-box .port02-text hr,
-section .workspace .portfolio03 .work-flex-box .port03-text hr {
+section .workspace .portfolio03 .work-flex-box .port03-text hr,
+section .workspace .portfolio03 .work-flex-box .port04-text hr,
+section .workspace .portfolio04 .work-flex-box .port01-text hr,
+section .workspace .portfolio04 .work-flex-box .port02-text hr,
+section .workspace .portfolio04 .work-flex-box .port03-text hr,
+section .workspace .portfolio04 .work-flex-box .port04-text hr {
   border: 0;
   height: 1px;
   background-color: #ffffff;
@@ -943,117 +1011,187 @@ section .workspace .portfolio03 .work-flex-box .port03-text hr {
 section .workspace .portfolio01 .work-flex-box .port01-text h3,
 section .workspace .portfolio01 .work-flex-box .port02-text h3,
 section .workspace .portfolio01 .work-flex-box .port03-text h3,
+section .workspace .portfolio01 .work-flex-box .port04-text h3,
 section .workspace .portfolio02 .work-flex-box .port01-text h3,
 section .workspace .portfolio02 .work-flex-box .port02-text h3,
 section .workspace .portfolio02 .work-flex-box .port03-text h3,
+section .workspace .portfolio02 .work-flex-box .port04-text h3,
 section .workspace .portfolio03 .work-flex-box .port01-text h3,
 section .workspace .portfolio03 .work-flex-box .port02-text h3,
-section .workspace .portfolio03 .work-flex-box .port03-text h3 {
+section .workspace .portfolio03 .work-flex-box .port03-text h3,
+section .workspace .portfolio03 .work-flex-box .port04-text h3,
+section .workspace .portfolio04 .work-flex-box .port01-text h3,
+section .workspace .portfolio04 .work-flex-box .port02-text h3,
+section .workspace .portfolio04 .work-flex-box .port03-text h3,
+section .workspace .portfolio04 .work-flex-box .port04-text h3 {
   font-size: 2.2em;
   padding: 25px 0 25px 6%;
 }
 section .workspace .portfolio01 .work-flex-box .port01-text h3 + hr,
 section .workspace .portfolio01 .work-flex-box .port02-text h3 + hr,
 section .workspace .portfolio01 .work-flex-box .port03-text h3 + hr,
+section .workspace .portfolio01 .work-flex-box .port04-text h3 + hr,
 section .workspace .portfolio02 .work-flex-box .port01-text h3 + hr,
 section .workspace .portfolio02 .work-flex-box .port02-text h3 + hr,
 section .workspace .portfolio02 .work-flex-box .port03-text h3 + hr,
+section .workspace .portfolio02 .work-flex-box .port04-text h3 + hr,
 section .workspace .portfolio03 .work-flex-box .port01-text h3 + hr,
 section .workspace .portfolio03 .work-flex-box .port02-text h3 + hr,
-section .workspace .portfolio03 .work-flex-box .port03-text h3 + hr {
+section .workspace .portfolio03 .work-flex-box .port03-text h3 + hr,
+section .workspace .portfolio03 .work-flex-box .port04-text h3 + hr,
+section .workspace .portfolio04 .work-flex-box .port01-text h3 + hr,
+section .workspace .portfolio04 .work-flex-box .port02-text h3 + hr,
+section .workspace .portfolio04 .work-flex-box .port03-text h3 + hr,
+section .workspace .portfolio04 .work-flex-box .port04-text h3 + hr {
   margin-bottom: 30px;
 }
 @media screen and (min-width: 1460px) {
   section .workspace .portfolio01 .work-flex-box .port01-text .mobile-ver,
 section .workspace .portfolio01 .work-flex-box .port02-text .mobile-ver,
 section .workspace .portfolio01 .work-flex-box .port03-text .mobile-ver,
+section .workspace .portfolio01 .work-flex-box .port04-text .mobile-ver,
 section .workspace .portfolio02 .work-flex-box .port01-text .mobile-ver,
 section .workspace .portfolio02 .work-flex-box .port02-text .mobile-ver,
 section .workspace .portfolio02 .work-flex-box .port03-text .mobile-ver,
+section .workspace .portfolio02 .work-flex-box .port04-text .mobile-ver,
 section .workspace .portfolio03 .work-flex-box .port01-text .mobile-ver,
 section .workspace .portfolio03 .work-flex-box .port02-text .mobile-ver,
-section .workspace .portfolio03 .work-flex-box .port03-text .mobile-ver {
+section .workspace .portfolio03 .work-flex-box .port03-text .mobile-ver,
+section .workspace .portfolio03 .work-flex-box .port04-text .mobile-ver,
+section .workspace .portfolio04 .work-flex-box .port01-text .mobile-ver,
+section .workspace .portfolio04 .work-flex-box .port02-text .mobile-ver,
+section .workspace .portfolio04 .work-flex-box .port03-text .mobile-ver,
+section .workspace .portfolio04 .work-flex-box .port04-text .mobile-ver {
     display: none;
   }
 }
 section .workspace .portfolio01 .work-flex-box .port01-text .tablet-ver,
 section .workspace .portfolio01 .work-flex-box .port02-text .tablet-ver,
 section .workspace .portfolio01 .work-flex-box .port03-text .tablet-ver,
+section .workspace .portfolio01 .work-flex-box .port04-text .tablet-ver,
 section .workspace .portfolio02 .work-flex-box .port01-text .tablet-ver,
 section .workspace .portfolio02 .work-flex-box .port02-text .tablet-ver,
 section .workspace .portfolio02 .work-flex-box .port03-text .tablet-ver,
+section .workspace .portfolio02 .work-flex-box .port04-text .tablet-ver,
 section .workspace .portfolio03 .work-flex-box .port01-text .tablet-ver,
 section .workspace .portfolio03 .work-flex-box .port02-text .tablet-ver,
-section .workspace .portfolio03 .work-flex-box .port03-text .tablet-ver {
+section .workspace .portfolio03 .work-flex-box .port03-text .tablet-ver,
+section .workspace .portfolio03 .work-flex-box .port04-text .tablet-ver,
+section .workspace .portfolio04 .work-flex-box .port01-text .tablet-ver,
+section .workspace .portfolio04 .work-flex-box .port02-text .tablet-ver,
+section .workspace .portfolio04 .work-flex-box .port03-text .tablet-ver,
+section .workspace .portfolio04 .work-flex-box .port04-text .tablet-ver {
   display: none;
 }
 @media screen and (min-width: 1460px) {
   section .workspace .portfolio01 .work-flex-box .port01-text .tablet-ver,
 section .workspace .portfolio01 .work-flex-box .port02-text .tablet-ver,
 section .workspace .portfolio01 .work-flex-box .port03-text .tablet-ver,
+section .workspace .portfolio01 .work-flex-box .port04-text .tablet-ver,
 section .workspace .portfolio02 .work-flex-box .port01-text .tablet-ver,
 section .workspace .portfolio02 .work-flex-box .port02-text .tablet-ver,
 section .workspace .portfolio02 .work-flex-box .port03-text .tablet-ver,
+section .workspace .portfolio02 .work-flex-box .port04-text .tablet-ver,
 section .workspace .portfolio03 .work-flex-box .port01-text .tablet-ver,
 section .workspace .portfolio03 .work-flex-box .port02-text .tablet-ver,
-section .workspace .portfolio03 .work-flex-box .port03-text .tablet-ver {
+section .workspace .portfolio03 .work-flex-box .port03-text .tablet-ver,
+section .workspace .portfolio03 .work-flex-box .port04-text .tablet-ver,
+section .workspace .portfolio04 .work-flex-box .port01-text .tablet-ver,
+section .workspace .portfolio04 .work-flex-box .port02-text .tablet-ver,
+section .workspace .portfolio04 .work-flex-box .port03-text .tablet-ver,
+section .workspace .portfolio04 .work-flex-box .port04-text .tablet-ver {
     display: block;
   }
 }
 section .workspace .portfolio01 .work-flex-box .port01-text .text-left-align,
 section .workspace .portfolio01 .work-flex-box .port02-text .text-left-align,
 section .workspace .portfolio01 .work-flex-box .port03-text .text-left-align,
+section .workspace .portfolio01 .work-flex-box .port04-text .text-left-align,
 section .workspace .portfolio02 .work-flex-box .port01-text .text-left-align,
 section .workspace .portfolio02 .work-flex-box .port02-text .text-left-align,
 section .workspace .portfolio02 .work-flex-box .port03-text .text-left-align,
+section .workspace .portfolio02 .work-flex-box .port04-text .text-left-align,
 section .workspace .portfolio03 .work-flex-box .port01-text .text-left-align,
 section .workspace .portfolio03 .work-flex-box .port02-text .text-left-align,
-section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align {
+section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align,
+section .workspace .portfolio03 .work-flex-box .port04-text .text-left-align,
+section .workspace .portfolio04 .work-flex-box .port01-text .text-left-align,
+section .workspace .portfolio04 .work-flex-box .port02-text .text-left-align,
+section .workspace .portfolio04 .work-flex-box .port03-text .text-left-align,
+section .workspace .portfolio04 .work-flex-box .port04-text .text-left-align {
   padding-left: 6%;
 }
 section .workspace .portfolio01 .work-flex-box .port01-text .text-left-align div,
 section .workspace .portfolio01 .work-flex-box .port02-text .text-left-align div,
 section .workspace .portfolio01 .work-flex-box .port03-text .text-left-align div,
+section .workspace .portfolio01 .work-flex-box .port04-text .text-left-align div,
 section .workspace .portfolio02 .work-flex-box .port01-text .text-left-align div,
 section .workspace .portfolio02 .work-flex-box .port02-text .text-left-align div,
 section .workspace .portfolio02 .work-flex-box .port03-text .text-left-align div,
+section .workspace .portfolio02 .work-flex-box .port04-text .text-left-align div,
 section .workspace .portfolio03 .work-flex-box .port01-text .text-left-align div,
 section .workspace .portfolio03 .work-flex-box .port02-text .text-left-align div,
-section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align div {
+section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align div,
+section .workspace .portfolio03 .work-flex-box .port04-text .text-left-align div,
+section .workspace .portfolio04 .work-flex-box .port01-text .text-left-align div,
+section .workspace .portfolio04 .work-flex-box .port02-text .text-left-align div,
+section .workspace .portfolio04 .work-flex-box .port03-text .text-left-align div,
+section .workspace .portfolio04 .work-flex-box .port04-text .text-left-align div {
   margin-bottom: 70px;
 }
 section .workspace .portfolio01 .work-flex-box .port01-text .text-left-align div h4,
 section .workspace .portfolio01 .work-flex-box .port02-text .text-left-align div h4,
 section .workspace .portfolio01 .work-flex-box .port03-text .text-left-align div h4,
+section .workspace .portfolio01 .work-flex-box .port04-text .text-left-align div h4,
 section .workspace .portfolio02 .work-flex-box .port01-text .text-left-align div h4,
 section .workspace .portfolio02 .work-flex-box .port02-text .text-left-align div h4,
 section .workspace .portfolio02 .work-flex-box .port03-text .text-left-align div h4,
+section .workspace .portfolio02 .work-flex-box .port04-text .text-left-align div h4,
 section .workspace .portfolio03 .work-flex-box .port01-text .text-left-align div h4,
 section .workspace .portfolio03 .work-flex-box .port02-text .text-left-align div h4,
-section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align div h4 {
+section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align div h4,
+section .workspace .portfolio03 .work-flex-box .port04-text .text-left-align div h4,
+section .workspace .portfolio04 .work-flex-box .port01-text .text-left-align div h4,
+section .workspace .portfolio04 .work-flex-box .port02-text .text-left-align div h4,
+section .workspace .portfolio04 .work-flex-box .port03-text .text-left-align div h4,
+section .workspace .portfolio04 .work-flex-box .port04-text .text-left-align div h4 {
   margin-bottom: 11px;
 }
 section .workspace .portfolio01 .work-flex-box .port01-text .text-left-align .btn,
 section .workspace .portfolio01 .work-flex-box .port02-text .text-left-align .btn,
 section .workspace .portfolio01 .work-flex-box .port03-text .text-left-align .btn,
+section .workspace .portfolio01 .work-flex-box .port04-text .text-left-align .btn,
 section .workspace .portfolio02 .work-flex-box .port01-text .text-left-align .btn,
 section .workspace .portfolio02 .work-flex-box .port02-text .text-left-align .btn,
 section .workspace .portfolio02 .work-flex-box .port03-text .text-left-align .btn,
+section .workspace .portfolio02 .work-flex-box .port04-text .text-left-align .btn,
 section .workspace .portfolio03 .work-flex-box .port01-text .text-left-align .btn,
 section .workspace .portfolio03 .work-flex-box .port02-text .text-left-align .btn,
-section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .btn {
+section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .btn,
+section .workspace .portfolio03 .work-flex-box .port04-text .text-left-align .btn,
+section .workspace .portfolio04 .work-flex-box .port01-text .text-left-align .btn,
+section .workspace .portfolio04 .work-flex-box .port02-text .text-left-align .btn,
+section .workspace .portfolio04 .work-flex-box .port03-text .text-left-align .btn,
+section .workspace .portfolio04 .work-flex-box .port04-text .text-left-align .btn {
   margin-bottom: 0;
 }
 @media screen and (min-width: 1460px) {
   section .workspace .portfolio01 .work-flex-box .port01-text .text-left-align .btn,
 section .workspace .portfolio01 .work-flex-box .port02-text .text-left-align .btn,
 section .workspace .portfolio01 .work-flex-box .port03-text .text-left-align .btn,
+section .workspace .portfolio01 .work-flex-box .port04-text .text-left-align .btn,
 section .workspace .portfolio02 .work-flex-box .port01-text .text-left-align .btn,
 section .workspace .portfolio02 .work-flex-box .port02-text .text-left-align .btn,
 section .workspace .portfolio02 .work-flex-box .port03-text .text-left-align .btn,
+section .workspace .portfolio02 .work-flex-box .port04-text .text-left-align .btn,
 section .workspace .portfolio03 .work-flex-box .port01-text .text-left-align .btn,
 section .workspace .portfolio03 .work-flex-box .port02-text .text-left-align .btn,
-section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .btn {
+section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .btn,
+section .workspace .portfolio03 .work-flex-box .port04-text .text-left-align .btn,
+section .workspace .portfolio04 .work-flex-box .port01-text .text-left-align .btn,
+section .workspace .portfolio04 .work-flex-box .port02-text .text-left-align .btn,
+section .workspace .portfolio04 .work-flex-box .port03-text .text-left-align .btn,
+section .workspace .portfolio04 .work-flex-box .port04-text .text-left-align .btn {
     display: flex;
     height: 40px;
   }
@@ -1064,18 +1202,32 @@ section .workspace .portfolio01 .work-flex-box .port02-text .text-left-align .bt
 section .workspace .portfolio01 .work-flex-box .port02-text .text-left-align .btn .btn2,
 section .workspace .portfolio01 .work-flex-box .port03-text .text-left-align .btn .btn1,
 section .workspace .portfolio01 .work-flex-box .port03-text .text-left-align .btn .btn2,
+section .workspace .portfolio01 .work-flex-box .port04-text .text-left-align .btn .btn1,
+section .workspace .portfolio01 .work-flex-box .port04-text .text-left-align .btn .btn2,
 section .workspace .portfolio02 .work-flex-box .port01-text .text-left-align .btn .btn1,
 section .workspace .portfolio02 .work-flex-box .port01-text .text-left-align .btn .btn2,
 section .workspace .portfolio02 .work-flex-box .port02-text .text-left-align .btn .btn1,
 section .workspace .portfolio02 .work-flex-box .port02-text .text-left-align .btn .btn2,
 section .workspace .portfolio02 .work-flex-box .port03-text .text-left-align .btn .btn1,
 section .workspace .portfolio02 .work-flex-box .port03-text .text-left-align .btn .btn2,
+section .workspace .portfolio02 .work-flex-box .port04-text .text-left-align .btn .btn1,
+section .workspace .portfolio02 .work-flex-box .port04-text .text-left-align .btn .btn2,
 section .workspace .portfolio03 .work-flex-box .port01-text .text-left-align .btn .btn1,
 section .workspace .portfolio03 .work-flex-box .port01-text .text-left-align .btn .btn2,
 section .workspace .portfolio03 .work-flex-box .port02-text .text-left-align .btn .btn1,
 section .workspace .portfolio03 .work-flex-box .port02-text .text-left-align .btn .btn2,
 section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .btn .btn1,
-section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .btn .btn2 {
+section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .btn .btn2,
+section .workspace .portfolio03 .work-flex-box .port04-text .text-left-align .btn .btn1,
+section .workspace .portfolio03 .work-flex-box .port04-text .text-left-align .btn .btn2,
+section .workspace .portfolio04 .work-flex-box .port01-text .text-left-align .btn .btn1,
+section .workspace .portfolio04 .work-flex-box .port01-text .text-left-align .btn .btn2,
+section .workspace .portfolio04 .work-flex-box .port02-text .text-left-align .btn .btn1,
+section .workspace .portfolio04 .work-flex-box .port02-text .text-left-align .btn .btn2,
+section .workspace .portfolio04 .work-flex-box .port03-text .text-left-align .btn .btn1,
+section .workspace .portfolio04 .work-flex-box .port03-text .text-left-align .btn .btn2,
+section .workspace .portfolio04 .work-flex-box .port04-text .text-left-align .btn .btn1,
+section .workspace .portfolio04 .work-flex-box .port04-text .text-left-align .btn .btn2 {
   background: transparent;
   font-weight: 600;
   width: 165px;
@@ -1096,18 +1248,32 @@ section .workspace .portfolio01 .work-flex-box .port02-text .text-left-align .bt
 section .workspace .portfolio01 .work-flex-box .port02-text .text-left-align .btn .btn2,
 section .workspace .portfolio01 .work-flex-box .port03-text .text-left-align .btn .btn1,
 section .workspace .portfolio01 .work-flex-box .port03-text .text-left-align .btn .btn2,
+section .workspace .portfolio01 .work-flex-box .port04-text .text-left-align .btn .btn1,
+section .workspace .portfolio01 .work-flex-box .port04-text .text-left-align .btn .btn2,
 section .workspace .portfolio02 .work-flex-box .port01-text .text-left-align .btn .btn1,
 section .workspace .portfolio02 .work-flex-box .port01-text .text-left-align .btn .btn2,
 section .workspace .portfolio02 .work-flex-box .port02-text .text-left-align .btn .btn1,
 section .workspace .portfolio02 .work-flex-box .port02-text .text-left-align .btn .btn2,
 section .workspace .portfolio02 .work-flex-box .port03-text .text-left-align .btn .btn1,
 section .workspace .portfolio02 .work-flex-box .port03-text .text-left-align .btn .btn2,
+section .workspace .portfolio02 .work-flex-box .port04-text .text-left-align .btn .btn1,
+section .workspace .portfolio02 .work-flex-box .port04-text .text-left-align .btn .btn2,
 section .workspace .portfolio03 .work-flex-box .port01-text .text-left-align .btn .btn1,
 section .workspace .portfolio03 .work-flex-box .port01-text .text-left-align .btn .btn2,
 section .workspace .portfolio03 .work-flex-box .port02-text .text-left-align .btn .btn1,
 section .workspace .portfolio03 .work-flex-box .port02-text .text-left-align .btn .btn2,
 section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .btn .btn1,
-section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .btn .btn2 {
+section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .btn .btn2,
+section .workspace .portfolio03 .work-flex-box .port04-text .text-left-align .btn .btn1,
+section .workspace .portfolio03 .work-flex-box .port04-text .text-left-align .btn .btn2,
+section .workspace .portfolio04 .work-flex-box .port01-text .text-left-align .btn .btn1,
+section .workspace .portfolio04 .work-flex-box .port01-text .text-left-align .btn .btn2,
+section .workspace .portfolio04 .work-flex-box .port02-text .text-left-align .btn .btn1,
+section .workspace .portfolio04 .work-flex-box .port02-text .text-left-align .btn .btn2,
+section .workspace .portfolio04 .work-flex-box .port03-text .text-left-align .btn .btn1,
+section .workspace .portfolio04 .work-flex-box .port03-text .text-left-align .btn .btn2,
+section .workspace .portfolio04 .work-flex-box .port04-text .text-left-align .btn .btn1,
+section .workspace .portfolio04 .work-flex-box .port04-text .text-left-align .btn .btn2 {
     margin-right: 20px;
   }
 }
@@ -1117,18 +1283,32 @@ section .workspace .portfolio01 .work-flex-box .port02-text .text-left-align .bt
 section .workspace .portfolio01 .work-flex-box .port02-text .text-left-align .btn .btn2:hover,
 section .workspace .portfolio01 .work-flex-box .port03-text .text-left-align .btn .btn1:hover,
 section .workspace .portfolio01 .work-flex-box .port03-text .text-left-align .btn .btn2:hover,
+section .workspace .portfolio01 .work-flex-box .port04-text .text-left-align .btn .btn1:hover,
+section .workspace .portfolio01 .work-flex-box .port04-text .text-left-align .btn .btn2:hover,
 section .workspace .portfolio02 .work-flex-box .port01-text .text-left-align .btn .btn1:hover,
 section .workspace .portfolio02 .work-flex-box .port01-text .text-left-align .btn .btn2:hover,
 section .workspace .portfolio02 .work-flex-box .port02-text .text-left-align .btn .btn1:hover,
 section .workspace .portfolio02 .work-flex-box .port02-text .text-left-align .btn .btn2:hover,
 section .workspace .portfolio02 .work-flex-box .port03-text .text-left-align .btn .btn1:hover,
 section .workspace .portfolio02 .work-flex-box .port03-text .text-left-align .btn .btn2:hover,
+section .workspace .portfolio02 .work-flex-box .port04-text .text-left-align .btn .btn1:hover,
+section .workspace .portfolio02 .work-flex-box .port04-text .text-left-align .btn .btn2:hover,
 section .workspace .portfolio03 .work-flex-box .port01-text .text-left-align .btn .btn1:hover,
 section .workspace .portfolio03 .work-flex-box .port01-text .text-left-align .btn .btn2:hover,
 section .workspace .portfolio03 .work-flex-box .port02-text .text-left-align .btn .btn1:hover,
 section .workspace .portfolio03 .work-flex-box .port02-text .text-left-align .btn .btn2:hover,
 section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .btn .btn1:hover,
-section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .btn .btn2:hover {
+section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .btn .btn2:hover,
+section .workspace .portfolio03 .work-flex-box .port04-text .text-left-align .btn .btn1:hover,
+section .workspace .portfolio03 .work-flex-box .port04-text .text-left-align .btn .btn2:hover,
+section .workspace .portfolio04 .work-flex-box .port01-text .text-left-align .btn .btn1:hover,
+section .workspace .portfolio04 .work-flex-box .port01-text .text-left-align .btn .btn2:hover,
+section .workspace .portfolio04 .work-flex-box .port02-text .text-left-align .btn .btn1:hover,
+section .workspace .portfolio04 .work-flex-box .port02-text .text-left-align .btn .btn2:hover,
+section .workspace .portfolio04 .work-flex-box .port03-text .text-left-align .btn .btn1:hover,
+section .workspace .portfolio04 .work-flex-box .port03-text .text-left-align .btn .btn2:hover,
+section .workspace .portfolio04 .work-flex-box .port04-text .text-left-align .btn .btn1:hover,
+section .workspace .portfolio04 .work-flex-box .port04-text .text-left-align .btn .btn2:hover {
   color: #fff;
   border: 1px solid rgba(223, 190, 106, 0);
   color: #ffffff;
@@ -1138,12 +1318,19 @@ section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .bt
 section .workspace .portfolio01 .work-flex-box .port01-text .text-left-align .vertical-text,
 section .workspace .portfolio01 .work-flex-box .port02-text .text-left-align .vertical-text,
 section .workspace .portfolio01 .work-flex-box .port03-text .text-left-align .vertical-text,
+section .workspace .portfolio01 .work-flex-box .port04-text .text-left-align .vertical-text,
 section .workspace .portfolio02 .work-flex-box .port01-text .text-left-align .vertical-text,
 section .workspace .portfolio02 .work-flex-box .port02-text .text-left-align .vertical-text,
 section .workspace .portfolio02 .work-flex-box .port03-text .text-left-align .vertical-text,
+section .workspace .portfolio02 .work-flex-box .port04-text .text-left-align .vertical-text,
 section .workspace .portfolio03 .work-flex-box .port01-text .text-left-align .vertical-text,
 section .workspace .portfolio03 .work-flex-box .port02-text .text-left-align .vertical-text,
-section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .vertical-text {
+section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .vertical-text,
+section .workspace .portfolio03 .work-flex-box .port04-text .text-left-align .vertical-text,
+section .workspace .portfolio04 .work-flex-box .port01-text .text-left-align .vertical-text,
+section .workspace .portfolio04 .work-flex-box .port02-text .text-left-align .vertical-text,
+section .workspace .portfolio04 .work-flex-box .port03-text .text-left-align .vertical-text,
+section .workspace .portfolio04 .work-flex-box .port04-text .text-left-align .vertical-text {
   font-family: "Poppins";
   font-weight: bolder;
   display: none;
@@ -1154,12 +1341,19 @@ section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .ve
 section .workspace .portfolio01 .work-flex-box .port01-text .text-left-align .vertical-text p,
 section .workspace .portfolio01 .work-flex-box .port02-text .text-left-align .vertical-text p,
 section .workspace .portfolio01 .work-flex-box .port03-text .text-left-align .vertical-text p,
+section .workspace .portfolio01 .work-flex-box .port04-text .text-left-align .vertical-text p,
 section .workspace .portfolio02 .work-flex-box .port01-text .text-left-align .vertical-text p,
 section .workspace .portfolio02 .work-flex-box .port02-text .text-left-align .vertical-text p,
 section .workspace .portfolio02 .work-flex-box .port03-text .text-left-align .vertical-text p,
+section .workspace .portfolio02 .work-flex-box .port04-text .text-left-align .vertical-text p,
 section .workspace .portfolio03 .work-flex-box .port01-text .text-left-align .vertical-text p,
 section .workspace .portfolio03 .work-flex-box .port02-text .text-left-align .vertical-text p,
-section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .vertical-text p {
+section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .vertical-text p,
+section .workspace .portfolio03 .work-flex-box .port04-text .text-left-align .vertical-text p,
+section .workspace .portfolio04 .work-flex-box .port01-text .text-left-align .vertical-text p,
+section .workspace .portfolio04 .work-flex-box .port02-text .text-left-align .vertical-text p,
+section .workspace .portfolio04 .work-flex-box .port03-text .text-left-align .vertical-text p,
+section .workspace .portfolio04 .work-flex-box .port04-text .text-left-align .vertical-text p {
   position: relative;
   -webkit-animation: text-left 1.7s infinite;
           animation: text-left 1.7s infinite;
@@ -1167,36 +1361,57 @@ section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .ve
 section .workspace .portfolio01 .work-flex-box .port01-text .text-left-align .vertical-text p:nth-child(1),
 section .workspace .portfolio01 .work-flex-box .port02-text .text-left-align .vertical-text p:nth-child(1),
 section .workspace .portfolio01 .work-flex-box .port03-text .text-left-align .vertical-text p:nth-child(1),
+section .workspace .portfolio01 .work-flex-box .port04-text .text-left-align .vertical-text p:nth-child(1),
 section .workspace .portfolio02 .work-flex-box .port01-text .text-left-align .vertical-text p:nth-child(1),
 section .workspace .portfolio02 .work-flex-box .port02-text .text-left-align .vertical-text p:nth-child(1),
 section .workspace .portfolio02 .work-flex-box .port03-text .text-left-align .vertical-text p:nth-child(1),
+section .workspace .portfolio02 .work-flex-box .port04-text .text-left-align .vertical-text p:nth-child(1),
 section .workspace .portfolio03 .work-flex-box .port01-text .text-left-align .vertical-text p:nth-child(1),
 section .workspace .portfolio03 .work-flex-box .port02-text .text-left-align .vertical-text p:nth-child(1),
-section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .vertical-text p:nth-child(1) {
+section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .vertical-text p:nth-child(1),
+section .workspace .portfolio03 .work-flex-box .port04-text .text-left-align .vertical-text p:nth-child(1),
+section .workspace .portfolio04 .work-flex-box .port01-text .text-left-align .vertical-text p:nth-child(1),
+section .workspace .portfolio04 .work-flex-box .port02-text .text-left-align .vertical-text p:nth-child(1),
+section .workspace .portfolio04 .work-flex-box .port03-text .text-left-align .vertical-text p:nth-child(1),
+section .workspace .portfolio04 .work-flex-box .port04-text .text-left-align .vertical-text p:nth-child(1) {
   -webkit-animation-delay: 0.2s;
           animation-delay: 0.2s;
 }
 section .workspace .portfolio01 .work-flex-box .port01-text .text-left-align .vertical-text p:nth-child(2),
 section .workspace .portfolio01 .work-flex-box .port02-text .text-left-align .vertical-text p:nth-child(2),
 section .workspace .portfolio01 .work-flex-box .port03-text .text-left-align .vertical-text p:nth-child(2),
+section .workspace .portfolio01 .work-flex-box .port04-text .text-left-align .vertical-text p:nth-child(2),
 section .workspace .portfolio02 .work-flex-box .port01-text .text-left-align .vertical-text p:nth-child(2),
 section .workspace .portfolio02 .work-flex-box .port02-text .text-left-align .vertical-text p:nth-child(2),
 section .workspace .portfolio02 .work-flex-box .port03-text .text-left-align .vertical-text p:nth-child(2),
+section .workspace .portfolio02 .work-flex-box .port04-text .text-left-align .vertical-text p:nth-child(2),
 section .workspace .portfolio03 .work-flex-box .port01-text .text-left-align .vertical-text p:nth-child(2),
 section .workspace .portfolio03 .work-flex-box .port02-text .text-left-align .vertical-text p:nth-child(2),
-section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .vertical-text p:nth-child(2) {
+section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .vertical-text p:nth-child(2),
+section .workspace .portfolio03 .work-flex-box .port04-text .text-left-align .vertical-text p:nth-child(2),
+section .workspace .portfolio04 .work-flex-box .port01-text .text-left-align .vertical-text p:nth-child(2),
+section .workspace .portfolio04 .work-flex-box .port02-text .text-left-align .vertical-text p:nth-child(2),
+section .workspace .portfolio04 .work-flex-box .port03-text .text-left-align .vertical-text p:nth-child(2),
+section .workspace .portfolio04 .work-flex-box .port04-text .text-left-align .vertical-text p:nth-child(2) {
   -webkit-animation-delay: 0.7s;
           animation-delay: 0.7s;
 }
 section .workspace .portfolio01 .work-flex-box .port01-text .text-left-align .vertical-text p:nth-child(3),
 section .workspace .portfolio01 .work-flex-box .port02-text .text-left-align .vertical-text p:nth-child(3),
 section .workspace .portfolio01 .work-flex-box .port03-text .text-left-align .vertical-text p:nth-child(3),
+section .workspace .portfolio01 .work-flex-box .port04-text .text-left-align .vertical-text p:nth-child(3),
 section .workspace .portfolio02 .work-flex-box .port01-text .text-left-align .vertical-text p:nth-child(3),
 section .workspace .portfolio02 .work-flex-box .port02-text .text-left-align .vertical-text p:nth-child(3),
 section .workspace .portfolio02 .work-flex-box .port03-text .text-left-align .vertical-text p:nth-child(3),
+section .workspace .portfolio02 .work-flex-box .port04-text .text-left-align .vertical-text p:nth-child(3),
 section .workspace .portfolio03 .work-flex-box .port01-text .text-left-align .vertical-text p:nth-child(3),
 section .workspace .portfolio03 .work-flex-box .port02-text .text-left-align .vertical-text p:nth-child(3),
-section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .vertical-text p:nth-child(3) {
+section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .vertical-text p:nth-child(3),
+section .workspace .portfolio03 .work-flex-box .port04-text .text-left-align .vertical-text p:nth-child(3),
+section .workspace .portfolio04 .work-flex-box .port01-text .text-left-align .vertical-text p:nth-child(3),
+section .workspace .portfolio04 .work-flex-box .port02-text .text-left-align .vertical-text p:nth-child(3),
+section .workspace .portfolio04 .work-flex-box .port03-text .text-left-align .vertical-text p:nth-child(3),
+section .workspace .portfolio04 .work-flex-box .port04-text .text-left-align .vertical-text p:nth-child(3) {
   -webkit-animation-delay: 0.4s;
           animation-delay: 0.4s;
   transform: translate(22px);
@@ -1204,36 +1419,57 @@ section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .ve
 section .workspace .portfolio01 .work-flex-box .port01-text .text-left-align .vertical-text p:nth-child(4),
 section .workspace .portfolio01 .work-flex-box .port02-text .text-left-align .vertical-text p:nth-child(4),
 section .workspace .portfolio01 .work-flex-box .port03-text .text-left-align .vertical-text p:nth-child(4),
+section .workspace .portfolio01 .work-flex-box .port04-text .text-left-align .vertical-text p:nth-child(4),
 section .workspace .portfolio02 .work-flex-box .port01-text .text-left-align .vertical-text p:nth-child(4),
 section .workspace .portfolio02 .work-flex-box .port02-text .text-left-align .vertical-text p:nth-child(4),
 section .workspace .portfolio02 .work-flex-box .port03-text .text-left-align .vertical-text p:nth-child(4),
+section .workspace .portfolio02 .work-flex-box .port04-text .text-left-align .vertical-text p:nth-child(4),
 section .workspace .portfolio03 .work-flex-box .port01-text .text-left-align .vertical-text p:nth-child(4),
 section .workspace .portfolio03 .work-flex-box .port02-text .text-left-align .vertical-text p:nth-child(4),
-section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .vertical-text p:nth-child(4) {
+section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .vertical-text p:nth-child(4),
+section .workspace .portfolio03 .work-flex-box .port04-text .text-left-align .vertical-text p:nth-child(4),
+section .workspace .portfolio04 .work-flex-box .port01-text .text-left-align .vertical-text p:nth-child(4),
+section .workspace .portfolio04 .work-flex-box .port02-text .text-left-align .vertical-text p:nth-child(4),
+section .workspace .portfolio04 .work-flex-box .port03-text .text-left-align .vertical-text p:nth-child(4),
+section .workspace .portfolio04 .work-flex-box .port04-text .text-left-align .vertical-text p:nth-child(4) {
   -webkit-animation-delay: 0.1s;
           animation-delay: 0.1s;
 }
 section .workspace .portfolio01 .work-flex-box .port01-text .text-left-align .vertical-text p:nth-child(5),
 section .workspace .portfolio01 .work-flex-box .port02-text .text-left-align .vertical-text p:nth-child(5),
 section .workspace .portfolio01 .work-flex-box .port03-text .text-left-align .vertical-text p:nth-child(5),
+section .workspace .portfolio01 .work-flex-box .port04-text .text-left-align .vertical-text p:nth-child(5),
 section .workspace .portfolio02 .work-flex-box .port01-text .text-left-align .vertical-text p:nth-child(5),
 section .workspace .portfolio02 .work-flex-box .port02-text .text-left-align .vertical-text p:nth-child(5),
 section .workspace .portfolio02 .work-flex-box .port03-text .text-left-align .vertical-text p:nth-child(5),
+section .workspace .portfolio02 .work-flex-box .port04-text .text-left-align .vertical-text p:nth-child(5),
 section .workspace .portfolio03 .work-flex-box .port01-text .text-left-align .vertical-text p:nth-child(5),
 section .workspace .portfolio03 .work-flex-box .port02-text .text-left-align .vertical-text p:nth-child(5),
-section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .vertical-text p:nth-child(5) {
+section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .vertical-text p:nth-child(5),
+section .workspace .portfolio03 .work-flex-box .port04-text .text-left-align .vertical-text p:nth-child(5),
+section .workspace .portfolio04 .work-flex-box .port01-text .text-left-align .vertical-text p:nth-child(5),
+section .workspace .portfolio04 .work-flex-box .port02-text .text-left-align .vertical-text p:nth-child(5),
+section .workspace .portfolio04 .work-flex-box .port03-text .text-left-align .vertical-text p:nth-child(5),
+section .workspace .portfolio04 .work-flex-box .port04-text .text-left-align .vertical-text p:nth-child(5) {
   -webkit-animation-delay: 0.3s;
           animation-delay: 0.3s;
 }
 section .workspace .portfolio01 .work-flex-box .port01-text .text-left-align .vertical-text p:nth-child(6),
 section .workspace .portfolio01 .work-flex-box .port02-text .text-left-align .vertical-text p:nth-child(6),
 section .workspace .portfolio01 .work-flex-box .port03-text .text-left-align .vertical-text p:nth-child(6),
+section .workspace .portfolio01 .work-flex-box .port04-text .text-left-align .vertical-text p:nth-child(6),
 section .workspace .portfolio02 .work-flex-box .port01-text .text-left-align .vertical-text p:nth-child(6),
 section .workspace .portfolio02 .work-flex-box .port02-text .text-left-align .vertical-text p:nth-child(6),
 section .workspace .portfolio02 .work-flex-box .port03-text .text-left-align .vertical-text p:nth-child(6),
+section .workspace .portfolio02 .work-flex-box .port04-text .text-left-align .vertical-text p:nth-child(6),
 section .workspace .portfolio03 .work-flex-box .port01-text .text-left-align .vertical-text p:nth-child(6),
 section .workspace .portfolio03 .work-flex-box .port02-text .text-left-align .vertical-text p:nth-child(6),
-section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .vertical-text p:nth-child(6) {
+section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .vertical-text p:nth-child(6),
+section .workspace .portfolio03 .work-flex-box .port04-text .text-left-align .vertical-text p:nth-child(6),
+section .workspace .portfolio04 .work-flex-box .port01-text .text-left-align .vertical-text p:nth-child(6),
+section .workspace .portfolio04 .work-flex-box .port02-text .text-left-align .vertical-text p:nth-child(6),
+section .workspace .portfolio04 .work-flex-box .port03-text .text-left-align .vertical-text p:nth-child(6),
+section .workspace .portfolio04 .work-flex-box .port04-text .text-left-align .vertical-text p:nth-child(6) {
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s;
   transform: translate(22px);
@@ -1241,24 +1477,38 @@ section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .ve
 section .workspace .portfolio01 .work-flex-box .port01-text .text-left-align .vertical-text p:nth-child(7),
 section .workspace .portfolio01 .work-flex-box .port02-text .text-left-align .vertical-text p:nth-child(7),
 section .workspace .portfolio01 .work-flex-box .port03-text .text-left-align .vertical-text p:nth-child(7),
+section .workspace .portfolio01 .work-flex-box .port04-text .text-left-align .vertical-text p:nth-child(7),
 section .workspace .portfolio02 .work-flex-box .port01-text .text-left-align .vertical-text p:nth-child(7),
 section .workspace .portfolio02 .work-flex-box .port02-text .text-left-align .vertical-text p:nth-child(7),
 section .workspace .portfolio02 .work-flex-box .port03-text .text-left-align .vertical-text p:nth-child(7),
+section .workspace .portfolio02 .work-flex-box .port04-text .text-left-align .vertical-text p:nth-child(7),
 section .workspace .portfolio03 .work-flex-box .port01-text .text-left-align .vertical-text p:nth-child(7),
 section .workspace .portfolio03 .work-flex-box .port02-text .text-left-align .vertical-text p:nth-child(7),
-section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .vertical-text p:nth-child(7) {
+section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .vertical-text p:nth-child(7),
+section .workspace .portfolio03 .work-flex-box .port04-text .text-left-align .vertical-text p:nth-child(7),
+section .workspace .portfolio04 .work-flex-box .port01-text .text-left-align .vertical-text p:nth-child(7),
+section .workspace .portfolio04 .work-flex-box .port02-text .text-left-align .vertical-text p:nth-child(7),
+section .workspace .portfolio04 .work-flex-box .port03-text .text-left-align .vertical-text p:nth-child(7),
+section .workspace .portfolio04 .work-flex-box .port04-text .text-left-align .vertical-text p:nth-child(7) {
   -webkit-animation-delay: 0.6s;
           animation-delay: 0.6s;
 }
 section .workspace .portfolio01 .work-flex-box .port01-text .text-left-align .vertical-text span,
 section .workspace .portfolio01 .work-flex-box .port02-text .text-left-align .vertical-text span,
 section .workspace .portfolio01 .work-flex-box .port03-text .text-left-align .vertical-text span,
+section .workspace .portfolio01 .work-flex-box .port04-text .text-left-align .vertical-text span,
 section .workspace .portfolio02 .work-flex-box .port01-text .text-left-align .vertical-text span,
 section .workspace .portfolio02 .work-flex-box .port02-text .text-left-align .vertical-text span,
 section .workspace .portfolio02 .work-flex-box .port03-text .text-left-align .vertical-text span,
+section .workspace .portfolio02 .work-flex-box .port04-text .text-left-align .vertical-text span,
 section .workspace .portfolio03 .work-flex-box .port01-text .text-left-align .vertical-text span,
 section .workspace .portfolio03 .work-flex-box .port02-text .text-left-align .vertical-text span,
-section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .vertical-text span {
+section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .vertical-text span,
+section .workspace .portfolio03 .work-flex-box .port04-text .text-left-align .vertical-text span,
+section .workspace .portfolio04 .work-flex-box .port01-text .text-left-align .vertical-text span,
+section .workspace .portfolio04 .work-flex-box .port02-text .text-left-align .vertical-text span,
+section .workspace .portfolio04 .work-flex-box .port03-text .text-left-align .vertical-text span,
+section .workspace .portfolio04 .work-flex-box .port04-text .text-left-align .vertical-text span {
   font-size: 1.7em;
   transform: translateY(-50%);
 }
@@ -1266,12 +1516,19 @@ section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .ve
   section .workspace .portfolio01 .work-flex-box .port01-text .text-left-align .vertical-text,
 section .workspace .portfolio01 .work-flex-box .port02-text .text-left-align .vertical-text,
 section .workspace .portfolio01 .work-flex-box .port03-text .text-left-align .vertical-text,
+section .workspace .portfolio01 .work-flex-box .port04-text .text-left-align .vertical-text,
 section .workspace .portfolio02 .work-flex-box .port01-text .text-left-align .vertical-text,
 section .workspace .portfolio02 .work-flex-box .port02-text .text-left-align .vertical-text,
 section .workspace .portfolio02 .work-flex-box .port03-text .text-left-align .vertical-text,
+section .workspace .portfolio02 .work-flex-box .port04-text .text-left-align .vertical-text,
 section .workspace .portfolio03 .work-flex-box .port01-text .text-left-align .vertical-text,
 section .workspace .portfolio03 .work-flex-box .port02-text .text-left-align .vertical-text,
-section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .vertical-text {
+section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .vertical-text,
+section .workspace .portfolio03 .work-flex-box .port04-text .text-left-align .vertical-text,
+section .workspace .portfolio04 .work-flex-box .port01-text .text-left-align .vertical-text,
+section .workspace .portfolio04 .work-flex-box .port02-text .text-left-align .vertical-text,
+section .workspace .portfolio04 .work-flex-box .port03-text .text-left-align .vertical-text,
+section .workspace .portfolio04 .work-flex-box .port04-text .text-left-align .vertical-text {
     display: block;
     font-size: 15em;
     font-weight: bolder;
@@ -1321,12 +1578,19 @@ section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .ve
 section .workspace .portfolio01 .work-flex-box .port01-text .text-left-align .vertical-text span,
 section .workspace .portfolio01 .work-flex-box .port02-text .text-left-align .vertical-text span,
 section .workspace .portfolio01 .work-flex-box .port03-text .text-left-align .vertical-text span,
+section .workspace .portfolio01 .work-flex-box .port04-text .text-left-align .vertical-text span,
 section .workspace .portfolio02 .work-flex-box .port01-text .text-left-align .vertical-text span,
 section .workspace .portfolio02 .work-flex-box .port02-text .text-left-align .vertical-text span,
 section .workspace .portfolio02 .work-flex-box .port03-text .text-left-align .vertical-text span,
+section .workspace .portfolio02 .work-flex-box .port04-text .text-left-align .vertical-text span,
 section .workspace .portfolio03 .work-flex-box .port01-text .text-left-align .vertical-text span,
 section .workspace .portfolio03 .work-flex-box .port02-text .text-left-align .vertical-text span,
-section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .vertical-text span {
+section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .vertical-text span,
+section .workspace .portfolio03 .work-flex-box .port04-text .text-left-align .vertical-text span,
+section .workspace .portfolio04 .work-flex-box .port01-text .text-left-align .vertical-text span,
+section .workspace .portfolio04 .work-flex-box .port02-text .text-left-align .vertical-text span,
+section .workspace .portfolio04 .work-flex-box .port03-text .text-left-align .vertical-text span,
+section .workspace .portfolio04 .work-flex-box .port04-text .text-left-align .vertical-text span {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -1334,12 +1598,19 @@ section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .ve
 section .workspace .portfolio01 .work-flex-box .port01-text .text-left-align .vertical-text-zindex,
 section .workspace .portfolio01 .work-flex-box .port02-text .text-left-align .vertical-text-zindex,
 section .workspace .portfolio01 .work-flex-box .port03-text .text-left-align .vertical-text-zindex,
+section .workspace .portfolio01 .work-flex-box .port04-text .text-left-align .vertical-text-zindex,
 section .workspace .portfolio02 .work-flex-box .port01-text .text-left-align .vertical-text-zindex,
 section .workspace .portfolio02 .work-flex-box .port02-text .text-left-align .vertical-text-zindex,
 section .workspace .portfolio02 .work-flex-box .port03-text .text-left-align .vertical-text-zindex,
+section .workspace .portfolio02 .work-flex-box .port04-text .text-left-align .vertical-text-zindex,
 section .workspace .portfolio03 .work-flex-box .port01-text .text-left-align .vertical-text-zindex,
 section .workspace .portfolio03 .work-flex-box .port02-text .text-left-align .vertical-text-zindex,
-section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .vertical-text-zindex {
+section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .vertical-text-zindex,
+section .workspace .portfolio03 .work-flex-box .port04-text .text-left-align .vertical-text-zindex,
+section .workspace .portfolio04 .work-flex-box .port01-text .text-left-align .vertical-text-zindex,
+section .workspace .portfolio04 .work-flex-box .port02-text .text-left-align .vertical-text-zindex,
+section .workspace .portfolio04 .work-flex-box .port03-text .text-left-align .vertical-text-zindex,
+section .workspace .portfolio04 .work-flex-box .port04-text .text-left-align .vertical-text-zindex {
   display: none;
   text-align: right;
   position: relative;
@@ -1349,12 +1620,19 @@ section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .ve
 section .workspace .portfolio01 .work-flex-box .port01-text .text-left-align .vertical-text-zindex p,
 section .workspace .portfolio01 .work-flex-box .port02-text .text-left-align .vertical-text-zindex p,
 section .workspace .portfolio01 .work-flex-box .port03-text .text-left-align .vertical-text-zindex p,
+section .workspace .portfolio01 .work-flex-box .port04-text .text-left-align .vertical-text-zindex p,
 section .workspace .portfolio02 .work-flex-box .port01-text .text-left-align .vertical-text-zindex p,
 section .workspace .portfolio02 .work-flex-box .port02-text .text-left-align .vertical-text-zindex p,
 section .workspace .portfolio02 .work-flex-box .port03-text .text-left-align .vertical-text-zindex p,
+section .workspace .portfolio02 .work-flex-box .port04-text .text-left-align .vertical-text-zindex p,
 section .workspace .portfolio03 .work-flex-box .port01-text .text-left-align .vertical-text-zindex p,
 section .workspace .portfolio03 .work-flex-box .port02-text .text-left-align .vertical-text-zindex p,
-section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .vertical-text-zindex p {
+section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .vertical-text-zindex p,
+section .workspace .portfolio03 .work-flex-box .port04-text .text-left-align .vertical-text-zindex p,
+section .workspace .portfolio04 .work-flex-box .port01-text .text-left-align .vertical-text-zindex p,
+section .workspace .portfolio04 .work-flex-box .port02-text .text-left-align .vertical-text-zindex p,
+section .workspace .portfolio04 .work-flex-box .port03-text .text-left-align .vertical-text-zindex p,
+section .workspace .portfolio04 .work-flex-box .port04-text .text-left-align .vertical-text-zindex p {
   position: relative;
   -webkit-animation: text-left 1.7s infinite;
           animation: text-left 1.7s infinite;
@@ -1362,36 +1640,57 @@ section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .ve
 section .workspace .portfolio01 .work-flex-box .port01-text .text-left-align .vertical-text-zindex p:nth-child(1),
 section .workspace .portfolio01 .work-flex-box .port02-text .text-left-align .vertical-text-zindex p:nth-child(1),
 section .workspace .portfolio01 .work-flex-box .port03-text .text-left-align .vertical-text-zindex p:nth-child(1),
+section .workspace .portfolio01 .work-flex-box .port04-text .text-left-align .vertical-text-zindex p:nth-child(1),
 section .workspace .portfolio02 .work-flex-box .port01-text .text-left-align .vertical-text-zindex p:nth-child(1),
 section .workspace .portfolio02 .work-flex-box .port02-text .text-left-align .vertical-text-zindex p:nth-child(1),
 section .workspace .portfolio02 .work-flex-box .port03-text .text-left-align .vertical-text-zindex p:nth-child(1),
+section .workspace .portfolio02 .work-flex-box .port04-text .text-left-align .vertical-text-zindex p:nth-child(1),
 section .workspace .portfolio03 .work-flex-box .port01-text .text-left-align .vertical-text-zindex p:nth-child(1),
 section .workspace .portfolio03 .work-flex-box .port02-text .text-left-align .vertical-text-zindex p:nth-child(1),
-section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .vertical-text-zindex p:nth-child(1) {
+section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .vertical-text-zindex p:nth-child(1),
+section .workspace .portfolio03 .work-flex-box .port04-text .text-left-align .vertical-text-zindex p:nth-child(1),
+section .workspace .portfolio04 .work-flex-box .port01-text .text-left-align .vertical-text-zindex p:nth-child(1),
+section .workspace .portfolio04 .work-flex-box .port02-text .text-left-align .vertical-text-zindex p:nth-child(1),
+section .workspace .portfolio04 .work-flex-box .port03-text .text-left-align .vertical-text-zindex p:nth-child(1),
+section .workspace .portfolio04 .work-flex-box .port04-text .text-left-align .vertical-text-zindex p:nth-child(1) {
   -webkit-animation-delay: 0.7s;
           animation-delay: 0.7s;
 }
 section .workspace .portfolio01 .work-flex-box .port01-text .text-left-align .vertical-text-zindex p:nth-child(2),
 section .workspace .portfolio01 .work-flex-box .port02-text .text-left-align .vertical-text-zindex p:nth-child(2),
 section .workspace .portfolio01 .work-flex-box .port03-text .text-left-align .vertical-text-zindex p:nth-child(2),
+section .workspace .portfolio01 .work-flex-box .port04-text .text-left-align .vertical-text-zindex p:nth-child(2),
 section .workspace .portfolio02 .work-flex-box .port01-text .text-left-align .vertical-text-zindex p:nth-child(2),
 section .workspace .portfolio02 .work-flex-box .port02-text .text-left-align .vertical-text-zindex p:nth-child(2),
 section .workspace .portfolio02 .work-flex-box .port03-text .text-left-align .vertical-text-zindex p:nth-child(2),
+section .workspace .portfolio02 .work-flex-box .port04-text .text-left-align .vertical-text-zindex p:nth-child(2),
 section .workspace .portfolio03 .work-flex-box .port01-text .text-left-align .vertical-text-zindex p:nth-child(2),
 section .workspace .portfolio03 .work-flex-box .port02-text .text-left-align .vertical-text-zindex p:nth-child(2),
-section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .vertical-text-zindex p:nth-child(2) {
+section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .vertical-text-zindex p:nth-child(2),
+section .workspace .portfolio03 .work-flex-box .port04-text .text-left-align .vertical-text-zindex p:nth-child(2),
+section .workspace .portfolio04 .work-flex-box .port01-text .text-left-align .vertical-text-zindex p:nth-child(2),
+section .workspace .portfolio04 .work-flex-box .port02-text .text-left-align .vertical-text-zindex p:nth-child(2),
+section .workspace .portfolio04 .work-flex-box .port03-text .text-left-align .vertical-text-zindex p:nth-child(2),
+section .workspace .portfolio04 .work-flex-box .port04-text .text-left-align .vertical-text-zindex p:nth-child(2) {
   -webkit-animation-delay: 0.6s;
           animation-delay: 0.6s;
 }
 section .workspace .portfolio01 .work-flex-box .port01-text .text-left-align .vertical-text-zindex p:nth-child(3),
 section .workspace .portfolio01 .work-flex-box .port02-text .text-left-align .vertical-text-zindex p:nth-child(3),
 section .workspace .portfolio01 .work-flex-box .port03-text .text-left-align .vertical-text-zindex p:nth-child(3),
+section .workspace .portfolio01 .work-flex-box .port04-text .text-left-align .vertical-text-zindex p:nth-child(3),
 section .workspace .portfolio02 .work-flex-box .port01-text .text-left-align .vertical-text-zindex p:nth-child(3),
 section .workspace .portfolio02 .work-flex-box .port02-text .text-left-align .vertical-text-zindex p:nth-child(3),
 section .workspace .portfolio02 .work-flex-box .port03-text .text-left-align .vertical-text-zindex p:nth-child(3),
+section .workspace .portfolio02 .work-flex-box .port04-text .text-left-align .vertical-text-zindex p:nth-child(3),
 section .workspace .portfolio03 .work-flex-box .port01-text .text-left-align .vertical-text-zindex p:nth-child(3),
 section .workspace .portfolio03 .work-flex-box .port02-text .text-left-align .vertical-text-zindex p:nth-child(3),
-section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .vertical-text-zindex p:nth-child(3) {
+section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .vertical-text-zindex p:nth-child(3),
+section .workspace .portfolio03 .work-flex-box .port04-text .text-left-align .vertical-text-zindex p:nth-child(3),
+section .workspace .portfolio04 .work-flex-box .port01-text .text-left-align .vertical-text-zindex p:nth-child(3),
+section .workspace .portfolio04 .work-flex-box .port02-text .text-left-align .vertical-text-zindex p:nth-child(3),
+section .workspace .portfolio04 .work-flex-box .port03-text .text-left-align .vertical-text-zindex p:nth-child(3),
+section .workspace .portfolio04 .work-flex-box .port04-text .text-left-align .vertical-text-zindex p:nth-child(3) {
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s;
   transform: translate(20px);
@@ -1399,36 +1698,57 @@ section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .ve
 section .workspace .portfolio01 .work-flex-box .port01-text .text-left-align .vertical-text-zindex p:nth-child(4),
 section .workspace .portfolio01 .work-flex-box .port02-text .text-left-align .vertical-text-zindex p:nth-child(4),
 section .workspace .portfolio01 .work-flex-box .port03-text .text-left-align .vertical-text-zindex p:nth-child(4),
+section .workspace .portfolio01 .work-flex-box .port04-text .text-left-align .vertical-text-zindex p:nth-child(4),
 section .workspace .portfolio02 .work-flex-box .port01-text .text-left-align .vertical-text-zindex p:nth-child(4),
 section .workspace .portfolio02 .work-flex-box .port02-text .text-left-align .vertical-text-zindex p:nth-child(4),
 section .workspace .portfolio02 .work-flex-box .port03-text .text-left-align .vertical-text-zindex p:nth-child(4),
+section .workspace .portfolio02 .work-flex-box .port04-text .text-left-align .vertical-text-zindex p:nth-child(4),
 section .workspace .portfolio03 .work-flex-box .port01-text .text-left-align .vertical-text-zindex p:nth-child(4),
 section .workspace .portfolio03 .work-flex-box .port02-text .text-left-align .vertical-text-zindex p:nth-child(4),
-section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .vertical-text-zindex p:nth-child(4) {
+section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .vertical-text-zindex p:nth-child(4),
+section .workspace .portfolio03 .work-flex-box .port04-text .text-left-align .vertical-text-zindex p:nth-child(4),
+section .workspace .portfolio04 .work-flex-box .port01-text .text-left-align .vertical-text-zindex p:nth-child(4),
+section .workspace .portfolio04 .work-flex-box .port02-text .text-left-align .vertical-text-zindex p:nth-child(4),
+section .workspace .portfolio04 .work-flex-box .port03-text .text-left-align .vertical-text-zindex p:nth-child(4),
+section .workspace .portfolio04 .work-flex-box .port04-text .text-left-align .vertical-text-zindex p:nth-child(4) {
   -webkit-animation-delay: 0.4s;
           animation-delay: 0.4s;
 }
 section .workspace .portfolio01 .work-flex-box .port01-text .text-left-align .vertical-text-zindex p:nth-child(5),
 section .workspace .portfolio01 .work-flex-box .port02-text .text-left-align .vertical-text-zindex p:nth-child(5),
 section .workspace .portfolio01 .work-flex-box .port03-text .text-left-align .vertical-text-zindex p:nth-child(5),
+section .workspace .portfolio01 .work-flex-box .port04-text .text-left-align .vertical-text-zindex p:nth-child(5),
 section .workspace .portfolio02 .work-flex-box .port01-text .text-left-align .vertical-text-zindex p:nth-child(5),
 section .workspace .portfolio02 .work-flex-box .port02-text .text-left-align .vertical-text-zindex p:nth-child(5),
 section .workspace .portfolio02 .work-flex-box .port03-text .text-left-align .vertical-text-zindex p:nth-child(5),
+section .workspace .portfolio02 .work-flex-box .port04-text .text-left-align .vertical-text-zindex p:nth-child(5),
 section .workspace .portfolio03 .work-flex-box .port01-text .text-left-align .vertical-text-zindex p:nth-child(5),
 section .workspace .portfolio03 .work-flex-box .port02-text .text-left-align .vertical-text-zindex p:nth-child(5),
-section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .vertical-text-zindex p:nth-child(5) {
+section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .vertical-text-zindex p:nth-child(5),
+section .workspace .portfolio03 .work-flex-box .port04-text .text-left-align .vertical-text-zindex p:nth-child(5),
+section .workspace .portfolio04 .work-flex-box .port01-text .text-left-align .vertical-text-zindex p:nth-child(5),
+section .workspace .portfolio04 .work-flex-box .port02-text .text-left-align .vertical-text-zindex p:nth-child(5),
+section .workspace .portfolio04 .work-flex-box .port03-text .text-left-align .vertical-text-zindex p:nth-child(5),
+section .workspace .portfolio04 .work-flex-box .port04-text .text-left-align .vertical-text-zindex p:nth-child(5) {
   -webkit-animation-delay: 0.3s;
           animation-delay: 0.3s;
 }
 section .workspace .portfolio01 .work-flex-box .port01-text .text-left-align .vertical-text-zindex p:nth-child(6),
 section .workspace .portfolio01 .work-flex-box .port02-text .text-left-align .vertical-text-zindex p:nth-child(6),
 section .workspace .portfolio01 .work-flex-box .port03-text .text-left-align .vertical-text-zindex p:nth-child(6),
+section .workspace .portfolio01 .work-flex-box .port04-text .text-left-align .vertical-text-zindex p:nth-child(6),
 section .workspace .portfolio02 .work-flex-box .port01-text .text-left-align .vertical-text-zindex p:nth-child(6),
 section .workspace .portfolio02 .work-flex-box .port02-text .text-left-align .vertical-text-zindex p:nth-child(6),
 section .workspace .portfolio02 .work-flex-box .port03-text .text-left-align .vertical-text-zindex p:nth-child(6),
+section .workspace .portfolio02 .work-flex-box .port04-text .text-left-align .vertical-text-zindex p:nth-child(6),
 section .workspace .portfolio03 .work-flex-box .port01-text .text-left-align .vertical-text-zindex p:nth-child(6),
 section .workspace .portfolio03 .work-flex-box .port02-text .text-left-align .vertical-text-zindex p:nth-child(6),
-section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .vertical-text-zindex p:nth-child(6) {
+section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .vertical-text-zindex p:nth-child(6),
+section .workspace .portfolio03 .work-flex-box .port04-text .text-left-align .vertical-text-zindex p:nth-child(6),
+section .workspace .portfolio04 .work-flex-box .port01-text .text-left-align .vertical-text-zindex p:nth-child(6),
+section .workspace .portfolio04 .work-flex-box .port02-text .text-left-align .vertical-text-zindex p:nth-child(6),
+section .workspace .portfolio04 .work-flex-box .port03-text .text-left-align .vertical-text-zindex p:nth-child(6),
+section .workspace .portfolio04 .work-flex-box .port04-text .text-left-align .vertical-text-zindex p:nth-child(6) {
   -webkit-animation-delay: 0.2s;
           animation-delay: 0.2s;
   transform: translate(20px);
@@ -1436,24 +1756,38 @@ section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .ve
 section .workspace .portfolio01 .work-flex-box .port01-text .text-left-align .vertical-text-zindex p:nth-child(7),
 section .workspace .portfolio01 .work-flex-box .port02-text .text-left-align .vertical-text-zindex p:nth-child(7),
 section .workspace .portfolio01 .work-flex-box .port03-text .text-left-align .vertical-text-zindex p:nth-child(7),
+section .workspace .portfolio01 .work-flex-box .port04-text .text-left-align .vertical-text-zindex p:nth-child(7),
 section .workspace .portfolio02 .work-flex-box .port01-text .text-left-align .vertical-text-zindex p:nth-child(7),
 section .workspace .portfolio02 .work-flex-box .port02-text .text-left-align .vertical-text-zindex p:nth-child(7),
 section .workspace .portfolio02 .work-flex-box .port03-text .text-left-align .vertical-text-zindex p:nth-child(7),
+section .workspace .portfolio02 .work-flex-box .port04-text .text-left-align .vertical-text-zindex p:nth-child(7),
 section .workspace .portfolio03 .work-flex-box .port01-text .text-left-align .vertical-text-zindex p:nth-child(7),
 section .workspace .portfolio03 .work-flex-box .port02-text .text-left-align .vertical-text-zindex p:nth-child(7),
-section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .vertical-text-zindex p:nth-child(7) {
+section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .vertical-text-zindex p:nth-child(7),
+section .workspace .portfolio03 .work-flex-box .port04-text .text-left-align .vertical-text-zindex p:nth-child(7),
+section .workspace .portfolio04 .work-flex-box .port01-text .text-left-align .vertical-text-zindex p:nth-child(7),
+section .workspace .portfolio04 .work-flex-box .port02-text .text-left-align .vertical-text-zindex p:nth-child(7),
+section .workspace .portfolio04 .work-flex-box .port03-text .text-left-align .vertical-text-zindex p:nth-child(7),
+section .workspace .portfolio04 .work-flex-box .port04-text .text-left-align .vertical-text-zindex p:nth-child(7) {
   -webkit-animation-delay: 0.1s;
           animation-delay: 0.1s;
 }
 section .workspace .portfolio01 .work-flex-box .port01-text .text-left-align .vertical-text-zindex span,
 section .workspace .portfolio01 .work-flex-box .port02-text .text-left-align .vertical-text-zindex span,
 section .workspace .portfolio01 .work-flex-box .port03-text .text-left-align .vertical-text-zindex span,
+section .workspace .portfolio01 .work-flex-box .port04-text .text-left-align .vertical-text-zindex span,
 section .workspace .portfolio02 .work-flex-box .port01-text .text-left-align .vertical-text-zindex span,
 section .workspace .portfolio02 .work-flex-box .port02-text .text-left-align .vertical-text-zindex span,
 section .workspace .portfolio02 .work-flex-box .port03-text .text-left-align .vertical-text-zindex span,
+section .workspace .portfolio02 .work-flex-box .port04-text .text-left-align .vertical-text-zindex span,
 section .workspace .portfolio03 .work-flex-box .port01-text .text-left-align .vertical-text-zindex span,
 section .workspace .portfolio03 .work-flex-box .port02-text .text-left-align .vertical-text-zindex span,
-section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .vertical-text-zindex span {
+section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .vertical-text-zindex span,
+section .workspace .portfolio03 .work-flex-box .port04-text .text-left-align .vertical-text-zindex span,
+section .workspace .portfolio04 .work-flex-box .port01-text .text-left-align .vertical-text-zindex span,
+section .workspace .portfolio04 .work-flex-box .port02-text .text-left-align .vertical-text-zindex span,
+section .workspace .portfolio04 .work-flex-box .port03-text .text-left-align .vertical-text-zindex span,
+section .workspace .portfolio04 .work-flex-box .port04-text .text-left-align .vertical-text-zindex span {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -1465,12 +1799,19 @@ section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .ve
   section .workspace .portfolio01 .work-flex-box .port01-text .text-left-align .vertical-text-zindex,
 section .workspace .portfolio01 .work-flex-box .port02-text .text-left-align .vertical-text-zindex,
 section .workspace .portfolio01 .work-flex-box .port03-text .text-left-align .vertical-text-zindex,
+section .workspace .portfolio01 .work-flex-box .port04-text .text-left-align .vertical-text-zindex,
 section .workspace .portfolio02 .work-flex-box .port01-text .text-left-align .vertical-text-zindex,
 section .workspace .portfolio02 .work-flex-box .port02-text .text-left-align .vertical-text-zindex,
 section .workspace .portfolio02 .work-flex-box .port03-text .text-left-align .vertical-text-zindex,
+section .workspace .portfolio02 .work-flex-box .port04-text .text-left-align .vertical-text-zindex,
 section .workspace .portfolio03 .work-flex-box .port01-text .text-left-align .vertical-text-zindex,
 section .workspace .portfolio03 .work-flex-box .port02-text .text-left-align .vertical-text-zindex,
-section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .vertical-text-zindex {
+section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align .vertical-text-zindex,
+section .workspace .portfolio03 .work-flex-box .port04-text .text-left-align .vertical-text-zindex,
+section .workspace .portfolio04 .work-flex-box .port01-text .text-left-align .vertical-text-zindex,
+section .workspace .portfolio04 .work-flex-box .port02-text .text-left-align .vertical-text-zindex,
+section .workspace .portfolio04 .work-flex-box .port03-text .text-left-align .vertical-text-zindex,
+section .workspace .portfolio04 .work-flex-box .port04-text .text-left-align .vertical-text-zindex {
     display: block;
     font-size: 7em;
     font-weight: bolder;
@@ -1562,7 +1903,7 @@ section .design .confix .design-flex-box {
 @media screen and (min-width: 768px) {
   section .design .confix .design-flex-box {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1582,7 +1923,12 @@ section .design .confix .design-flex-box div {
 }
 @media screen and (min-width: 768px) {
   section .design .confix .design-flex-box div {
-    margin: 0 10px;
+    margin: 0 5px;
+  }
+}
+@media screen and (min-width: 768px) {
+  section .design .confix .design-flex-box div {
+    margin: 0 20px;
   }
 }
 section .design .confix .design-flex-box div h3 {
@@ -1637,18 +1983,18 @@ section .design .design-modal .design-modal-box {
     height: 750px;
   }
 }
-section .design .design-modal .design-modal-box:last-child {
+section .design .design-modal .design-modal-box:nth-child(3), section .design .design-modal .design-modal-box:nth-child(4) {
   overflow: hidden;
 }
 @media screen and (min-width: 768px) {
-  section .design .design-modal .design-modal-box:last-child .modal-image {
+  section .design .design-modal .design-modal-box:nth-child(3) .modal-image, section .design .design-modal .design-modal-box:nth-child(4) .modal-image {
     width: 600px;
     height: 510px;
     overflow-y: scroll;
   }
 }
 @media screen and (min-width: 1460px) {
-  section .design .design-modal .design-modal-box:last-child .modal-image {
+  section .design .design-modal .design-modal-box:nth-child(3) .modal-image, section .design .design-modal .design-modal-box:nth-child(4) .modal-image {
     width: 1000px;
     height: 650px;
   }
@@ -1704,12 +2050,16 @@ section .contact .icon-zip .icon {
   justify-content: center;
   margin-bottom: 20px;
 }
-section .contact .icon-zip .icon img {
+section .contact .icon-zip .icon a {
   width: 40px;
   margin-right: 15px;
 }
-section .contact .icon-zip .icon img:last-child {
+section .contact .icon-zip .icon a:last-child {
   margin-right: 0;
+}
+section .contact .icon-zip .icon a:hover {
+  transform: translateY(-5px);
+  transition: 0.2s linear;
 }
 @media screen and (min-width: 1460px) {
   section .contact .form-gif-flex {
