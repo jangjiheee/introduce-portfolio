@@ -874,11 +874,6 @@ section .workspace .portfolio03 .work-flex-box .port03-img {
 section .workspace .portfolio01 .work-flex-box .port03-img,
 section .workspace .portfolio02 .work-flex-box .port03-img,
 section .workspace .portfolio03 .work-flex-box .port03-img {
-  margin-bottom: 0;
-}
-section .workspace .portfolio01 .work-flex-box .port03-img,
-section .workspace .portfolio02 .work-flex-box .port03-img,
-section .workspace .portfolio03 .work-flex-box .port03-img {
   border: 5px solid #ffffff;
 }
 section .workspace .portfolio01 .work-flex-box .port01-text,
