@@ -487,6 +487,9 @@ section {
                             img {
                                 width: 85%;
                                 margin: 0 auto;
+                                @include responsive(pc-size) {
+                                    width: 65%;
+                                }
                             }
     
                             h3 {
@@ -502,11 +505,22 @@ section {
                                 font-size: 1.5em;
                             }
                         }
+                        .img-box3 {
+                            .img-height {
+                                width: 85%;
+                                margin: 0 auto;
+                                height: 650px;
+                                overflow-y: scroll;
+                                img {
+                                    width: 100%;
+                                }
+                            }
+                        }
                     }
                 }
 
                 @include responsive(pc-size) {
-                    width: 40%;
+                    width: 45%;
                 }           
             }
 
@@ -518,7 +532,7 @@ section {
                 }
 
                 @include responsive(pc-size) {
-                    width: 60%;
+                    width: 55%;
                     border: 1px solid white;
                     padding: 124px 0;
                 }

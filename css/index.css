@@ -575,11 +575,20 @@ section .skill .skill-flex-box .skill-explain {
     width: 85%;
     margin: 0 auto;
   }
+}
+@media screen and (min-width: 768px) and (min-width: 1460px) {
+  section .skill .skill-flex-box .skill-explain .img-box .skill-text img {
+    width: 65%;
+  }
+}
+@media screen and (min-width: 768px) {
   section .skill .skill-flex-box .skill-explain .img-box .skill-text h3 {
     margin: 40px 0 20px 0;
     text-align: center;
     font-size: 2.5em;
   }
+}
+@media screen and (min-width: 768px) {
   section .skill .skill-flex-box .skill-explain .img-box .skill-text p {
     margin: 0 auto;
     width: 85%;
@@ -587,9 +596,20 @@ section .skill .skill-flex-box .skill-explain {
     font-size: 1.5em;
   }
 }
+@media screen and (min-width: 768px) {
+  section .skill .skill-flex-box .skill-explain .img-box .img-box3 .img-height {
+    width: 85%;
+    margin: 0 auto;
+    height: 650px;
+    overflow-y: scroll;
+  }
+  section .skill .skill-flex-box .skill-explain .img-box .img-box3 .img-height img {
+    width: 100%;
+  }
+}
 @media screen and (min-width: 1460px) {
   section .skill .skill-flex-box .skill-explain {
-    width: 40%;
+    width: 45%;
   }
 }
 @media screen and (min-width: 768px) {
@@ -601,7 +621,7 @@ section .skill .skill-flex-box .skill-explain {
 }
 @media screen and (min-width: 1460px) {
   section .skill .skill-flex-box .skill-graph {
-    width: 60%;
+    width: 55%;
     border: 1px solid white;
     padding: 124px 0;
   }
@@ -1786,4 +1806,4 @@ footer p {
     float: right;
     margin-right: 5%;
   }
-}/*# sourceMappingURL=index.css.map */
+}
