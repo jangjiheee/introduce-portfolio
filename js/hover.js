@@ -110,8 +110,6 @@ window.onload = function() {
 }
 
 // 메뉴 스크롤 이벤트
-
-
 $(function() {
     $(window).on("scroll", function() {
         if($(this).scrollTop() > 650) {
@@ -123,6 +121,7 @@ $(function() {
 })
 
 $(function() {
+    // text 셔플
     var $ = function(id) {
     return document.getElementById(id);
     };

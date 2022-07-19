@@ -596,7 +596,7 @@ section .skill .skill-flex-box .skill-explain {
 }
 @media screen and (min-width: 768px) and (min-width: 1460px) {
   section .skill .skill-flex-box .skill-explain .img-box .skill-text img {
-    width: 65%;
+    width: 70%;
   }
 }
 @media screen and (min-width: 768px) {
@@ -631,6 +631,17 @@ section .skill .skill-flex-box .skill-explain {
     margin: 0 auto;
     height: 600px;
     overflow-y: scroll;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1460px) {
+  section .skill .skill-flex-box .skill-explain .img-box .img-box1 img,
+section .skill .skill-flex-box .skill-explain .img-box .img-box4 img {
+    width: 65%;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1460px) {
+  section .skill .skill-flex-box .skill-explain .img-box .img-box7 img {
+    width: 90%;
   }
 }
 @media screen and (min-width: 1460px) {
@@ -1830,4 +1841,4 @@ footer p {
     float: right;
     margin-right: 5%;
   }
-}
+}/*# sourceMappingURL=index.css.map */
