@@ -347,7 +347,6 @@ section {
             @include responsive(tablet-size) {
                 flex-direction: row;
                 position: relative;
-                // margin-left: 5%;
                 margin: 0 auto;
             }
             @include responsive(pc-size) {
@@ -359,7 +358,7 @@ section {
                 width: 80%;
                 @include responsive(tablet-size) {
                     width: 40%;
-                    margin-left: 7%;
+                    margin-left: 0;
                 }
                 @include responsive(pc-size) {
                     width: 400px;
@@ -368,11 +367,13 @@ section {
 
             .explain {
                 margin: 0 auto;
+
                 @include responsive(tablet-size) {
                     position: absolute;
-                    left: 50%;
+                    left: 40%;
                     bottom: 10%;
-                    margin-right: 0;
+                    margin-left: 0;
+                    width: 60%;
                 }
                 @include responsive(pc-size) {
                     bottom: 15%;
@@ -382,10 +383,12 @@ section {
                     color: $orange;
                     font-size: 1.8em;
                     margin: 30px 0 15px 0;
+
                     @include responsive(tablet-size) {
-                        font-size: 1.66em;
+                        font-size: 1.8em;
                     }
                     @include responsive(pc-size) {
+                        text-align: left;
                         font-size: 2.8em;
                     }
                 }
@@ -396,6 +399,7 @@ section {
                         weight: bolder;
                     }
                     margin-bottom: 67px;
+
 
                     @include responsive(pc-size) {
                         font-size: 5.7em;
@@ -408,6 +412,18 @@ section {
                     margin: 0 auto;
                     display: flex;
                     justify-content: space-between;
+
+                    @include responsive(tablet-size) {
+                        width: 95%;
+                        justify-content: center;
+                        gap: 5%;
+                    }
+
+                    @include responsive(pc-size) {
+                        width: 95%;
+                        justify-content: flex-start;
+                        gap: 10%;
+                    }
 
                     div {
                         p {
@@ -507,12 +523,20 @@ section {
                         }
                         .img-box3 {
                             .img-height {
-                                width: 85%;
                                 margin: 0 auto;
-                                height: 650px;
+                                width: 90%;
+                                height: 450px;
                                 overflow-y: scroll;
                                 img {
                                     width: 100%;
+                                }
+
+                                @include responsive(pc-size) {
+                                    width: 85%;
+                                    margin: 0 auto;
+                                    height: 600px;
+                                    overflow-y: scroll;
+                                    
                                 }
                             }
                         }
@@ -528,7 +552,7 @@ section {
                 @include responsive(tablet-size) {
                     width: 50%;
                     border: 1px solid white;
-                    padding: 124px 0;
+                    padding: 80px 0 30px 0;
                 }
 
                 @include responsive(pc-size) {
@@ -539,14 +563,14 @@ section {
 
                 .rectangles {
                     width: 45%;
-                    margin: 3rem auto;
+                    margin: 0 auto;
                     display: flex;
                     flex-wrap: wrap;
                     justify-content: space-around;
                     
                     @include responsive(tablet-size) {
                         gap: 5%;
-                        width: 83%;
+                        width: 80%;
                         justify-content: space-around;
                     }
 
@@ -555,9 +579,7 @@ section {
                     }
                     
                     .rectangle {
-                        // margin-right: 0 20px;
                         position: relative;
-                        // width: 100%;
                         margin-bottom: 50px;
 
                         .skill-hover {
@@ -586,8 +608,8 @@ section {
                                 }
     
                                 @include responsive(tablet-size) {
-                                    width: 170px;
-                                    height: 170px;
+                                    width: 141px;
+                                    height: 141px;
                                     font-size: 1.7em;
                                     p {
                                         line-height: 150px;
@@ -617,8 +639,8 @@ section {
                             height: 250px;
 
                             @include responsive(tablet-size) {
-                                width: 170px;
-                                height: 170px;
+                                width: 141px;
+                                height: 141px;
                             }
 
                             @include responsive(pc-size) {
@@ -640,10 +662,10 @@ section {
                                 stroke: $white;
 
                                 @include responsive(tablet-size) {
-                                    width: 170px;
-                                    height: 170px;
-                                    stroke-width: 35; /* 반지름의 두께 */
-                                    stroke-dasharray: 666;
+                                    width: 141px;
+                                    height: 141px;
+                                    stroke-width: 20; /* 반지름의 두께 */
+                                    stroke-dasharray: 561;
                                 }
 
                                 @include responsive(pc-size) {
@@ -654,40 +676,6 @@ section {
                                 }
                             }
                         }
-
-                        // .skill-hover {
-                        //     position: absolute;
-                        //     top: 0;
-                        //     left: 0;
-                        //     font-size: 2.5em;
-                        //     font-weight: 600;
-                        //     background-color: $orange;
-                        //     width: 250px;
-                        //     height: 250px;
-
-                        //     p {
-                        //         color: $background;
-                        //         text-align: center;
-                        //         line-height: 250px;
-                        //     }
-
-                        //     @include responsive(tablet-size) {
-                        //         width: 150px;
-                        //         height: 150px;
-                        //         font-size: 1.7em;
-                        //         p {
-                        //             line-height: 150px;
-                        //         }
-                        //     }
-                        //     @include responsive(pc-size) {
-                        //         width: 220px;
-                        //         height: 220px;
-                        //         font-size: 2.5em;
-                        //         p {
-                        //             line-height: 220px;
-                        //         }
-                        //     }
-                        // }
                     }
                 }
             }
