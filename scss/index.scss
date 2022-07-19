@@ -504,7 +504,7 @@ section {
                                 width: 85%;
                                 margin: 0 auto;
                                 @include responsive(pc-size) {
-                                    width: 65%;
+                                    width: 70%;
                                 }
                             }
     
@@ -537,6 +537,22 @@ section {
                                     height: 600px;
                                     overflow-y: scroll;
                                     
+                                }
+                            }
+                        }
+                        .img-box1,
+                        .img-box4 {
+                            img {
+                                @include responsive(pc-size) {
+                                    width: 65%;
+                                }
+                            }
+                        }
+
+                        .img-box7 {
+                            img {
+                                @include responsive(pc-size) {
+                                    width: 90%;
                                 }
                             }
                         }
