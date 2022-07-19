@@ -1125,6 +1125,7 @@ section {
                 border: 4px solid $white;
                 padding: 60px 35px;
                 color: $white;
+                margin-bottom: 100px;
 
                 @include responsive(tablet-size) {
                     width: 87%;
