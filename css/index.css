@@ -636,15 +636,13 @@ section .skill .skill-flex-box .skill-graph .rectangles {
 @media screen and (min-width: 768px) {
   section .skill .skill-flex-box .skill-graph .rectangles {
     gap: 5%;
-    width: 85%;
+    width: 83%;
     justify-content: space-around;
   }
 }
 @media screen and (min-width: 1460px) {
   section .skill .skill-flex-box .skill-graph .rectangles {
     gap: 6%;
-    width: 70%;
-    justify-content: flex-start;
   }
 }
 section .skill .skill-flex-box .skill-graph .rectangles .rectangle {
@@ -1806,4 +1804,4 @@ footer p {
     float: right;
     margin-right: 5%;
   }
-}
+}/*# sourceMappingURL=index.css.map */

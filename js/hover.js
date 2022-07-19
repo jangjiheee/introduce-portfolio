@@ -18,7 +18,7 @@ window.onload = function() {
         })
     }
 
-    // determine skil text display
+    // determine skill text display
     function setSkillTextDisplayMode(position) {
         let skillSize = skillT.length;
         for (let i = 0; i < skillSize; i++) {
@@ -110,6 +110,8 @@ window.onload = function() {
 }
 
 // 메뉴 스크롤 이벤트
+
+
 $(function() {
     $(window).on("scroll", function() {
         if($(this).scrollTop() > 650) {
@@ -118,18 +120,9 @@ $(function() {
             $(".main-menu").fadeOut();
         }
     });
-
-    $(window).on("scoll", function() {
-        if($(this).scrollTop()>1000) {
-            $(".s").fadeIn();
-        } else {
-            $(".s").fadeOutn();
-        }
-    })
 })
 
 $(function() {
-    // text 셔플
     var $ = function(id) {
     return document.getElementById(id);
     };

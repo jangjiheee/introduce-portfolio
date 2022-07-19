@@ -546,14 +546,12 @@ section {
                     
                     @include responsive(tablet-size) {
                         gap: 5%;
-                        width: 85%;
+                        width: 83%;
                         justify-content: space-around;
                     }
 
                     @include responsive(pc-size) {
                         gap: 6%;
-                        width: 70%;
-                        justify-content: flex-start;
                     }
                     
                     .rectangle {
