@@ -5,94 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio01-디자인가이드</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        .wrapper {
-            display: flex;
-        }
-
-        .left {
-            background-color: #171717;
-            width: 60px;
-            max-width: 150px;
-            position: relative;
-        }
-
-        .left img {
-            display: block;
-            margin: 0 auto;
-            position: fixed;
-            width: 40px;
-            top: 5%;
-            left: 10px;
-        }
-
-        .left p {
-            font-size: 1.3em;
-            font-weight: 600;
-            text-align: center;
-            color: #ffffff;
-            transform: rotate(-90deg);
-            position: fixed;
-            bottom: 7%;
-        }
-
-        .left p:hover {
-            color: #ea894e;
-        }
-
-        .left p:after {
-            display:block;
-            content: '';
-            border-bottom: solid 5px #ea894e;  
-            transform: scaleX(0);  
-            transition: transform 250ms ease-in-out;
-        }
-        
-        .left p:hover:after {
-            transform: scaleX(1);
-        }
-
-        .right {
-            margin: 0 auto;
-            width: 90%;
-            max-width: 1920px;
-        }
-
-        .right img {
-            width: 100%;
-        }
-
-        @media screen and (min-width:768px) {
-            .left {
-                width: 100px;
-            }
-
-            .left img {
-                left: 25px;
-            }
-            
-            .left p {
-                left: 20px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="./sub-css/sub.css">
     <script src="./../js/jquery.js"></script>
-    <script>
-        $(function() {
-            $(".chGit").on("mouseover", function() {
-                $(".chGit").attr("src", "./../images/blackGithub.png");
-            })
-            $(".chGit").on("mouseout", function() {
-                $(".chGit").attr("src", "./../images/whiteGithub.png");
-            })
-        })
-    </script>
+    <script src="./sub-js/sub.js"></script>
 </head>
 <body>
     <div class="wrapper">
