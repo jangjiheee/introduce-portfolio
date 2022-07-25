@@ -435,7 +435,6 @@ section .introduce .intro-flex-box {
 }
 section .introduce .intro-flex-box .img-box {
   margin: 0 auto;
-  width: 80%;
 }
 @media screen and (min-width: 768px) {
   section .introduce .intro-flex-box .img-box {
@@ -450,6 +449,7 @@ section .introduce .intro-flex-box .img-box {
 }
 section .introduce .intro-flex-box .explain {
   margin: 0 auto;
+  width: 90%;
 }
 @media screen and (min-width: 768px) {
   section .introduce .intro-flex-box .explain {
@@ -467,7 +467,7 @@ section .introduce .intro-flex-box .explain {
 }
 section .introduce .intro-flex-box .explain h3 {
   color: #ea894e;
-  font-size: 1.8em;
+  font-size: 1.6em;
   margin: 30px 0 15px 0;
 }
 @media screen and (min-width: 768px) {
@@ -496,7 +496,8 @@ section .introduce .intro-flex-box .explain .eng-character {
   width: 100%;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  gap: 1%;
 }
 @media screen and (min-width: 768px) {
   section .introduce .intro-flex-box .explain .eng-character {
@@ -2034,7 +2035,7 @@ section .contact {
 section .contact h2 {
   margin: 0 auto;
   font-size: 1.6em;
-  margin-bottom: 400px;
+  margin-bottom: 260px;
   position: -webkit-sticky;
   position: sticky;
   top: 25px;
@@ -2060,6 +2061,9 @@ section .contact h2 {
     font-size: 6em;
     top: -2px;
   }
+}
+section .contact .icon-zip {
+  padding-top: 140px;
 }
 section .contact .icon-zip .icon {
   display: flex;
