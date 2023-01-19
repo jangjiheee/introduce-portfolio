@@ -75,8 +75,8 @@ header .main-menu .main-filter {
   justify-content: space-between;
   padding: 30px 0 30px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(25px);
+          backdrop-filter: blur(25px);
 }
 @media screen and (min-width: 1460px) {
   header .main-menu .main-filter {
@@ -93,6 +93,15 @@ header .main-menu .main-filter #logo {
   header .main-menu .main-filter #logo {
     margin-left: 5%;
   }
+}
+@media screen and (min-width: 1460px) {
+  header .main-menu .main-filter #logo {
+    font-size: 1.6em;
+  }
+}
+header .main-menu .main-filter #logo .apostrophe {
+  display: none;
+  color: #ea894e;
 }
 header .main-menu .main-filter .navbar {
   margin-right: 7%;
@@ -144,15 +153,15 @@ header .main-menu .main-filter div.mobile-menu .hamburger {
   position: fixed;
   top: 34px;
   float: right;
-  right: 4.2%;
+  right: 4%;
   width: 25px;
   height: 20px;
-  margin-right: 20px;
+  margin-right: 10px;
   z-index: 999;
 }
 @media screen and (min-width: 768px) {
   header .main-menu .main-filter div.mobile-menu .hamburger {
-    right: 5%;
+    right: 2%;
   }
 }
 @media screen and (min-width: 1460px) {
@@ -260,7 +269,7 @@ section .intro-text .text-position .hello-text span {
   position: relative;
   -webkit-animation: text-up 1.2s infinite;
           animation: text-up 1.2s infinite;
-  font-size: 6em;
+  font-size: 4em;
   font-weight: bolder;
 }
 section .intro-text .text-position .hello-text span:nth-child(1) {
@@ -330,22 +339,22 @@ section .intro-text .text-position .hello-text span:nth-child(6) {
 }
 @media screen and (min-width: 768px) {
   section .intro-text .text-position .hello-text span {
-    font-size: 10.5em;
+    font-size: 10em;
     margin-bottom: 120px;
   }
 }
 @media screen and (min-width: 1460px) {
   section .intro-text .text-position .hello-text span {
-    font-size: 18.75em;
+    font-size: 18em;
   }
 }
 section .intro-text .text-position .shuffle-text {
   margin-top: 20px;
-  font-size: 2.3em;
+  font-size: 1.4em;
 }
 @media screen and (min-width: 768px) {
   section .intro-text .text-position .shuffle-text {
-    font-size: 4em;
+    font-size: 2em;
   }
 }
 @media screen and (min-width: 1460px) {
@@ -383,11 +392,11 @@ section .introduce {
 }
 section .introduce h2 {
   margin: 0 auto;
-  font-size: 2.3em;
+  font-size: 1.1em;
   margin-bottom: 200px;
   position: -webkit-sticky;
   position: sticky;
-  top: 16px;
+  top: 32px;
   z-index: 999;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -399,16 +408,16 @@ section .introduce h2 {
     text-align: left;
     margin-bottom: 500px;
     margin-left: 14%;
-    font-size: 4.5em;
-    top: -4px;
+    font-size: 2.6em;
+    top: 12px;
   }
 }
 @media screen and (min-width: 1460px) {
   section .introduce h2 {
     margin-left: 12%;
     margin-bottom: 400px;
-    font-size: 6em;
-    top: 0px;
+    font-size: 3.2em;
+    top: 24px;
   }
 }
 section .introduce .confix {
@@ -450,6 +459,7 @@ section .introduce .intro-flex-box .img-box {
 section .introduce .intro-flex-box .explain {
   margin: 0 auto;
   width: 90%;
+  word-break: keep-all;
 }
 @media screen and (min-width: 768px) {
   section .introduce .intro-flex-box .explain {
@@ -467,8 +477,8 @@ section .introduce .intro-flex-box .explain {
 }
 section .introduce .intro-flex-box .explain h3 {
   color: #ea894e;
-  font-size: 1.6em;
-  margin: 30px 0 15px 0;
+  font-size: 1.4em;
+  margin: 30px 0 10px 0;
 }
 @media screen and (min-width: 768px) {
   section .introduce .intro-flex-box .explain h3 {
@@ -529,7 +539,7 @@ section .introduce .intro-flex-box .explain .eng-character div p:last-child {
 }
 @media screen and (min-width: 1460px) {
   section .introduce .intro-flex-box .explain .eng-character div p {
-    font-size: 2.54em;
+    font-size: 2em;
     font-weight: bolder;
     margin-bottom: 17px;
   }
@@ -539,11 +549,11 @@ section .skill {
 }
 section .skill h2 {
   margin: 0 auto;
-  font-size: 3em;
+  font-size: 1.1em;
   margin-bottom: 400px;
   position: -webkit-sticky;
   position: sticky;
-  top: 10px;
+  top: 32px;
   z-index: 999;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -554,16 +564,16 @@ section .skill h2 {
     text-align: left;
     margin-left: 15%;
     margin-bottom: 500px;
-    font-size: 4.5em;
-    top: -6px;
+    font-size: 2.6em;
+    top: 12px;
   }
 }
 @media screen and (min-width: 1460px) {
   section .skill h2 {
     margin-left: 12%;
     margin-bottom: 600px;
-    font-size: 6em;
-    top: 0px;
+    font-size: 3.2em;
+    top: 24px;
   }
 }
 section .skill .skill-flex-box {
@@ -612,7 +622,7 @@ section .skill .skill-flex-box .skill-explain .img-box .skill-text {
 }
 section .skill .skill-flex-box .skill-explain .img-box .skill-text h3 {
   margin: 15px 0;
-  font-size: 2em;
+  font-size: 1.4em;
 }
 @media screen and (min-width: 768px) {
   section .skill .skill-flex-box .skill-explain .img-box .skill-text h3 {
@@ -624,7 +634,7 @@ section .skill .skill-flex-box .skill-explain .img-box .skill-text h3 {
 section .skill .skill-flex-box .skill-explain .img-box .skill-text p {
   margin: 0 auto;
   text-align: left;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 @media screen and (min-width: 768px) {
   section .skill .skill-flex-box .skill-explain .img-box .skill-text p {
@@ -804,11 +814,11 @@ section .workspace {
 }
 section .workspace h2 {
   margin: 0 auto;
-  font-size: 2em;
+  font-size: 1.1em;
   margin-bottom: 400px;
   position: -webkit-sticky;
   position: sticky;
-  top: 20px;
+  top: 32px;
   z-index: 999;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -820,16 +830,16 @@ section .workspace h2 {
     text-align: left;
     margin-left: 11%;
     margin-bottom: 500px;
-    font-size: 5em;
-    top: -12px;
+    font-size: 2.6em;
+    top: 12px;
   }
 }
 @media screen and (min-width: 1460px) {
   section .workspace h2 {
     margin-left: 7%;
     margin-bottom: 600px;
-    font-size: 6em;
-    top: -4px;
+    font-size: 3.2em;
+    top: 26px;
   }
 }
 section .workspace .portfolio01,
@@ -1041,7 +1051,7 @@ section .workspace .portfolio04 .work-flex-box .port01-text h3,
 section .workspace .portfolio04 .work-flex-box .port02-text h3,
 section .workspace .portfolio04 .work-flex-box .port03-text h3,
 section .workspace .portfolio04 .work-flex-box .port04-text h3 {
-  font-size: 2.2em;
+  font-size: 1.6em;
   padding: 25px 0 25px 6%;
 }
 section .workspace .portfolio01 .work-flex-box .port01-text h3 + hr,
@@ -1173,6 +1183,27 @@ section .workspace .portfolio04 .work-flex-box .port02-text .text-left-align div
 section .workspace .portfolio04 .work-flex-box .port03-text .text-left-align div h4,
 section .workspace .portfolio04 .work-flex-box .port04-text .text-left-align div h4 {
   margin-bottom: 11px;
+  font-size: 1.1em;
+}
+@media screen and (min-width: 768px) {
+  section .workspace .portfolio01 .work-flex-box .port01-text .text-left-align div h4,
+section .workspace .portfolio01 .work-flex-box .port02-text .text-left-align div h4,
+section .workspace .portfolio01 .work-flex-box .port03-text .text-left-align div h4,
+section .workspace .portfolio01 .work-flex-box .port04-text .text-left-align div h4,
+section .workspace .portfolio02 .work-flex-box .port01-text .text-left-align div h4,
+section .workspace .portfolio02 .work-flex-box .port02-text .text-left-align div h4,
+section .workspace .portfolio02 .work-flex-box .port03-text .text-left-align div h4,
+section .workspace .portfolio02 .work-flex-box .port04-text .text-left-align div h4,
+section .workspace .portfolio03 .work-flex-box .port01-text .text-left-align div h4,
+section .workspace .portfolio03 .work-flex-box .port02-text .text-left-align div h4,
+section .workspace .portfolio03 .work-flex-box .port03-text .text-left-align div h4,
+section .workspace .portfolio03 .work-flex-box .port04-text .text-left-align div h4,
+section .workspace .portfolio04 .work-flex-box .port01-text .text-left-align div h4,
+section .workspace .portfolio04 .work-flex-box .port02-text .text-left-align div h4,
+section .workspace .portfolio04 .work-flex-box .port03-text .text-left-align div h4,
+section .workspace .portfolio04 .work-flex-box .port04-text .text-left-align div h4 {
+    font-size: 1.2em;
+  }
 }
 section .workspace .portfolio01 .work-flex-box .port01-text .text-left-align .btn,
 section .workspace .portfolio01 .work-flex-box .port02-text .text-left-align .btn,
@@ -1880,11 +1911,11 @@ section .design {
 }
 section .design h2 {
   margin: 0 auto;
-  font-size: 3em;
+  font-size: 1.1em;
   margin-bottom: 100px;
   position: -webkit-sticky;
   position: sticky;
-  top: 10px;
+  top: 32px;
   z-index: 999;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -1904,8 +1935,8 @@ section .design h2 {
   section .design h2 {
     margin-left: 12%;
     margin-bottom: 600px;
-    font-size: 6em;
-    top: 0px;
+    font-size: 3.2em;
+    top: 26px;
   }
 }
 section .design .confix {
@@ -1943,16 +1974,22 @@ section .design .confix .design-flex-box div {
     margin: 0 5px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1460px) {
   section .design .confix .design-flex-box div {
     margin: 0 20px;
   }
 }
 section .design .confix .design-flex-box div h3 {
   margin-bottom: 5px;
+  font-size: 2em;
+}
+@media screen and (min-width: 768px) {
+  section .design .confix .design-flex-box div h3 {
+    font-size: 2.1em;
+  }
 }
 section .design .confix .design-flex-box div p {
-  font-size: 1.1em;
+  font-size: 1em;
 }
 section .design .confix .design-flex-box div:hover {
   background-color: #ea894e;
@@ -1985,8 +2022,11 @@ section .design .design-modal .design-modal-box {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 400px;
+  width: 320px;
   height: 450px;
+}
+section .design .design-modal .design-modal-box:last-child {
+  height: 700px;
 }
 @media screen and (min-width: 768px) {
   section .design .design-modal .design-modal-box {
@@ -2017,11 +2057,11 @@ section .design .design-modal .design-modal-box:nth-child(3), section .design .d
   }
 }
 section .design .design-modal .design-modal-box .closeBtn {
-  font-size: 3.5rem;
+  font-size: 2.2rem;
   text-align: right;
   color: #ffffff;
   font-weight: 600;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 section .design .design-modal .design-modal-box .closeBtn:hover {
   cursor: pointer;
@@ -2034,11 +2074,11 @@ section .contact {
 }
 section .contact h2 {
   margin: 0 auto;
-  font-size: 1.6em;
+  font-size: 1.1em;
   margin-bottom: 260px;
   position: -webkit-sticky;
   position: sticky;
-  top: 25px;
+  top: 32px;
   z-index: 999;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -2058,8 +2098,8 @@ section .contact h2 {
   section .contact h2 {
     margin-left: 6%;
     margin-bottom: 600px;
-    font-size: 6em;
-    top: -2px;
+    font-size: 3.2em;
+    top: 26px;
   }
 }
 section .contact .icon-zip {
@@ -2204,7 +2244,7 @@ footer {
 }
 footer p {
   color: #000;
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: 600;
 }
 @media screen and (min-width: 1460px) {

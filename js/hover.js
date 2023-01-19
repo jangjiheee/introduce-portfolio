@@ -112,12 +112,22 @@ window.onload = function() {
 // 메뉴 스크롤 이벤트
 $(function() {
     $(window).on("scroll", function() {
-        if($(this).scrollTop() > 650) {
+        if($(this).scrollTop() > 500) {
             $(".main-menu").fadeIn();
         } else {
             $(".main-menu").fadeOut();
         }
     });
+})
+
+$(function() {
+    $(window).on("scroll", function() {
+        if($(this).scrollTop()>1500) {
+            $(".apostrophe").css("display", "inline-block");
+        } else {
+            $(".apostrophe").css("display", "none")
+        }
+    })
 })
 
 $(function() {
